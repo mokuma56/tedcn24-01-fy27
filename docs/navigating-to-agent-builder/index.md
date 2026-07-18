@@ -1,28 +1,15 @@
 # Navigating to Agent Builder
 
-Access the Agent Builder platform through the Cloud Control Studio interface.
-
-## Step 1: Log in to Cloud Control
+## Step 1: Overview
 
 Log in to Cloud Control at cloud.cisco.com.
 
-```
-cloud.cisco.com
-```
-
-!!! success "Expected Result"
-    You are logged in to the Cloud Control portal.
-
-## Step 2: Open the nine-dots menu
-
 Click the nine-dots menu in the top header.
 
-!!! success "Expected Result"
-    The application menu expands.
+Under Platform Services, click Studio. If it is not visible, click Show more to expand the list.
 
-## Step 3: Navigate to Studio
+This opens the Agent Builder Overview page. The top navigation bar has four tabs: Overview, Integrations, Agent Builder, and Observability.
 
-Under Platform Services, click Studio. If Studio is not immediately visible in the menu, click Show more to expand the full list of platform services and then click Studio.
+On a fresh setup, the Overview page shows two calls to action: Browse Integrations and Create an Agent. It also shows three summary cards — agents currently running, total active agents, and number of connected integrations — along with a Recent Agent Activity section and a Connected Integrations section.
 
-!!! success "Expected Result"
-    The Agent Builder Overview page opens. The top navigation bar shows four tabs: Overview, Integrations, Agent Builder, and Observability. On a fresh setup, the Overview page shows two calls to action: Browse Integrations and Create an Agent. It also shows three summary cards — agents currently running, total active agents, and number of connected integrations — along with a Recent Agent Activity section and a Connected Integrations section.
+![Agent Builder Overview page showing stat cards, recent agent activity, and connected integrations](../screenshots/84ff424d-agent-builder-overview-page-showing-stat-cards-recent-agent.png)

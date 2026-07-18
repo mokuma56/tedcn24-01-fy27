@@ -1,21 +1,78 @@
-site_name: "Agent Builder — Getting Started Guide"
-site_description: "Lab Guide — Agent Builder — Getting Started Guide"
+---
+dev_addr: "0.0.0.0:8000"
+site_name: "(TEDC24) Unlock the Potential of Cisco's Agentic Ops Framework"
+site_description: "(TEDC24) Unlock the Potential of Cisco's Agentic Ops Framework"
+site_author: "Matt Okuma"
+copyright: Copyright &copy; 2024 Cisco
 theme:
   name: material
-  palette:
-    primary: teal
-    accent: cyan
   features:
     - navigation.tabs
-    - navigation.expand
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+    - search.suggest
     - content.code.copy
+    - toc.integrate
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: template_assets/cisco_logo.png
+  favicon: template_assets/cisco_logo.png
+extra:
+  generator: false
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: false
+      auto_caption: true
+      caption_position: top
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - tables
+  - toc:
+      toc_depth: 2
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 nav:
   - Home: index.md
-  - Navigating to Agent Builder: navigating-to-agent-builder/index.md
-  - "Section 1: Third-Party Integrations": section-1-third-party-integrations/index.md
-  - "Section 2: Agent Builder — Creating an Agent": section-2-agent-builder-creating-an-agent/index.md
-  - "Section 2.2: Testing Your Agent": section-2-2-testing-your-agent/index.md
-  - "Section 2.3: Managing Your Agent": section-2-3-managing-your-agent/index.md
-  - "Section 2.4: Observability": section-2-4-observability/index.md
-  - "Appendix A: Vendor Setup Instructions": appendix-a-vendor-setup-instructions/index.md
-
+  - Lab:
+    - Navigating to Agent Builder: navigating-to-agent-builder/index.md
+    - "Section 1: Third-Party Integrations": section-1-third-party-integrations/index.md
+    - "Section 2: Agent Builder — Creating an Agent": section-2-agent-builder-creating-an-agent/index.md
+    - "Section 2.2: Testing Your Agent": section-2-2-testing-your-agent/index.md
+    - "Section 2.3: Managing Your Agent": section-2-3-managing-your-agent/index.md
+    - "Section 2.4: Observability": section-2-4-observability/index.md
+    - "Appendix A: Vendor Setup Instructions": appendix-a-vendor-setup-instructions/index.md

@@ -1,0 +1,21 @@
+site_name: "Agent Builder — Getting Started Guide"
+site_description: "Lab Guide — Agent Builder — Getting Started Guide"
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Navigating to Agent Builder: navigating-to-agent-builder/index.md
+  - "Section 1: Third-Party Integrations": section-1-third-party-integrations/index.md
+  - "Section 2: Agent Builder — Creating an Agent": section-2-agent-builder-creating-an-agent/index.md
+  - "Section 2.2: Testing Your Agent": section-2-2-testing-your-agent/index.md
+  - "Section 2.3: Managing Your Agent": section-2-3-managing-your-agent/index.md
+  - "Section 2.4: Observability": section-2-4-observability/index.md
+  - "Appendix A: Vendor Setup Instructions": appendix-a-vendor-setup-instructions/index.md
+

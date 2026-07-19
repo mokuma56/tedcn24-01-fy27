@@ -2,7 +2,7 @@
 
 This appendix covers what you need from each vendor’s platform to complete the credential form in Admin Console.
 
-## Step 1: ServiceNow CMDB
+## Step 16: ServiceNow CMDB
 
 Fields in Admin Console:
 
@@ -14,7 +14,7 @@ How to obtain:
 
 To be added.
 
-## Step 2: ServiceNow ITSM
+## Step 17: ServiceNow ITSM
 
 Fields in Admin Console:
 
@@ -38,7 +38,7 @@ Complete the OAuth flow using a dedicated integration user account created for t
 
 Requirement: ServiceNow Zurich or later with a Now Assist SKU and Now Assist for ITSM installed.
 
-## Step 3: ServiceNow ITOM
+## Step 18: ServiceNow ITOM
 
 Fields in Admin Console:
 
@@ -50,7 +50,7 @@ How to obtain:
 
 To be added.
 
-## Step 4: Atlassian (Jira + Confluence)
+## Step 19: Atlassian (Jira + Confluence)
 
 Fields in Admin Console:
 
@@ -70,7 +70,7 @@ Use this token along with your Atlassian account email when filling in the Admin
 
 Note: API token authentication must be enabled by your Atlassian org admin. The Atlassian MCP server defaults to OAuth 2.1 — confirm with your admin that API token auth is permitted for your org.
 
-## Step 5: Infoblox DDI
+## Step 20: Infoblox DDI
 
 Fields in Admin Console:
 
@@ -82,7 +82,7 @@ How to obtain:
 
 To be added.
 
-## Step 6: BlueCat Integrity
+## Step 21: BlueCat Integrity
 
 Fields in Admin Console:
 
@@ -96,7 +96,7 @@ How to obtain:
 
 To be added.
 
-## Step 7: BlueCat Edge
+## Step 22: BlueCat Edge
 
 Fields in Admin Console:
 

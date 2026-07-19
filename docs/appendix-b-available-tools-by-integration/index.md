@@ -2,19 +2,19 @@
 
 What Canvas can do via each integration is determined by the tools that vendor exposes through their MCP server.
 
-## Step 1: Atlassian — Jira
+## Step 23: Atlassian — Jira
 
 
 
-## Step 2: Atlassian — Confluence
+## Step 24: Atlassian — Confluence
 
 
 
-## Step 3: ServiceNow ITSM
+## Step 25: ServiceNow ITSM
 
 Note: Incident creation is not in the confirmed tool set for ITSM and may require additional configuration. Contact your Cisco representative.
 
-## Step 4: ServiceNow CMDB, ITOM, Infoblox, BlueCat
+## Step 26: ServiceNow CMDB, ITOM, Infoblox, BlueCat
 
 Tool lists to be added — pending confirmation.
 

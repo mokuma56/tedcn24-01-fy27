@@ -12,6 +12,7 @@ theme:
     - navigation.indexes
     - navigation.instant
     - navigation.top
+    - navigation.footer
     - search.suggest
     - content.code.copy
     - toc.integrate

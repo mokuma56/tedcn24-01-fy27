@@ -1,14 +1,11 @@
+---
+description: " (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework"
+template: home.html
+---
+
 #  (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework
 
-**Version:** 1.0 Draft  |  **Author:** Matt Okuma   |  **Date:** 2026-07-18  |  **Difficulty:** Intermediate  |  **Duration:** 60 min
-
-**Tags:** agent-builder, cisco, ai-canvas, mcp, integrations, automation, cloud-control, studio
-
-## Prerequisites
-
-- Cisco SSO credentials and access to your Cloud Control tenant
-- Admin Console access within your tenant
-- API credentials for the third-party tools you want to connect (see Appendix A)
+**Author:** Matt Okuma   |  **Version:** 1.0 Draft
 
 ## Introduction
 
@@ -52,29 +49,3 @@ In this hands-on lab you will experience Cisco Cloud Control end-to-end across i
 - Create an autonomous agent with a profile, trigger, and cadence
 - Test an agent using the Test tab before promoting to production
 - Promote, monitor, and manage agent versions in production
-
-## Section 1: Explore the LAB and Cloud Control Capabilities
-
-In this section, you will discover how Cloud Control streamlines the management of your cloud infrastructure through a centralized interface. You'll gain hands-on experience with its core monitoring, automation, and governance features to understand how they work together to simplify operations at scale.
-
-### Step 1: Lab and Topoloy  Overview
-
-<p>Review the assigned lab POD and network topology diagram provided in your lab guide. Note your POD number, device hostnames, IP addressing scheme, and the interconnections between devices, as these will be referenced throughout this lab.</p>
-
-> **Expected Result:** <p>Your POD's network topology is understood. Each POD has two (2) dedicated 9300 Cloud Managed switches and multiple attached clients, providing a small but real-world branch site to work with.</p>
-
-### Step 2: Logging into your assinged Cloud Control Tenant and exploring the Home Screen
-
-<p>Open a web browser and navigate to <a href="https://cloud.cisco.com" rel="noopener noreferrer" target="_blank"><strong>https://cloud.cisco.com</strong></a>. Enter your provided credentials (username and password) and click <strong>Sign In</strong> to authenticate. Accept any authentication pop-ups.</p><p><strong>NOTE:</strong> If you are unable to locate your POD login credentials, please contact a proctor.</p>
-
-> **Expected Result:** <p>You are successfully logged in to the Cloud Control tenant dashboard and have explored the home screen.</p>
-
-### Step 3: Explore 9-Dot Menu
-
-<p>Click the <strong>9-dot menu</strong> (grid icon) located in the top navigation bar of Cloud Control to explore the available options and applications.</p>
-
-> **Expected Result:** <p>The 9-dot menu expands to display all available applications and navigation options within Cloud Control. You have explored the applications, products, and the option to pin items to the navigation banner.</p>
-
-## Conclusion
-
-You have now set up integrations, created and tested an agent, and promoted it to production. Use the Observability tab and Notifications pane to monitor ongoing agent runs. Refer to Appendix A for vendor-specific credential setup and Appendix B for the full list of available tools per integration. For issues not covered in the Troubleshooting section, contact your Cisco representative.

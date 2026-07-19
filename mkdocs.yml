@@ -69,9 +69,9 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Lab:
-    - Navigating to Agent Builder: navigating-to-agent-builder/index.md
-    - TEST: test/index.md
+    - Explore the LAB and Cloud Control Capabilities: explore-the-lab-and-cloud-control-capabilities/index.md
     - "Section 1: Third-Party Integrations": section-1-third-party-integrations/index.md
+    - Navigating to Agent Builder: navigating-to-agent-builder/index.md
     - "Section 2: Agent Builder": section-2-agent-builder/index.md
     - Troubleshooting: troubleshooting/index.md
     - "Appendix A: Vendor Setup Instructions": appendix-a-vendor-setup-instructions/index.md

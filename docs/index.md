@@ -1,6 +1,6 @@
 #  (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework
 
-**Version:** 0.4 Draft  |  **Author:** Unknown  |  **Date:** 2026-07-18  |  **Difficulty:** Intermediate  |  **Duration:** 60 min
+**Version:** 1.0 Draft  |  **Author:** Matt Okuma   |  **Date:** 2026-07-18  |  **Difficulty:** Intermediate  |  **Duration:** 60 min
 
 **Tags:** agent-builder, cisco, ai-canvas, mcp, integrations, automation, cloud-control, studio
 
@@ -53,35 +53,39 @@ In this hands-on lab you will experience Cisco Cloud Control end-to-end across i
 - Test an agent using the Test tab before promoting to production
 - Promote, monitor, and manage agent versions in production
 
-## Navigating to Agent Builder
+## Explore the LAB and Cloud Control Capabilities
 
-### Step 1: Overview
+In this section, you will discover how Cloud Control streamlines the management of your cloud infrastructure through a centralized interface. You'll gain hands-on experience with its core monitoring, automation, and governance features to understand how they work together to simplify operations at scale.
 
-Log in to Cloud Control at cloud.cisco.com.
+### Step 1: Lab and Topoloy  Overview
 
-Click the nine-dots menu in the top header.
+<p>Review the assigned lab POD and network topology diagram provided in your lab guide. Note your POD number, device hostnames, IP addressing scheme, and the interconnections between devices, as these will be referenced throughout this lab.</p>
 
-Under Platform Services, click Studio. If it is not visible, click Show more to expand the list.
+> **Expected Result:** <p>Your POD's network topology is understood. Each POD has two (2) dedicated 9300 Cloud Managed switches and multiple attached clients, providing a small but real-world branch site to work with.</p>
 
-This opens the Agent Builder Overview page. The top navigation bar has four tabs: Overview, Integrations, Agent Builder, and Observability.
+### Step 2: Logging into your assinged Cloud Control Tenant and exploring the Home Screen
 
-On a fresh setup, the Overview page shows two calls to action: Browse Integrations and Create an Agent. It also shows three summary cards — agents currently running, total active agents, and number of connected integrations — along with a Recent Agent Activity section and a Connected Integrations section.
+<p>Open a web browser and navigate to <a href="https://cloud.cisco.com" rel="noopener noreferrer" target="_blank"><strong>https://cloud.cisco.com</strong></a>. Enter your provided credentials (username and password) and click <strong>Sign In</strong> to authenticate. Accept any authentication pop-ups.</p><p><strong>NOTE:</strong> If you are unable to locate your POD login credentials, please contact a proctor.</p>
 
-## TEST
+> **Expected Result:** <p>You are successfully logged in to the Cloud Control tenant dashboard and have explored the home screen.</p>
 
-this is a test section
+### Step 3: Explore 9-Dot Menu
+
+<p>Click&nbsp;the&nbsp;<strong>9-dot&nbsp;menu</strong>&nbsp;(grid&nbsp;icon)&nbsp;located&nbsp;in&nbsp;the&nbsp;top&nbsp;navigation&nbsp;bar&nbsp;of&nbsp;Cloud&nbsp;Control&nbsp;to&nbsp;explore&nbsp;the&nbsp;available&nbsp;options&nbsp;and&nbsp;applications.&nbsp;</p>
+
+> **Expected Result:** <p>The 9-dot menu expands to display all available applications and navigation options within Cloud Control. You have explored the applications, products, and the option to pin items to the navigation banner.</p>
 
 ## Section 1: Third-Party Integrations
 
-### Step 2: What Are Integrations?
+### Step 4: What Are Integrations?
 
 Integrations connect Agent Builder to your third-party tools — ServiceNow, Atlassian, Infoblox, BlueCat, and others. Each integration is backed by an MCP server that exposes the vendor’s API as callable tools. Once connected, AI Canvas can use those tools to query data and take actions in that vendor’s platform on your behalf.
 
-### Step 3: Browse the Integration Catalog
+### Step 5: Browse the Integration Catalog
 
 Click the Integrations tab. You will see a tile catalog with one tile per available MCP server. Each tile shows the vendor name, product description, and either a + Configure button (not yet connected) or a ✓ Configured checkmark (already connected) in the bottom right corner.
 
-### Step 4: 1.2 Configure an Integration
+### Step 6: 1.2 Configure an Integration
 
 Clicking + Configure on a tile cross-launches you into the Integrations section of the Admin Console. You can also navigate there directly:
 
@@ -101,11 +105,11 @@ The integration appears in the table on the Admin Console Integrations page with
 
 Each user configures their own credentials. Repeat this process for every integration you want to connect.
 
-### Step 5: 1.3 Verify the Connection
+### Step 7: 1.3 Verify the Connection
 
 Return to the Integrations tab in Studio. Each integration you configured will now show a ✓ Configured checkmark instead of + Configure.
 
-### Step 6: 1.4 Use Your Integrations in Canvas
+### Step 8: 1.4 Use Your Integrations in Canvas
 
 Go to AI Canvas and enter a natural language query. Canvas routes the query to the appropriate integration based on context.
 
@@ -123,9 +127,23 @@ Sample queries:
 
 “Check DHCP utilization for the 10.150.28.0/24 subnet”
 
+## Navigating to Agent Builder
+
+### Step 9: Overview
+
+Log in to Cloud Control at cloud.cisco.com.
+
+Click the nine-dots menu in the top header.
+
+Under Platform Services, click Studio. If it is not visible, click Show more to expand the list.
+
+This opens the Agent Builder Overview page. The top navigation bar has four tabs: Overview, Integrations, Agent Builder, and Observability.
+
+On a fresh setup, the Overview page shows two calls to action: Browse Integrations and Create an Agent. It also shows three summary cards — agents currently running, total active agents, and number of connected integrations — along with a Recent Agent Activity section and a Connected Integrations section.
+
 ## Section 2: Agent Builder
 
-### Step 7: 2.1 Creating an Agent
+### Step 10: 2.1 Creating an Agent
 
 Before creating an agent, verify that all integrations the agent will need are already configured:
 
@@ -137,7 +155,7 @@ Click the Agent Builder tab. If no agents have been created yet, you will see a 
 
 Click either to start the agent creation flow. Agent creation has three steps: Agent Profile → Triggers → Review.
 
-### Step 8: Step 1: Agent Profile
+### Step 11: Step 1: Agent Profile
 
 Tips for writing good instructions:
 
@@ -149,7 +167,7 @@ Include thresholds or conditions to flag (e.g., “flag any incident not updated
 
 Once the required fields are filled in, click Continue.
 
-### Step 9: Step 2: Triggers
+### Step 12: Step 2: Triggers
 
 Trigger Mode determines how the agent is activated. Select a mode from the drop-down:
 
@@ -165,11 +183,11 @@ Example:
 
 Click Continue when done. You can click Back at any point to return to the previous step.
 
-### Step 10: Step 3: Review
+### Step 13: Step 3: Review
 
 The Review page shows a summary of everything you configured — agent name, description, trigger mode, activation schedule, and trigger prompt. Verify the details look correct, then click Create Agent.
 
-### Step 11: What Happens When You Click Create Agent
+### Step 14: What Happens When You Click Create Agent
 
 Studio runs through a series of automated steps that typically take one to a few minutes:
 
@@ -193,7 +211,7 @@ Once complete, a confirmation page shows the agent name, description, and a summ
 
 Two buttons are available:
 
-### Step 12: 2.2 Testing Your Agent
+### Step 15: 2.2 Testing Your Agent
 
 The Test tab provides a live test environment where you can chat directly with the agent to verify it responds correctly before promoting it to production.
 
@@ -207,11 +225,11 @@ Run readiness check — Agent confirms it can reach its configured integrations 
 
 You can also type anything directly into the prompt box. A good starting point is to enter the trigger prompt you configured and verify the agent returns the expected output.
 
-### Step 13: 2.3 Managing Your Agent
+### Step 16: 2.3 Managing Your Agent
 
 The agent detail page has four tabs:
 
-### Step 14: Versions and Promoting to Production
+### Step 17: Versions and Promoting to Production
 
 When an agent is first created, it starts as Version 1 in Candidate state, visible in the Release History table on the Configurations tab.
 
@@ -237,7 +255,7 @@ Roll back — Promote any previously published version from the Release History 
 
 Delete the agent — Remove the agent entirely from the agent detail page if it is no longer needed
 
-### Step 15: 2.4 Observability
+### Step 18: 2.4 Observability
 
 Each time an ambient agent completes a run, its output appears in the Notifications pane in the Cloud Control header — one notification per run. To view results:
 
@@ -255,7 +273,7 @@ Use the Download option to export the output if needed.
 
 This appendix covers what you need from each vendor’s platform to complete the credential form in Admin Console.
 
-### Step 16: ServiceNow CMDB
+### Step 19: ServiceNow CMDB
 
 Fields in Admin Console:
 
@@ -267,7 +285,7 @@ How to obtain:
 
 To be added.
 
-### Step 17: ServiceNow ITSM
+### Step 20: ServiceNow ITSM
 
 Fields in Admin Console:
 
@@ -291,7 +309,7 @@ Complete the OAuth flow using a dedicated integration user account created for t
 
 Requirement: ServiceNow Zurich or later with a Now Assist SKU and Now Assist for ITSM installed.
 
-### Step 18: ServiceNow ITOM
+### Step 21: ServiceNow ITOM
 
 Fields in Admin Console:
 
@@ -303,7 +321,7 @@ How to obtain:
 
 To be added.
 
-### Step 19: Atlassian (Jira + Confluence)
+### Step 22: Atlassian (Jira + Confluence)
 
 Fields in Admin Console:
 
@@ -323,7 +341,7 @@ Use this token along with your Atlassian account email when filling in the Admin
 
 Note: API token authentication must be enabled by your Atlassian org admin. The Atlassian MCP server defaults to OAuth 2.1 — confirm with your admin that API token auth is permitted for your org.
 
-### Step 20: Infoblox DDI
+### Step 23: Infoblox DDI
 
 Fields in Admin Console:
 
@@ -335,7 +353,7 @@ How to obtain:
 
 To be added.
 
-### Step 21: BlueCat Integrity
+### Step 24: BlueCat Integrity
 
 Fields in Admin Console:
 
@@ -349,7 +367,7 @@ How to obtain:
 
 To be added.
 
-### Step 22: BlueCat Edge
+### Step 25: BlueCat Edge
 
 Fields in Admin Console:
 
@@ -365,19 +383,19 @@ To be added.
 
 What Canvas can do via each integration is determined by the tools that vendor exposes through their MCP server.
 
-### Step 23: Atlassian — Jira
+### Step 26: Atlassian — Jira
 
 
 
-### Step 24: Atlassian — Confluence
+### Step 27: Atlassian — Confluence
 
 
 
-### Step 25: ServiceNow ITSM
+### Step 28: ServiceNow ITSM
 
 Note: Incident creation is not in the confirmed tool set for ITSM and may require additional configuration. Contact your Cisco representative.
 
-### Step 26: ServiceNow CMDB, ITOM, Infoblox, BlueCat
+### Step 29: ServiceNow CMDB, ITOM, Infoblox, BlueCat
 
 Tool lists to be added — pending confirmation.
 

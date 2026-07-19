@@ -1,6 +1,6 @@
 # Section 2: Agent Builder
 
-## Step 7: 2.1 Creating an Agent
+## Step 10: 2.1 Creating an Agent
 
 Before creating an agent, verify that all integrations the agent will need are already configured:
 
@@ -12,9 +12,9 @@ Click the Agent Builder tab. If no agents have been created yet, you will see a 
 
 Click either to start the agent creation flow. Agent creation has three steps: Agent Profile → Triggers → Review.
 
-![Agent Builder tab in empty state with the Create Agent call to action](../screenshots/84ff424d-agent-builder-tab-in-empty-state-with-the-create-agent-call.png)
+![](../screenshots/84ff424d-agent-builder-tab-in-empty-state-with-the-create-agent-call.png)
 
-## Step 8: Step 1: Agent Profile
+## Step 11: Step 1: Agent Profile
 
 Tips for writing good instructions:
 
@@ -26,9 +26,9 @@ Include thresholds or conditions to flag (e.g., “flag any incident not updated
 
 Once the required fields are filled in, click Continue.
 
-![Agent Profile form filled in with agent name, description, and instructions](../screenshots/84ff424d-agent-profile-form-filled-in-with-agent-name-description-a.png)
+![](../screenshots/84ff424d-agent-profile-form-filled-in-with-agent-name-description-a.png)
 
-## Step 9: Step 2: Triggers
+## Step 12: Step 2: Triggers
 
 Trigger Mode determines how the agent is activated. Select a mode from the drop-down:
 
@@ -44,15 +44,15 @@ Example:
 
 Click Continue when done. You can click Back at any point to return to the previous step.
 
-![Triggers form showing Ambient mode selected, Hourly cadence, and trigger prompt](../screenshots/84ff424d-triggers-form-showing-ambient-mode-selected-hourly-cadence.png)
+![](../screenshots/84ff424d-triggers-form-showing-ambient-mode-selected-hourly-cadence.png)
 
-## Step 10: Step 3: Review
+## Step 13: Step 3: Review
 
 The Review page shows a summary of everything you configured — agent name, description, trigger mode, activation schedule, and trigger prompt. Verify the details look correct, then click Create Agent.
 
-![Review page showing a summary of the agent configuration before creation](../screenshots/84ff424d-review-page-showing-a-summary-of-the-agent-configuration-bef.png)
+![](../screenshots/84ff424d-review-page-showing-a-summary-of-the-agent-configuration-bef.png)
 
-## Step 11: What Happens When You Click Create Agent
+## Step 14: What Happens When You Click Create Agent
 
 Studio runs through a series of automated steps that typically take one to a few minutes:
 
@@ -76,11 +76,11 @@ Once complete, a confirmation page shows the agent name, description, and a summ
 
 Two buttons are available:
 
-![Agent creation progress screen showing each automated step completing in sequence](../screenshots/84ff424d-agent-creation-progress-screen-showing-each-automated-step-c.png)
+![](../screenshots/84ff424d-agent-creation-progress-screen-showing-each-automated-step-c.png)
 
-![Agent created confirmation page with View Agent and Test Agent buttons](../screenshots/84ff424d-agent-created-confirmation-page-with-view-agent-and-test-age.png)
+![](../screenshots/84ff424d-agent-created-confirmation-page-with-view-agent-and-test-age.png)
 
-## Step 12: 2.2 Testing Your Agent
+## Step 15: 2.2 Testing Your Agent
 
 The Test tab provides a live test environment where you can chat directly with the agent to verify it responds correctly before promoting it to production.
 
@@ -94,13 +94,13 @@ Run readiness check — Agent confirms it can reach its configured integrations 
 
 You can also type anything directly into the prompt box. A good starting point is to enter the trigger prompt you configured and verify the agent returns the expected output.
 
-![Test tab showing pre-canned prompt options and the live test chat interface](../screenshots/84ff424d-test-tab-showing-pre-canned-prompt-options-and-the-live-test.png)
+![](../screenshots/84ff424d-test-tab-showing-pre-canned-prompt-options-and-the-live-test.png)
 
-## Step 13: 2.3 Managing Your Agent
+## Step 16: 2.3 Managing Your Agent
 
 The agent detail page has four tabs:
 
-## Step 14: Versions and Promoting to Production
+## Step 17: Versions and Promoting to Production
 
 When an agent is first created, it starts as Version 1 in Candidate state, visible in the Release History table on the Configurations tab.
 
@@ -126,13 +126,13 @@ Roll back — Promote any previously published version from the Release History 
 
 Delete the agent — Remove the agent entirely from the agent detail page if it is no longer needed
 
-![Configurations tab showing agent details, AI Defense protection status, and the Release History table with V1 as a Candidate](../screenshots/84ff424d-configurations-tab-showing-agent-details-ai-defense-protect.png)
+![](../screenshots/84ff424d-configurations-tab-showing-agent-details-ai-defense-protect.png)
 
-![Promote to production confirmation pop-up](../screenshots/84ff424d-promote-to-production-confirmation-pop-up.png)
+![](../screenshots/84ff424d-promote-to-production-confirmation-pop-up.png)
 
-![Configurations tab after promotion showing the Production badge and version promoted confirmation](../screenshots/84ff424d-configurations-tab-after-promotion-showing-the-production-ba.png)
+![](../screenshots/84ff424d-configurations-tab-after-promotion-showing-the-production-ba.png)
 
-## Step 15: 2.4 Observability
+## Step 18: 2.4 Observability
 
 Each time an ambient agent completes a run, its output appears in the Notifications pane in the Cloud Control header — one notification per run. To view results:
 

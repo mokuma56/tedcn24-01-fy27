@@ -11,9 +11,9 @@ theme:
     - navigation.instant
     - navigation.top
     - navigation.footer
+    - navigation.expand
     - search.suggest
     - content.code.copy
-    - toc.integrate
   custom_dir: docs/overrides
   palette:
     - media: "(prefers-color-scheme: light)"

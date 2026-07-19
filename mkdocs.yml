@@ -7,8 +7,6 @@ copyright: Copyright &copy; 2024 Cisco
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.indexes
     - navigation.instant
     - navigation.top
@@ -69,6 +67,5 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 nav:
   - Home: index.md
-  - Lab:
-    - "Section 1: Explore the LAB and Cloud Control Capabilities": section-1-explore-the-lab-and-cloud-control-capabilities/index.md
+  - "Section 1: Explore the LAB and Cloud Control Capabilities": section-1-explore-the-lab-and-cloud-control-capabilities/index.md
 

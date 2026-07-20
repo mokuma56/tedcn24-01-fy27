@@ -6,7 +6,7 @@ In this section, you will discover how Cloud Control streamlines the management 
 
 Review the assigned lab POD and network topology diagram provided in your lab guide. Note your POD number, device hostnames, IP addressing scheme, and the interconnections between devices, as these will be referenced throughout this lab.
 
-![](../screenshots/capture-f523fdb5.png)
+![](../screenshots/163398b6dc.png)
 
 ## Step 2: Logging into your assinged Cloud Control Tenant and exploring the Home Screen
 

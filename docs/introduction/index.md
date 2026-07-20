@@ -22,15 +22,13 @@ Cisco Cloud Control delivers three foundational capabilities:
 
 In this hands-on lab you will experience Cisco Cloud Control end-to-end across its key platform areas:
 
-1. **Explore the Platform** — Navigate Cisco Cloud Control and understand its capabilities across Platform Services, getting familiar with the unified operational environment.
+1. **Explore the Lab and Cloud Control Capabilities** — Navigate Cisco Cloud Control and understand its capabilities across Platform Services, getting familiar with the unified operational environment.
 
-2. **Discover Your Meraki Organization** — Connect to your Meraki org and explore the network infrastructure available in your POD, seeing how Cisco Cloud Control surfaces real device and topology context.
+2. **Experience the Agentic AI Canvas** — Work with the AI Canvas to see how operators and AI agents collaborate to investigate and resolve cross-domain issues across your infrastructure.
 
-3. **Experience the Agentic AI Canvas** — Work with the AI Canvas to see how operators and AI agents collaborate to investigate and resolve cross-domain issues across your infrastructure.
+3. **Build an Agent with Agent Builder** — Leverage a ServiceNow integration to construct a working AI agent from scratch, defining its tools, context, and behavior.
 
-4. **Build an Agent with Agent Builder** — Leverage a ServiceNow integration to construct a working AI agent from scratch, defining its tools, context, and behavior.
-
-5. **Troubleshoot a Network Issue** — Diagnose and resolve a connectivity problem between the two switches in your POD, using the platform's operational context to identify root cause and take action.
+4. **Troubleshoot a Network Issue** — Diagnose and resolve a connectivity problem between the two switches in your POD, using the platform's operational context to identify root cause and take action.
 
 ## Learning Objectives
 

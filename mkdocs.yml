@@ -69,5 +69,8 @@ nav:
   - Home: index.md
   - Introduction: introduction/index.md
   - "Section 1: Explore the LAB and Cloud Control Capabilities": section-1-explore-the-lab-and-cloud-control-capabilities/index.md
+  - "Section 2: Experience the Agentic AI Canvas": section-2-experience-the-agentic-ai-canvas/index.md
+  - "Section 3: Build an Agent with Agent Builder": section-3-build-an-agent-with-agent-builder/index.md
+  - Troubleshoot a Network Issue - Agentic Ops: troubleshoot-a-network-issue-agentic-ops/index.md
   - Conclusion: conclusion/index.md
 

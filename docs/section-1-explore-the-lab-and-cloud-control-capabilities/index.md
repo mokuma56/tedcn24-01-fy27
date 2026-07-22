@@ -4,9 +4,42 @@ In this section, you will discover how Cloud Control streamlines the management 
 
 ## Step 1: Lab and Topoloy  Overview
 
-Review the assigned lab POD and network topology diagram provided in your lab guide. Note your POD number, device hostnames, IP addressing scheme, and the interconnections between devices, as these will be referenced throughout this lab.
+This lab is based on the dCloud **"Cisco Cloud Control: AgenticOps in Action"** experience. Your assigned login has been provisioned with elevated permissions that unlock advanced capabilities beyond the standard dCloud environment — most notably **Agent Studio**, which is the primary focus of this lab.
 
-![](../screenshots/163398b6dc.png)
+These special permissions allow you to build, test, and deploy agentic workflows across the Cisco Cloud Control platform in ways that reflect real-world production use cases. Throughout this lab, you will move from exploration to hands-on creation, gaining practical experience with the tools and services that power Cisco's Agentic Operations framework.
+
+Lab Topology
+
+Your lab environment is pre-integrated with a broad set of Cisco platforms and third-party services. The topology reflects a realistic enterprise deployment, giving you visibility and control across networking, security, cloud, and collaboration domains.
+
+The following products and controllers are available in your environment:
+
+- **Cisco Security Cloud Control** — The unified management plane that ties all security services together. This is your primary interface throughout the lab.
+
+- **AI Defense** — Provides AI-powered threat detection and policy enforcement across your environment.
+
+- **Multicloud Defense** — Delivers consistent security policy and visibility across multiple cloud providers.
+
+- **Secure Access** — A cloud-delivered SSE solution combining ZTNA, SWG, CASB, and DNS security.
+
+- **Secure Firewall** — Next-generation firewall capabilities managed through the unified control plane.
+
+- **Secure Workload** — Provides workload segmentation, micro-segmentation policy, and application dependency mapping.
+
+- **Cisco Meraki** — Cloud-managed networking including switching, wireless, and SD-WAN, integrated directly into Cloud Control.
+
+- **Cisco Intersight** — Unified infrastructure management for compute, storage, and HCI across on-premises and cloud.
+
+- **Cisco Nexus Dashboard** — Centralized operations hub for data center networking, providing analytics, orchestration, and insights.
+
+- **Nexus Hyperfabric** — A cloud-managed, AI-driven data center fabric solution for simplified network operations.
+
+- **Cisco Collaboration Control Hub** *(formerly Webex Control Hub)* — The administration portal for managing Webex collaboration services, users, and devices at scale.
+
+Not all products listed above will be actively used in every section of this lab. However, their presence in the topology reflects the breadth of the Cisco Cloud Control platform and the scope of what agentic workflows can reach and act upon.
+
+!!! warning "Caution"
+    You have been granted elevated permissions necessary to complete the exercises in this lab. With these additional privileges comes an expectation of responsible use. Please confine your activities strictly to the tasks and resources outlined in this lab guide. Unauthorized actions — such as modifying shared infrastructure, accessing resources outside the scope of this lab, or interfering with other participants' environments — can disrupt the experience for everyone. Any actions you take may be logged and audited. Please be a good steward of the shared environment.
 
 ## Step 2: Logging into your assinged Cloud Control Tenant and exploring the Home Screen
 

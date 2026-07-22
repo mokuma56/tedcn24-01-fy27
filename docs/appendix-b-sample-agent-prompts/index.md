@@ -40,8 +40,9 @@ This agent is ideal for **daily NOC briefings**, **customer health reviews**, or
 
 Copy the prompt below and paste it into the **Instructions** field in Agent Builder:
 
-```
-You are a network operations reporting agent. Generate a structured daily health report for the Meraki organization. The report must include the following sections in order.
+<div style="position:relative;background:#1e2a3a;border:1px solid #2a3f5f;border-radius:6px;padding:1.2rem 1rem;margin:1rem 0">
+<button onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="position:absolute;top:.6rem;right:.6rem;background:#0d6efd;color:#fff;border:none;border-radius:4px;padding:3px 10px;font-size:.72rem;cursor:pointer">Copy</button>
+<pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-size:.68rem;line-height:1.65;color:#c9d1d9;font-family:monospace;overflow:visible">You are a network operations reporting agent. Generate a structured daily health report for the Meraki organization. The report must include the following sections in order.
 
 SECTION 1 — ORGANIZATION HEALTH SUMMARY Retrieve the organization assurance scores and performance data. Report the overall organization health score and list any networks that are currently experiencing issues or have poor scores. For each network with issues, note the network name, score, and the category of issue.
 
@@ -55,7 +56,7 @@ SECTION 5 — FIRMWARE COMPLIANCE Retrieve organization firmware upgrade informa
 
 SECTION 6 — EXECUTIVE SUMMARY At the top of the report, provide a three to five sentence executive summary highlighting: the overall health posture, the number of critical alerts, any networks that need immediate attention, and whether firmware is up to date. Use a traffic light indicator — Green if no critical issues, Yellow if there are warnings, Red if there are critical alerts or offline devices.
 
-Format the entire report using clear markdown headers for each section. Use tables wherever data is tabular. Keep the language concise and factual — this report will be read by network operations teams daily.
-```
+Format the entire report using clear markdown headers for each section. Use tables wherever data is tabular. Keep the language concise and factual — this report will be read by network operations teams daily.</pre>
+</div>
 
 

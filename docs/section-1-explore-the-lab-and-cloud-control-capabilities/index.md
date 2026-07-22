@@ -79,7 +79,7 @@ Take as much time as needed during this section to become comfortable with the m
 
 ![](../screenshots/c7c2329fb0.png)
 
-!!! example "🏆 Team Challenge"
+!!! team-challenge "🏆 Team Challenge"
     (**Take 5 minutes**) As a team, collaborate to design the most effective prompt workflow for your assigned use case. Develop a clear, compelling talk track that explains your prompting strategy, highlights key design decisions, and articulates the business value of your approach. Present a live demo to your assigned proctor, walking them through each step of your workflow and showcasing the quality of your results. Proctors will evaluate each team on creativity, clarity, and overall effectiveness — the top-performing team will be selected as the winner!
 
 ## Step 3: Explore 9-Dot Menu

@@ -32,7 +32,7 @@ Highlight the / and # shortcuts for the prompt and what capabilities those provi
 
 The trade-off with Deep Reasoning mode is that responses take longer to generate due to the additional computational steps involved. For straightforward tasks, Default mode will typically be faster and sufficient, while Deep Reasoning mode is most valuable when accuracy and thoroughness outweigh the need for speed.
 
-!!! example "🏆 Team Challenge"
+!!! team-challenge "🏆 Team Challenge"
     (Take **5 Minutes**) Please collaborate with your team to explore and refine prompts that generate interesting and helpful **Agentic Ops workflows** relevant to your assigned lab pod's use case. Focus on crafting prompts that leverage the AI Canvas to produce actionable, well-structured outputs.
 
 Your goal is to identify the most effective AI Canvas prompt that produces a comprehensive **Root Cause Analysis (RCA)** for your assigned scenario. A strong RCA should clearly identify the problem statement, contributing factors, root cause(s), impact assessment, and recommended remediation steps.

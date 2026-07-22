@@ -8,7 +8,7 @@ This lab is based on the dCloud **"Cisco Cloud Control: AgenticOps in Action"** 
 
 These special permissions allow you to build, test, and deploy agentic workflows across the Cisco Cloud Control platform in ways that reflect real-world production use cases. Throughout this lab, you will move from exploration to hands-on creation, gaining practical experience with the tools and services that power Cisco's Agentic Operations framework.
 
-Lab Topology
+## Lab Topology
 
 Your lab environment is pre-integrated with a broad set of Cisco platforms and third-party services. The topology reflects a realistic enterprise deployment, giving you visibility and control across networking, security, cloud, and collaboration domains.
 

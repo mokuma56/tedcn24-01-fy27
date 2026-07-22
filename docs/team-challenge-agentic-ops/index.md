@@ -4,9 +4,7 @@ In this section, teams will compete in two hands-on challenges that put their AI
 
 add the two team challenges here
 
-!!! team-challenge "🏆 Team Challenge"
-    ### 🏆 Team Challenge — AI Canvas RCA
-
+!!! team-challenge "🏆 Team Challenge — AI Canvas RCA"
     Work as a team to craft the most effective AI Canvas prompts for your assigned lab pod scenario. Your goal is to engineer a prompt — or a sequence of prompts — that produces a comprehensive **Root Cause Analysis (RCA)** for a real network or security issue relevant to your environment.
 
     A strong RCA should clearly identify:
@@ -35,9 +33,7 @@ add the two team challenges here
 
     Proctors will evaluate each team on **prompt quality, RCA completeness, and clarity of presentation**. The team that demonstrates the most effective and well-reasoned approach will be recognized as the **winning team**. Good luck! 🏆
 
-!!! team-challenge "🏆 Team Challenge"
-    ### 🏆 Team Challenge — Agent Builder
-
+!!! team-challenge "🏆 Team Challenge — Agent Builder"
     Now it is time to put your Agent Builder skills to the ultimate test. As a team, design and build the **most creative, useful, and impressive AI agent** you can using Agent Builder in Cisco Cloud Control.
 
     Your agent should solve a real operational problem relevant to your lab environment. There are no restrictions on the use case — the only requirement is that it must be functional, demonstrable, and something you could confidently show to a customer. Think about what makes an agent truly valuable: the tools it has access to, the context it understands, and the outcomes it can drive autonomously.

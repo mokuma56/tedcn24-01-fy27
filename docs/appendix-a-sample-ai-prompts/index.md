@@ -1,6 +1,6 @@
-# Appendix A: Validated AI Prompts
+# Appendix A: Sample AI Prompts
 
-## Step 1: Known-Good Prompts for AI Assistant and Agentic Canvas
+## Step 1: Sample Prompts for AI Assistant and Agentic Canvas
 
 
 
@@ -213,3 +213,4 @@ Summarize any alerts from our Splunk system
 ```
 Show any failed Splunk login attempts in the last 24 hours grouped by user
 ```
+

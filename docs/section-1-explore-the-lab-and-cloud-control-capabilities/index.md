@@ -48,7 +48,7 @@ Open a web browser and navigate to [**https://cloud.cisco.com**](https://cloud.c
 ![](../screenshots/capture-f706efe4.png)
 
 !!! info "Note"
-    **If ** you are unable to locate your POD login credentials, please contact a proctor.
+    If you are unable to locate your POD login credentials, please contact a proctor.
 
 After logging in, explore the three sections on the home screen.
 
@@ -59,6 +59,28 @@ After logging in, explore the three sections on the home screen.
 3. **Actions** — Review any actions required in your environment. Take note of what is displayed. These actions can be engaged agentically, which will be covered in detail later in this lab.
 
 ![](../screenshots/capture-91b7aa81.png)
+
+Next, navigate to [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) and spend time running the validated prompts for this environment. Use the **copy button** on each prompt block to paste directly into the AI Assistant or Agentic Canvas — this ensures accuracy and eliminates the risk of transcription errors. As you work through each prompt, observe how the system interprets the input, what format the response takes, and how quickly results are returned.
+
+The goal of this exercise is to thoroughly prepare yourself for live customer demonstrations by building familiarity and confidence with a core set of prompts that consistently produce clear, accurate, and compelling results. Consider the following as you explore:
+
+- **Identify your strongest examples.** Some prompts will generate output that is particularly well-suited for showcasing the capabilities of the environment. Take note of these and prioritize them for use in demos.
+
+- **Understand the output.** Be prepared to explain to a customer not just what the output shows, but why it is useful and how it maps to a real-world business scenario or use case.
+
+- **Anticipate follow-up questions.** As you review each result, think about questions a customer might ask and ensure you can speak confidently to the underlying functionality.
+
+- **Practice your delivery.** Running through these prompts multiple times will help you develop a smooth, natural delivery so that the demonstration feels polished and professional rather than scripted.
+
+Take as much time as needed during this section to become comfortable with the material. A well-rehearsed demonstration using familiar prompts is far more effective than presenting new or untested examples under the pressure of a live customer engagement.
+
+!!! tip "Tip"
+    You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
+
+![](../screenshots/c7c2329fb0.png)
+
+!!! example "🏆 Team Challenge"
+    (Take 5 minutes) As a team, collaborate to design the most effective prompt workflow for your assigned use case. Develop a clear, compelling talk track that explains your prompting strategy, highlights key design decisions, and articulates the business value of your approach. Present a live demo to your assigned proctor, walking them through each step of your workflow and showcasing the quality of your results. Proctors will evaluate each team on creativity, clarity, and overall effectiveness — the top-performing team will be selected as the winner!
 
 ## Step 3: Explore 9-Dot Menu
 

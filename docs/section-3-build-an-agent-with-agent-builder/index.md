@@ -19,3 +19,6 @@ Next, notice the **Studio** overview page within Cisco Cloud Control, which serv
 To begin building your first agent, click **+ Create Agent** to launch the Agent Builder workflow, or click **+ Browse Integrations** to first explore and configure the available integrations that your agent will use.
 
 ![](../screenshots/capture-fd0f345d.png)
+
+!!! info "Note"
+    Depending on whether there are already agents configured, you might see one of the two screenshots above — either is fine.

@@ -28,7 +28,7 @@ In this hands-on lab you will experience Cisco Cloud Control end-to-end across i
 
 3. **Build an Agent with Agent Builder** — Leverage a ServiceNow integration to construct a working AI agent from scratch, defining its tools, context, and behavior.
 
-4. **Troubleshoot a Network Issue** — Diagnose and resolve a connectivity problem between the two switches in your POD, using the platform's operational context to identify root cause and take action.
+4. **Team Challenge** — Work as a team on two team challenge scenarios based on what was learned in the lab. 
 
 ## Learning Objectives
 

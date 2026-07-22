@@ -54,3 +54,14 @@
     -webkit-mask-image: var(--md-admonition-icon--team-challenge);
     mask-image: var(--md-admonition-icon--team-challenge);
 }
+
+/* ── Code block sizing — keep long prompts readable and contained ── */
+.md-typeset pre {
+    font-size: .72rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.md-typeset code {
+    font-size: .76rem;
+}

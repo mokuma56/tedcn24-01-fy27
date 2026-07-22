@@ -57,11 +57,14 @@
 
 /* ── Code block sizing — keep long prompts readable and contained ── */
 .md-typeset pre {
-    font-size: .72rem;
+    font-size: .65rem;
     line-height: 1.6;
     white-space: pre-wrap;
     word-break: break-word;
+    max-height: none !important;
+    overflow-y: visible !important;
+    overflow-x: visible !important;
 }
 .md-typeset code {
-    font-size: .76rem;
+    font-size: .68rem;
 }

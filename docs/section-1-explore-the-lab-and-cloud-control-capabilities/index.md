@@ -45,9 +45,10 @@ Not all products listed above will be actively used in every section of this lab
 
 Open a web browser and navigate to [**https://cloud.cisco.com**](https://cloud.cisco.com). Enter your provided credentials (username and password) and click **Sign In** to authenticate. Accept any authentication pop-ups.
 
-**NOTE:** If you are unable to locate your POD login credentials, please contact a proctor.
-
 ![](../screenshots/capture-f706efe4.png)
+
+!!! info "Note"
+    **If ** you are unable to locate your POD login credentials, please contact a proctor.
 
 After logging in, explore the three sections on the home screen.
 
@@ -73,7 +74,7 @@ Explore the three main sections available on the platform.
 
 3. **Favorites** — Save frequently visited pages from any product in this section for quick access during future sessions.
 
-!!! note ""
+!!! info "Note"
     Click a Platform Service or Product to pin it to the navigation bar. This bar remains visible throughout Cloud Control, enabling quick and consistent access regardless of where you navigate.
 
 ![](../screenshots/capture-eb82ce39.png)
@@ -120,5 +121,5 @@ The Topology view displays your global network topology organized by site, provi
 
 ![](../screenshots/capture-d940b575.png)
 
-!!! note ""
+!!! abstract "Congratulations"
     Congratulations on completing this section! You have successfully navigated the Cisco Cloud Control platform and gained hands-on experience with its core services, including the AI Assistant, Inventory, and Topology. These foundational skills will serve as building blocks as you progress through the remaining sections of this lab.

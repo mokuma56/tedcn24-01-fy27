@@ -46,7 +46,11 @@ To help provide context and guidance while creating your first agent, please ref
 
 However, for this first agent, please use the [**Meraki Daily Health Report**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent) example from Appendix B. This sample prompt is designed to instruct the agent to automatically gather and summarize key health metrics from your Meraki network environment — such as device connectivity status, alert summaries, and performance indicators — and present them in a structured, easy-to-read daily report format. Using this example as your starting point will ensure you have a consistent baseline configuration that aligns with the exercises and validation steps in the sections that follow.
 
-Notice the **Agent Profile** page, which is the first step in configuring your new agent. Observe that the **Agent name** field (1) has been populated with meraki-daily-health-report, the **Description** field (2) reads "Generates a Daily Meraki Health Report," and the **Instructions Prompt** field (3) contains a detailed system prompt defining the agent's behavior and report structure.
+On the **Agent Profile** page, the first step is configuring your new agent's name. Set the **Agent name** **(1)** to meraki-daily-health-report.
+
+Next, configure the **Description** **(2)** with "**Generates a Daily Meraki Health Report**."
+
+Finally, configure the **Instructions Prompt** **(3)** with the detailed sample prompt in Appendix B, which defines the agent's behavior and report structure.
 
 Once you have reviewed all three fields and confirmed the information is correct, click the **Continue** button in the bottom-right corner to proceed to the next step.
 
@@ -61,20 +65,95 @@ Click the **Continue** button in the bottom-right corner of the screen to procee
 ![](../screenshots/77e1e18a53.png)
 
 !!! info "Note"
-    **Trigger Mode** determines how the agent is activated. Select a mode from the drop-down:
+    **Trigger Mode** determines how the agent is activated
 
-    | Mode | What It Does |
-    | --- | --- |
-    | **Ambient** | Agent runs automatically on a schedule |
-    | **Interactive** | Agent is available for users to invoke in Canvas (coming soon) |
-    | **Ambient + Interactive** | Both (coming soon) |
+    - **Ambient:** Agent runs automatically on a schedule
 
-    Currently, only **Ambient** mode is available.
+    - **Interactive:** Agent is available for users to invoke in Canvas *(****coming soon****)*
 
-    **Activation Cadence** — Set how often the agent runs:
+    - **Ambient + Interactive:** Agent runs both *(****coming soon****)*
 
-    | Cadence | Additional Setting |
-    | --- | --- |
-    | **Hourly** | Select the minute past the hour at which the agent should run (e.g., :00, :15, :30) |
-    | **Daily** | Select the time of day in your local time |
-    | **Weekly** | Select the day of the week and the time of day in your local time |
+Review the agent configuration summary, which displays the agent name (**meraki-daily-health-report**), description, trigger type (Ambient), activation schedule (runs daily at 9:00 AM local time), and the trigger prompt that will be used to generate the report.
+
+Verify that all settings are correct before proceeding. Click the **Create Agent** button in the bottom-right corner of the screen to finalize and deploy your agent.
+
+![](../screenshots/45b5810d5d.png)
+
+Review page showing a summary of the agent configuration before creation.
+
+#### What Happens When You Click Create Agent
+
+Studio runs through a **series of automated steps** that typically take one to a few minutes:
+
+1. **Validating inputs** — Checks that all required fields are present and correctly formatted.
+
+1. **Selecting tools** — Automatically identifies and scopes the MCP tools the agent needs based on its instructions and integrations. The agent only has access to the tools relevant to its role, which improves accuracy, reduces token usage, and increases speed. In a future release, you will be able to view and modify this tool scope directly.
+
+1. **AI Defense reviewing** — Scans the agent configuration for safety and security issues.
+
+1. **Building manifest** — Assembles the agent's runtime manifest.
+
+1. **Validating configuration** — Validates the full configuration package.
+
+1. **Generating agent package** — Generates the deployable agent artifact.
+
+1. **Saving configuration** — Persists the agent configuration.
+
+1. **Opening launch setup** — Initializes the agent and opens the confirmation page.
+
+![](../screenshots/d89ca2940b.png)
+
+The **meraki-daily-health-report** agent has been successfully created and is now in **Draft** status, ready for validation. Review the Agent Summary panel on the right, which confirms that the agent is not yet deployed, is set to version **v1**, uses a **Scheduled** trigger, and is protected by **Cisco AI Defense**. Observe the connectors listed on the left, which include a variety of Meraki data retrieval and display actions that the agent will utilize when generating the daily health report. Click **Test Agent** to validate the agent's functionality before proceeding to deployment.
+
+![](../screenshots/35a9518f19.png)
+
+Next, inspect the **Live Test** panel, which allows you to validate the selected agent version against the registered runtime and inspect the execution trace. Enter the test prompt *"****Generate the Daily Meraki Health Report****"*  in the input field at the bottom of the panel.
+
+Click the **Run Test** button to execute the agent and generate the daily Meraki health report. The results, including the agent response and full execution trace, will appear directly within this panel.
+
+There are also several pre-built scenarios you can run and explore the outputs of:
+
+- Summarize Configuration
+
+- Explain Guardrails
+
+- Run Readiness Check
+
+![](../screenshots/4a5ff1788a.png)
+
+Next, review that the **Live Test** has successfully executed the agent, displaying the generated **Daily Meraki Health Report**. Review the key findings highlighted in the summary report.
+
+![](../screenshots/2ca1a13dd7.png)
+
+Next, we will review the Agent files and then promote the agent to production.
+
+First, **click** back to the **Overview** page, then **click** on the newly created agent to open it.
+
+![](../screenshots/29bd12789d.png)
+
+Review the agent configuration, which contains detailed instructions for generating a structured six-section daily health report covering organization health, active alerts, device status, wireless performance, firmware compliance, and an executive summary.
+
+Notice that the agent is **Protected by AI Defense**, which checks prompts, retrieved content, and tool calls to ensure write actions are gated and read tools are scoped to approved targets.
+
+In the **Release history** section at the bottom of the page, observe that version **v1** is currently in a **Candidate** state.
+
+Finally, click **Promote to production** to make this version the active production release.
+
+![](../screenshots/fd706d11c5.png)
+
+A confirmation dialog box will appear asking whether you want to promote v1 to production. *Notice that the dialog explains this will make v1 the active production release used for activation and customer testing, replacing any version currently in production.*
+
+Click **Promote to production** to confirm the action and deploy v1 as the production release.
+
+![](../screenshots/d25f59e17d.png)
+
+Finally, click back on the **Observability** tab. This section displays a summary of all agent execution metrics available for review.
+
+In the **Recent executions** table, you can see that our agent ran version **v1**, which was triggered by the **Scheduler** and completed with a status of **Passed**.
+
+Click **Open run** to inspect the detailed execution trace and step-by-step results for this agent run.
+
+![](../screenshots/ba7e6704e7.png)
+
+!!! abstract "Congratulations"
+    *Click ✎ to add text*

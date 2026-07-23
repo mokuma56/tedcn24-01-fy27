@@ -91,6 +91,11 @@ Take as much time as needed during this section to become comfortable with the m
 
 **Example prompts you can use:**
 
+!!! tip "Tip"
+    You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
+
+---
+
 ```
 How is my organization doing?
 ```
@@ -99,25 +104,20 @@ How is my organization doing?
 Are there any outages affecting my monitored services right now?
 ```
 
+```
 Is my data center fabric healthy right now?
+```
 
+```
 why can lee chang not access jira via ZTA in secure access?
+```
+
+---
+
+![](../screenshots/0d36e4415d.png)
 
 !!! info "Note"
     Actual responses will vary due to the nature of Agentic Systems
-
-!!! tip "Tip"
-    You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
-
-![](../screenshots/0fd471b650.png)
-
----
-
-![](../screenshots/0f54aa1a08.png)
-
----
-
-![](../screenshots/8f3f1b5726.png)
 
 ## Step 3: Explore 9-Dot Menu
 

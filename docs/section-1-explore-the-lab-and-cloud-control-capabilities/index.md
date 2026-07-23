@@ -48,19 +48,17 @@ Not all products listed above will be actively used in every section of this lab
 
 Open a web browser and navigate to the lab landing page at: [http://cs.co/TEDC24](https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-cloud-control-for-ai-canvas-team?returnPathTitleKey=content-view) . Then **Click** View.
 
+---
+
 ![](../screenshots/554d865750.png)
 
-```
-
-```
+---
 
 Next, **Click** on your assigned **user credentials **and click **Sign In** to authenticate and login.
 
 ![](../screenshots/6afb15a844.png)
 
-```
-
-```
+---
 
 !!! info "Note"
     If you are unable to locate your POD login credentials, please contact a proctor. Please use caution and verify you are logging into your assigned POD, as this will ensure a successful lab experience for all.
@@ -101,7 +99,11 @@ Prompt #3I can see that Site_101 has 0% availability. Help me troubleshoot and i
 
 ![](../screenshots/0fd471b650.png)
 
+---
+
 ![](../screenshots/0f54aa1a08.png)
+
+---
 
 ![](../screenshots/8f3f1b5726.png)
 

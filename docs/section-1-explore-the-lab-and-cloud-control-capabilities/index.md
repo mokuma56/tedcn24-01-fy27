@@ -162,17 +162,18 @@ Click **Show Device Inventory** or select an alternative view to change the disp
 
 Practice using the **AI-assisted search** functionality within the Inventory section. **Collaborate** with your team to explore the available Inventory capabilities, including filtering, sorting, and device categorization options.
 
-1. Enter the sample prompt below into the AI-Assisted Search (Copy):
+**Step 1 —** Enter the sample prompt below into the AI-Assisted Search and press Enter:
 
 ```
 show me my Mexico City Devices
 ```
 
-1. Next, **click** the **C9300-X-Leaf-1** switch to view it.
+**Step 2 —** **Click** the **C9300-X-Leaf-1** switch to view it.
 
-1. Observe the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your **C9300-X-Leaf-1** switch. Review the **General** tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows ***Reachable***, indicating the device is actively communicating with the management platform, and that the Compliance status shows ***Compliant***, confirming the device configuration meets your organization's defined policy standards.
+**Step 3 —** Observe the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your **C9300-X-Leaf-1** switch. Review the **General** tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows ***Reachable***, indicating the device is actively communicating with the management platform, and that the Compliance status shows ***Compliant***, confirming the device configuration meets your organisation's defined policy standards.
 
-1. Finally, **click** **View in Topology**. This will take you directly to the switch in the Global Topology Service
+**Step 4 —** **Click** **View in Topology**. This will take you directly to the switch in the Global Topology Service.
+
 
 ![](../screenshots/a5266bb0c4.png)
 

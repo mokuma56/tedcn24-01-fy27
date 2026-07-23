@@ -56,7 +56,15 @@ Once you have reviewed all three fields and confirmed the information is correct
 
 ![](../screenshots/363ae56a0e.png)
 
-On the triggers configuration page, configure the following agent settings: set the Trigger mode to **Ambient**, the Activation cadence to **Daily**, and the Local run time to **09:00 AM**. This means the agent will run automatically every day at 9:00 AM local time.
+On the triggers configuration page, configure the following agent settings:
+
+- Set the Trigger mode to **Ambient**
+
+- Set the Activation cadence to **Daily**
+
+- Set the Local run time to **09:00 AM**
+
+This means the agent will run **automatically every day at 9:00 AM local time**.
 
 In the Trigger prompt field, enter **"Generate the Meraki Daily Health Report"**. This defines the instruction the agent will execute during its scheduled runs.
 
@@ -73,13 +81,21 @@ Click the **Continue** button in the bottom-right corner of the screen to procee
 
     - **Ambient + Interactive:** Agent runs both *(****coming soon****)*
 
-Review the agent configuration summary, which displays the agent name (**meraki-daily-health-report**), description, trigger type (Ambient), activation schedule (runs daily at 9:00 AM local time), and the trigger prompt that will be used to generate the report.
+Review the agent configuration summary, which displays the following:
+
+- Agent name: **meraki-daily-health-report**
+
+- Description: **Generate a Daily Meraki Health Report**
+
+- Trigger type: **Ambient**
+
+- Activation schedule: **Runs daily at 9:00 AM local time**
+
+- Trigger prompt: **Generate the Meraki Daily Report**
 
 Verify that all settings are correct before proceeding. Click the **Create Agent** button in the bottom-right corner of the screen to finalize and deploy your agent.
 
 ![](../screenshots/45b5810d5d.png)
-
-Review page showing a summary of the agent configuration before creation.
 
 #### What Happens When You Click Create Agent
 
@@ -147,6 +163,18 @@ Click **Promote to production** to confirm the action and deploy v1 as the produ
 
 ![](../screenshots/d25f59e17d.png)
 
+Once in production, you can:
+
+- - **Update the config** — Edit the agent's profile or instructions to create a new version, test it, and promote it when ready
+
+- **Monitor runs** — Check the **Run** tab to view execution history, outputs, and any errors
+
+- **Update the trigger** — Go to the **Trigger** tab to change the cadence or trigger prompt
+
+- **Roll back** — Promote any previously published version from the Release History table
+
+- **Delete the agent** — Remove the agent entirely from the agent detail page if it is no longer needed
+
 Finally, click back on the **Observability** tab. This section displays a summary of all agent execution metrics available for review.
 
 In the **Recent executions** table, you can see that our agent ran version **v1**, which was triggered by the **Scheduler** and completed with a status of **Passed**.
@@ -156,4 +184,20 @@ Click **Open run** to inspect the detailed execution trace and step-by-step resu
 ![](../screenshots/ba7e6704e7.png)
 
 !!! abstract "Congratulations"
-    *Click ✎ to add text*
+    Outstanding work — you have just built and deployed your first production AI agent on Cisco Cloud Control! Take a moment to appreciate what you accomplished in this section:
+
+    - You navigated to **Studio** and explored the Agent Builder platform, understanding its role in designing autonomous AI agents and integrating third-party tools into AI Canvas workflows.
+
+    - You created a fully functional **Meraki Daily Health Report** agent from scratch — configuring the agent profile with a clear name, description, and a detailed instruction prompt that defines exactly what the agent should do and how it should present its output.
+
+    - You configured an **Ambient trigger** with a daily schedule, giving your agent the autonomy to run automatically every morning at 9:00 AM without any manual intervention.
+
+    - You validated your agent using the **Live Test** panel, executing a real test run and reviewing the generated health report output — confirming the agent works exactly as designed before moving it forward.
+
+    - You **promoted the agent to production**, making it a live, active agent ready for real-world use — a meaningful milestone that reflects real operational deployment practices.
+
+    - You explored the **Observability** tab to review execution history and confirm the agent ran successfully, giving you confidence in monitoring and managing agents over time.
+
+    What you built today is not just a lab exercise — it is a fully deployable, production-grade AI agent that a network operations team could use right now to automate their daily health reporting. You have hands-on experience with the complete agent lifecycle: design, configure, test, promote, and monitor. That is a skillset that directly translates to real customer conversations and demonstrations.
+
+    Carry this confidence into the Team Challenge — you now have everything you need to build something even more creative. 🏆

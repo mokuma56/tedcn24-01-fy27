@@ -50,9 +50,17 @@ Open a web browser and navigate to the lab landing page at: [http://cs.co/TEDC24
 
 ![](../screenshots/554d865750.png)
 
+```
+
+```
+
 Next, **Click** on your assigned **user credentials **and click **Sign In** to authenticate and login.
 
 ![](../screenshots/6afb15a844.png)
+
+```
+
+```
 
 !!! info "Note"
     If you are unable to locate your POD login credentials, please contact a proctor. Please use caution and verify you are logging into your assigned POD, as this will ensure a successful lab experience for all.

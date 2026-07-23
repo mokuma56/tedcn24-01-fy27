@@ -141,7 +141,7 @@ Next, review that the **Live Test** has successfully executed the agent, display
 
 ![](../screenshots/2ca1a13dd7.png)
 
-Next, we will review the Agent files and then promote the agent to production.
+Next, we will review the Agent configuration and then promote the agent to production.
 
 First, **click** back to the **Overview** page, then **click** on the newly created agent to open it.
 

@@ -49,3 +49,44 @@ Agent creation has three steps: **Agent Profile → Triggers → Review**.
 To help provide context and guidance while creating your first agent, please refer to the examples provided in [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/). Appendix B contains several pre-built prompt examples that demonstrate best practices for structuring agent instructions, defining scope, and setting expected behaviors. You are welcome to explore and create agents based on any of the examples listed, and you are encouraged to experiment with multiple configurations throughout this lab.
 
 However, for this first agent, please use the [**Meraki Daily Health Report**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent) example from Appendix B. This sample prompt is designed to instruct the agent to automatically gather and summarize key health metrics from your Meraki network environment — such as device connectivity status, alert summaries, and performance indicators — and present them in a structured, easy-to-read daily report format. Using this example as your starting point will ensure you have a consistent baseline configuration that aligns with the exercises and validation steps in the sections that follow.
+
+Notice the **Agent Profile** page, which is the first step in configuring your new agent. Observe that the **Agent name** field (1) has been populated with meraki-daily-health-report, the **Description** field (2) reads "Generates a Daily Meraki Health Report," and the **Instructions Prompt** field (3) contains a detailed system prompt defining the agent's behavior and report structure.
+
+Once you have reviewed all three fields and confirmed the information is correct, click the **Continue** button in the bottom-right corner to proceed to the next step.
+
+![](../screenshots/363ae56a0e.png)
+
+On the triggers configuration page, configure the following agent settings: set the Trigger mode to **Ambient**, the Activation cadence to **Daily**, and the Local run time to **09:00 AM**. This means the agent will run automatically every day at 9:00 AM local time.
+
+In the Trigger prompt field, enter **"Generate the Meraki Daily Health Report"**. This defines the instruction the agent will execute during its scheduled runs.
+
+Click the **Continue** button in the bottom-right corner of the screen to proceed to the Review step and finalize the agent configuration.
+
+![](../screenshots/77e1e18a53.png)
+
+!!! info "Note"
+    **Trigger Mode** determines how the agent is activated. Select a mode from the drop-down:
+
+    | Mode | What It Does |
+    | --- | --- |
+
+
+
+    | **Ambient** | Agent runs automatically on a schedule |
+    | --- | --- |
+    | **Interactive** | Agent is available for users to invoke in Canvas *(coming soon)* |
+    | **Ambient + Interactive** | Both *(coming soon)* |
+
+    Currently, only **Ambient** mode is available.
+
+    **Activation Cadence** — Set how often the agent runs:
+
+    | Cadence | Additional Setting |
+    | --- | --- |
+
+
+
+    | **Hourly** | Select the minute past the hour at which the agent should run (e.g., :00, :15, :30) |
+    | --- | --- |
+    | **Daily** | Select the time of day in your local time |
+    | **Weekly** | Select the day of the week and the time of day in your local time |

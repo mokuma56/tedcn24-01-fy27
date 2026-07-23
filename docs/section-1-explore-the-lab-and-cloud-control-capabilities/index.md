@@ -4,9 +4,12 @@ In this section, you will discover how Cloud Control streamlines the management 
 
 ## Step 1: Lab and Topoloy  Overview
 
-This lab is based on the dCloud **"Cisco Cloud Control: AgenticOps in Action"** experience. Your assigned login has been provisioned with elevated permissions that unlock advanced capabilities beyond the standard dCloud environment — most notably **Agent Studio**, which is the primary focus of this lab.
 
-These special permissions allow you to build, test, and deploy agentic workflows across the Cisco Cloud Control platform in ways that reflect real-world production use cases. Throughout this lab, you will move from exploration to hands-on creation, gaining practical experience with the tools and services that power Cisco's Agentic Operations framework.
+
+!!! info "Note"
+    This lab is based on the dCloud **"Cisco Cloud Control: AgenticOps in Action"** experience. Your assigned login has been provisioned with elevated permissions that unlock advanced capabilities beyond the standard dCloud environment — most notably **Agent Studio**, which is the primary focus of this lab.
+
+    These special permissions allow you to build, test, and deploy agentic workflows across the Cisco Cloud Control platform in ways that reflect real-world production use cases. Throughout this lab, you will move from exploration to hands-on creation, gaining practical experience with the tools and services that power Cisco's Agentic Operations framework.
 
 ## Lab Topology
 
@@ -73,6 +76,25 @@ The goal of this exercise is to thoroughly prepare yourself for live customer de
 - **Practice your delivery.** Running through these prompts multiple times will help you develop a smooth, natural delivery so that the demonstration feels polished and professional rather than scripted.
 
 Take as much time as needed during this section to become comfortable with the material. A well-rehearsed demonstration using familiar prompts is far more effective than presenting new or untested examples under the pressure of a live customer engagement.
+
+**Example sequence of prompts you can use:**
+
+Prompt #1Summarize my Catalyst SD-WAN deploymentCopy
+
+Prompt #2Give me the list of sites with low availabilityCopy
+
+Prompt #3I can see that Site_101 has 0% availability. Help me troubleshoot and identify the root causeCopy
+
+**Example screenshots below:**
+
+![](../screenshots/0fd471b650.png)
+
+![](../screenshots/0f54aa1a08.png)
+
+![](../screenshots/8f3f1b5726.png)
+
+!!! info "Note"
+    Actual responses will vary due to the nature of Agentic Systems
 
 !!! tip "Tip"
     You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.

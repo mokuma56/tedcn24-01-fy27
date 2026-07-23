@@ -44,6 +44,8 @@ Not all products listed above will be actively used in every section of this lab
 !!! warning "Caution"
     You have been granted elevated permissions necessary to complete the exercises in this lab. With these additional privileges comes an expectation of responsible use. Please confine your activities strictly to the tasks and resources outlined in this lab guide. Unauthorized actions — such as modifying shared infrastructure, accessing resources outside the scope of this lab, or interfering with other participants' environments — can disrupt the experience for everyone. Any actions you take may be logged and audited. Please be a good steward of the shared environment.
 
+---
+
 ## Step 2: Logging into with your assigned Cloud Control user and exploring the Home Screen
 
 Open a web browser and navigate to the lab landing page at: [http://cs.co/TEDC24](https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-cloud-control-for-ai-canvas-team?returnPathTitleKey=content-view) . Then **Click** View.
@@ -127,18 +129,20 @@ Explore the three main sections available on the platform.
 
 2. **Products** — These are the products currently integrated with your tenant. In this lab, only Meraki is integrated. In a production environment, multiple products would typically be present. For a full list of supported products and onboarding requirements, visit the [Cloud Control Onboarding SharePoint site](https://cisco.sharepoint.com/sites/CiscoCloudControl-ControlledAvailability/SitePages/Home.aspx).
 
-3. **Favorites** — Save frequently visited pages from any product in this section for quick access during future sessions.
+3. **Apps** — Common applications residing in Cloud Control.
+
+4. **Favorites** — Save frequently visited pages from any product in this section for quick access during future sessions.
 
 !!! info "Note"
     Click a Platform Service or Product to pin it to the navigation bar. This bar remains visible throughout Cloud Control, enabling quick and consistent access regardless of where you navigate.
 
-![](../screenshots/capture-eb82ce39.png)
+![](../screenshots/8e31effd5c.png)
 
 ## Step 4: Explore Inventory Capabilities
 
 Navigate to the **Inventory** section of Cisco Cloud Control to explore the available inventory capabilities.
 
-![](../screenshots/capture-a4548035.png)
+![](../screenshots/f017eb63c9.png)
 
 Next, explore the available capabilities. Review the Inventory Insights dashboard to examine detected issues, recommendations, and asset visibility across your managed devices.
 

@@ -89,15 +89,25 @@ The goal of this exercise is to thoroughly prepare yourself for live customer de
 
 Take as much time as needed during this section to become comfortable with the material. A well-rehearsed demonstration using familiar prompts is far more effective than presenting new or untested examples under the pressure of a live customer engagement.
 
-**Example sequence of prompts you can use:**
+**Example prompts you can use:**
 
-Prompt #1Summarize my Catalyst SD-WAN deploymentCopy
+```
+How is my organization doing?
+```
 
-Prompt #2Give me the list of sites with low availabilityCopy
+```
+Are there any outages affecting my monitored services right now?
+```
 
-Prompt #3I can see that Site_101 has 0% availability. Help me troubleshoot and identify the root causeCopy
+Is my data center fabric healthy right now?
 
-**Example screenshots below:**
+why can lee chang not access jira via ZTA in secure access?
+
+!!! info "Note"
+    Actual responses will vary due to the nature of Agentic Systems
+
+!!! tip "Tip"
+    You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
 
 ![](../screenshots/0fd471b650.png)
 
@@ -108,14 +118,6 @@ Prompt #3I can see that Site_101 has 0% availability. Help me troubleshoot and i
 ---
 
 ![](../screenshots/8f3f1b5726.png)
-
-!!! info "Note"
-    Actual responses will vary due to the nature of Agentic Systems
-
-!!! tip "Tip"
-    You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
-
-![](../screenshots/c7c2329fb0.png)
 
 ## Step 3: Explore 9-Dot Menu
 

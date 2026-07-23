@@ -165,7 +165,7 @@ Click **Promote to production** to confirm the action and deploy v1 as the produ
 
 Once in production, you can:
 
-- - **Update the config** — Edit the agent's profile or instructions to create a new version, test it, and promote it when ready
+- **Update the config** — Edit the agent's profile or instructions to create a new version, test it, and promote it when ready
 
 - **Monitor runs** — Check the **Run** tab to view execution history, outputs, and any errors
 

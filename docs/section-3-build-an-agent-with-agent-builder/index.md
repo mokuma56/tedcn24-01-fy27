@@ -184,20 +184,4 @@ Click **Open run** to inspect the detailed execution trace and step-by-step resu
 ![](../screenshots/ba7e6704e7.png)
 
 !!! abstract "Congratulations"
-    Outstanding work — you have just built and deployed your first production AI agent on Cisco Cloud Control! Take a moment to appreciate what you accomplished in this section:
-
-    - You navigated to **Studio** and explored the Agent Builder platform, understanding its role in designing autonomous AI agents and integrating third-party tools into AI Canvas workflows.
-
-    - You created a fully functional **Meraki Daily Health Report** agent from scratch — configuring the agent profile with a clear name, description, and a detailed instruction prompt that defines exactly what the agent should do and how it should present its output.
-
-    - You configured an **Ambient trigger** with a daily schedule, giving your agent the autonomy to run automatically every morning at 9:00 AM without any manual intervention.
-
-    - You validated your agent using the **Live Test** panel, executing a real test run and reviewing the generated health report output — confirming the agent works exactly as designed before moving it forward.
-
-    - You **promoted the agent to production**, making it a live, active agent ready for real-world use — a meaningful milestone that reflects real operational deployment practices.
-
-    - You explored the **Observability** tab to review execution history and confirm the agent ran successfully, giving you confidence in monitoring and managing agents over time.
-
-    What you built today is not just a lab exercise — it is a fully deployable, production-grade AI agent that a network operations team could use right now to automate their daily health reporting. You have hands-on experience with the complete agent lifecycle: design, configure, test, promote, and monitor. That is a skillset that directly translates to real customer conversations and demonstrations.
-
-    Carry this confidence into the Team Challenge — you now have everything you need to build something even more creative. 🏆
+    Excellent work completing Section 3! You have successfully built, tested, and promoted your first production AI agent on Cisco Cloud Control — taking it all the way from a blank profile to a live, scheduled agent running autonomously in production. The skills you just practiced are exactly what you will need to tackle the Team Challenge ahead. 🎉

@@ -50,7 +50,7 @@ On the **Agent Profile** page, the first step is configuring your new agent's na
 
 Next, configure the **Description** **(2)** with "**Generates a Daily Meraki Health Report**."
 
-Finally, configure the **Instructions Prompt** **(3)** with the detailed sample prompt in Appendix B, which defines the agent's behavior and report structure.
+Finally, configure the **Instructions Prompt** **(3)** with the detailed sample prompt from [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent), which defines the agent's behavior and report structure.
 
 Once you have reviewed all three fields and confirmed the information is correct, click the **Continue** button in the bottom-right corner to proceed to the next step.
 

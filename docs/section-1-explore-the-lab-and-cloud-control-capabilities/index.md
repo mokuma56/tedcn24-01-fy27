@@ -44,14 +44,18 @@ Not all products listed above will be actively used in every section of this lab
 !!! warning "Caution"
     You have been granted elevated permissions necessary to complete the exercises in this lab. With these additional privileges comes an expectation of responsible use. Please confine your activities strictly to the tasks and resources outlined in this lab guide. Unauthorized actions — such as modifying shared infrastructure, accessing resources outside the scope of this lab, or interfering with other participants' environments — can disrupt the experience for everyone. Any actions you take may be logged and audited. Please be a good steward of the shared environment.
 
-## Step 2: Logging into your assinged Cloud Control Tenant and exploring the Home Screen
+## Step 2: Logging into with your assigned Cloud Control user and exploring the Home Screen
 
-Open a web browser and navigate to [**https://cloud.cisco.com**](https://cloud.cisco.com). Enter your provided credentials (username and password) and click **Sign In** to authenticate. Accept any authentication pop-ups.
+Open a web browser and navigate to the lab landing page at: [http://cs.co/TEDC24](https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-cloud-control-for-ai-canvas-team?returnPathTitleKey=content-view) . Then **Click** View.
 
-![](../screenshots/capture-f706efe4.png)
+![](../screenshots/554d865750.png)
+
+Next, **Click** on your assigned **user credentials **and click **Sign In** to authenticate and login.
+
+![](../screenshots/6afb15a844.png)
 
 !!! info "Note"
-    If you are unable to locate your POD login credentials, please contact a proctor.
+    If you are unable to locate your POD login credentials, please contact a proctor. Please use caution and verify you are logging into your assigned POD, as this will ensure a successful lab experience for all.
 
 After logging in, explore the three sections on the home screen.
 
@@ -61,7 +65,7 @@ After logging in, explore the three sections on the home screen.
 
 3. **Actions** — Review any actions required in your environment. Take note of what is displayed. These actions can be engaged agentically, which will be covered in detail later in this lab.
 
-![](../screenshots/capture-91b7aa81.png)
+![](../screenshots/560ac7baae.png)
 
 Next, navigate to [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) and spend time running the validated prompts for this environment. Use the **copy button** on each prompt block to paste directly into the AI Assistant or Agentic Canvas — this ensures accuracy and eliminates the risk of transcription errors. As you work through each prompt, observe how the system interprets the input, what format the response takes, and how quickly results are returned.
 
@@ -105,7 +109,7 @@ Prompt #3I can see that Site_101 has 0% availability. Help me troubleshoot and i
 
 Click the **9-dot menu** (grid icon) located in the top navigation bar of Cloud Control to explore the available options and applications.
 
-![](../screenshots/capture-6f4e152f.png)
+![](../screenshots/f735b80124.png)
 
 Explore the three main sections available on the platform.
 

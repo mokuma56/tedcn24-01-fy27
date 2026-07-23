@@ -46,13 +46,15 @@ To help provide context and guidance while creating your first agent, please ref
 
 However, for this first agent, please use the [**Meraki Daily Health Report**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent) example from Appendix B. This sample prompt is designed to instruct the agent to automatically gather and summarize key health metrics from your Meraki network environment — such as device connectivity status, alert summaries, and performance indicators — and present them in a structured, easy-to-read daily report format. Using this example as your starting point will ensure you have a consistent baseline configuration that aligns with the exercises and validation steps in the sections that follow.
 
-On the **Agent Profile** page, the first step is configuring your new agent's name. Set the **Agent name** **(1)** to meraki-daily-health-report.
+On the **Agent Profile** page, configure the following:
 
-Next, configure the **Description** **(2)** with "**Generates a Daily Meraki Health Report**."
+1. Set the **Agent name** to: meraki-daily-health-report.
 
-Finally, configure the **Instructions Prompt** **(3)** with the detailed sample prompt from [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent), which defines the agent's behavior and report structure.
+1. Set the **Description** to: "**Generates a Daily Meraki Health Report**."
 
-Once you have reviewed all three fields and confirmed the information is correct, click the **Continue** button in the bottom-right corner to proceed to the next step.
+1. Set the **Instructions Prompt** using the detailed sample prompt from [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent), which defines the agent's behavior and report structure.
+
+Once you have reviewed all three fields and confirmed the information is correct, click **Continue** to proceed to the next step.
 
 ![](../screenshots/363ae56a0e.png)
 

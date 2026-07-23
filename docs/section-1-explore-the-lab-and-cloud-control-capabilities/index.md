@@ -58,6 +58,8 @@ Open a web browser and navigate to the lab landing page at: [http://cs.co/TEDC24
 
 Next, **Click** on your assigned **user credentials **and click **Sign In** to authenticate and login.
 
+---
+
 ![](../screenshots/6afb15a844.png)
 
 ---
@@ -114,7 +116,11 @@ why can lee chang not access jira via ZTA in secure access?
 
 ---
 
-![](../screenshots/0d36e4415d.png)
+**Example:**
+
+![](../screenshots/a95715657f.png)
+
+---
 
 !!! info "Note"
     Actual responses will vary due to the nature of Agentic Systems
@@ -148,23 +154,33 @@ Navigate to the **Inventory** section of Cisco Cloud Control to explore the avai
 
 Next, explore the available capabilities. Review the Inventory Insights dashboard to examine detected issues, recommendations, and asset visibility across your managed devices.
 
-![](../screenshots/capture-8620480a.png)
+![](../screenshots/6f8e9d0b9d.png)
 
 Click **Show Device Inventory** or select an alternative view to change the display format.
 
-![](../screenshots/capture-112100bd.png)
+![](../screenshots/bd8aee830c.png)
 
-Practice using the AI-assisted search functionality within the Inventory section. Collaborate with your team to explore the available Inventory capabilities, including filtering, sorting, and device categorization options.
+Practice using the **AI-assisted search** functionality within the Inventory section. **Collaborate** with your team to explore the available Inventory capabilities, including filtering, sorting, and device categorization options.
 
-Locate your two dedicated switches within the Inventory list and click one to select it.
+1. Enter the sample prompt below into the AI-Assisted Search (Copy):
 
-Observe the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your **C9300-X-X** Cisco Catalyst C9300 switch.
+```
+show me my Mexico City Devices
+```
 
-Review the **General** tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows *Reachable*, indicating the device is actively communicating with the management platform, and that the Compliance status shows *Compliant*, confirming the device configuration meets your organization's defined policy standards.
+1. Next, **click** the **C9300-X-Leaf-1** switch to view it.
 
-After reviewing the device details, click the **View in Meraki** button in the bottom-right corner of the details panel.
+1. Observe the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your **C9300-X-Leaf-1** switch. Review the **General** tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows ***Reachable***, indicating the device is actively communicating with the management platform, and that the Compliance status shows ***Compliant***, confirming the device configuration meets your organization's defined policy standards.
 
-![](../screenshots/capture-1ead1250.png)
+1. Finally, **click** **View in Topology**. This will take you directly to the switch in the Global Topology Service
+
+![](../screenshots/a5266bb0c4.png)
+
+The Topology view displays your global network topology organized by site, providing a visual representation of device relationships and connectivity across your environment. In this case, we pivoted directly to the **C9300-X-Leaf1 i**n the local site topology. Notice the navigation options available to go directly to the device in Meraki or pivot back to the device in inventory.
+
+To demonstrate the seamless pivot to the** Mexico City** network, **Click Meraki** on the top navigation banner.
+
+![](../screenshots/8668d35970.png)
 
 This action opens the Meraki Dashboard in context for the selected device, demonstrating the seamless cross-platform navigation capability within Cisco Cloud Control.
 
@@ -172,15 +188,7 @@ This integration allows network administrators to move fluidly between unified i
 
 Notice the top navigation bar, which reflects the unified Cloud Control interface. Click **Home** to return to the Cloud Control home screen, or click any other element in the banner to navigate directly to it. These tabs allow you to seamlessly move between management planes within a single dashboard.
 
-![](../screenshots/capture-2c0815ed.png)
-
-From the top navigation banner, click **Topology**.
-
-![](../screenshots/capture-eefe5d44.png)
-
-The Topology view displays your global network topology organized by site, providing a visual representation of device relationships and connectivity across your environment.
-
-![](../screenshots/capture-d940b575.png)
+![](../screenshots/c126892f9c.png)
 
 !!! abstract "Congratulations"
     Congratulations on completing this section! You have successfully navigated the Cisco Cloud Control platform and gained hands-on experience with its core services, including the AI Assistant, Inventory, and Topology. These foundational skills will serve as building blocks as you progress through the remaining sections of this lab.

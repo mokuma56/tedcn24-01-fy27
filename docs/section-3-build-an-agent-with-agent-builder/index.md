@@ -26,21 +26,17 @@ On a fresh setup, the Overview page displays two calls to action: **Browse Integ
 
 Agent creation has three steps: **Agent Profile → Triggers → Review**.
 
-#### Step 1: Agent Profile
+### Step 1: Agent Profile
 
 | Field | Required | Description |
 | --- | --- | --- |
-
- 
-
 | **Agent Name** | Yes | A clear, descriptive name for the agent |
-| --- | --- | --- |
 | **Description** | No | A short summary of what the agent does — displayed on the agent card |
 | **Instructions** | Yes | The system prompt — detailed instructions defining what the agent should do, what data to retrieve, and how to format its output |
 
 **Tips for writing effective instructions:**
 
-- - Be specific about what data to retrieve and from which source
+- Be specific about what data to retrieve and from which source
 
 - Specify the output format (e.g., a table with defined columns)
 
@@ -69,13 +65,9 @@ Click the **Continue** button in the bottom-right corner of the screen to procee
 
     | Mode | What It Does |
     | --- | --- |
-
-
-
     | **Ambient** | Agent runs automatically on a schedule |
-    | --- | --- |
-    | **Interactive** | Agent is available for users to invoke in Canvas *(coming soon)* |
-    | **Ambient + Interactive** | Both *(coming soon)* |
+    | **Interactive** | Agent is available for users to invoke in Canvas (coming soon) |
+    | **Ambient + Interactive** | Both (coming soon) |
 
     Currently, only **Ambient** mode is available.
 
@@ -83,10 +75,6 @@ Click the **Continue** button in the bottom-right corner of the screen to procee
 
     | Cadence | Additional Setting |
     | --- | --- |
-
-
-
     | **Hourly** | Select the minute past the hour at which the agent should run (e.g., :00, :15, :30) |
-    | --- | --- |
     | **Daily** | Select the time of day in your local time |
     | **Weekly** | Select the day of the week and the time of day in your local time |

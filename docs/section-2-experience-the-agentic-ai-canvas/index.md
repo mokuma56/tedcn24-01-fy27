@@ -56,7 +56,7 @@ The trade-off with Deep Reasoning mode is that responses take longer to generate
 
 ---
 
-![](../screenshots/20a628aa6d.png)
+![](../screenshots/e25c577f41.png)
 
 ---
 

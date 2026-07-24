@@ -10,6 +10,16 @@ Start on the Home section by **clicking Canvas**.
 
 ---
 
+Now in the AI Canvas section you will see:
+
+1. The ability to create a **New Canvas**
+
+1. The **Quick Start** tiles, which allow you to run a set of pre-populated prompts
+
+1. The **Recent** list of Canvases
+
+Next, **click** the Wireless Quick Start tile and let's put AI Canvas to work.
+
 ---
 
 ![](../screenshots/92dec771bf.png)

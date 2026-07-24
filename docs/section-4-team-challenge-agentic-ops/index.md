@@ -9,7 +9,7 @@ In this section, teams will compete in two hands-on challenges that put their AI
 
     A strong RCA should clearly identify:
 
-    - The **problem statement** — what is happening and where
+    - **The** **problem statement** — what is happening and where
 
     - **Contributing factors** — conditions that led to or worsened the issue
 

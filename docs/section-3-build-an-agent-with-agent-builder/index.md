@@ -60,13 +60,18 @@ However, for this first agent, please use the [**Meraki Daily Health Report**](.
 
 On the **Agent Profile** page, configure the following:
 
-1. Set the **Agent name** to: meraki-daily-health-report.
+1. Set the **Agent name** to: meraki-daily-health-report-Your-CCOID
 
 1. Set the **Description** to: "**Generates a Daily Meraki Health Report**."
 
 1. Set the **Instructions Prompt** using the detailed sample prompt from [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent), which defines the agent's behavior and report structure.
 
 Once you have reviewed all three fields and confirmed the information is correct, click **Continue** to proceed to the next step.
+
+!!! warning "Caution"
+    Due to the shared nature of the lab environment, when naming your Agent please **ALWAYS** append your **CCO ID **to the end of the agent name. This will ensure there are no conflicting agent names.
+
+    Example: **meraki-daily-health-report-maokuma**
 
 ---
 

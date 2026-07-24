@@ -2,21 +2,29 @@
 
 In this section we will explore the AI Canvas and Agentic Ops capabilities in Cisco Cloud Control
 
-Lauch AI Canvas
+Start on the Home section by **clicking Canvas**.
 
-![](../screenshots/capture-dd716e09.png)
+---
 
-Notice that the AI Assistant has responded to your health query and automatically generated an **Organization Summary** card on the Canvas, displaying the overall health of your Meraki organization 
+![](../screenshots/e4bc15699c.png)
 
-Review the card details, which highlight key concerns including devices online, dormant devices, and severely degraded uplink connectivity.
+---
 
-Click **Summarize this card** at the top of the canvas to have the AI Assistant generate a concise summary of the organization health data, or type a follow-up question in the chat input field to drill deeper into a specific issue such as dormant devices or uplink failures.
+---
 
-![](../screenshots/capture-073e6760.png)
+![](../screenshots/92dec771bf.png)
 
-Highlight the / and # shortcuts for the prompt and what capabilities those provide. Also explore the differences between  Default and Deep Reasoning mode
+---
 
-**Default** mode and **Deep Reasoning**
+Next, watch closely as AI Canvas **generates the Wireless session**, reviewing wireless performance, clients, and alerts in the environment.
+
+Once it completes, **spend some time exploring** the various capabilities of the Canvas interface, such as the ability to share and invite others, annotate, resize cards, generate a summary, and more.
+
+---
+
+1. Within Canvas, practice entering **/** for a set of pre-populated prompts and **#** for accessing and managing a knowledge base of context to leverage.
+
+1. Notice that you can toggle between **Default** and **Reasoning Mode**. See the detailed differences below:
 
 **Default mode** uses a standard language model optimized for speed and general-purpose assistance. It is well-suited for everyday tasks such as writing boilerplate code, asking quick questions, getting explanations, or making minor code edits. Responses are generated quickly, making this mode ideal when you need fast, iterative feedback during active development.
 
@@ -31,3 +39,44 @@ Highlight the / and # shortcuts for the prompt and what capabilities those provi
 - Working through problems that require the model to plan several steps ahead before producing an answer.
 
 The trade-off with Deep Reasoning mode is that responses take longer to generate due to the additional computational steps involved. For straightforward tasks, Default mode will typically be faster and sufficient, while Deep Reasoning mode is most valuable when accuracy and thoroughness outweigh the need for speed.
+
+---
+
+![](../screenshots/20a628aa6d.png)
+
+---
+
+The** final step** in this section is to review the **Sample Customer Scenarios** in **Appendix C**. Select one scenario, create a **New Canvas**, and use **defaut or reasoning **to identify the root cause analysis **(RCA)** for the given scenario. Collaborate with your team and share your successes. 
+
+**Next  is an example of how to work through an RCA using AI Canvas**
+
+---
+
+The scenario below involves a **Network Operator** who wants to perform Root Cause Analysis (**RCA**) on **SD-WAN sites that are down**. The progression of prompts used is outlined below, and the screenshots are provided for your reference. Please use the scenarios in **Appendix C for your actual RCA**.
+
+**Example sequence of prompts you can use:**
+
+**Prompt #1 **Summarize my Catalyst SD-WAN deploymentCopy
+
+**Prompt #2 **Give me the list of sites with low availability
+
+**Prompt #3 **I can see that Site_101 has 0% availability. Help me troubleshoot and identify the root cause
+
+**Example screenshots below:**
+
+---
+
+![](../screenshots/f343d7858a.png)
+
+---
+
+![](../screenshots/ddec56c244.png)
+
+---
+
+![](../screenshots/46d730ba18.png)
+
+---
+
+!!! abstract "Congratulations"
+    You now have the foundational knowledge required to work effectively with the **Agentic AI Canvas**. This concludes the section.

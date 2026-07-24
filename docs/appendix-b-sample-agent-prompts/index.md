@@ -59,4 +59,110 @@ SECTION 6 — EXECUTIVE SUMMARY At the top of the report, provide a three to fiv
 Format the entire report using clear markdown headers for each section. Use tables wherever data is tabular. Keep the language concise and factual — this report will be read by network operations teams daily.</pre>
 </div>
 
+---
+
+## Cross-Domain Infrastructure Health Report Agent
+
+### What This Agent Does
+
+The **Cross-Domain Infrastructure Health Report** agent (`cross-domain-infrastructure-health-report`) produces a single unified view of your entire Cisco infrastructure across three domains in one report. Instead of checking Intersight, Nexus Dashboard, and Meraki separately, this agent pulls data from all three simultaneously and surfaces any unhealthy device — regardless of domain — in a single consolidated flags table.
+
+Each time the agent runs it produces:
+
+- **Executive Summary** — one-paragraph overview plus a per-domain table showing total devices, healthy count, needs-attention count, and overall status
+- **Cross-Domain Flags** — a single consolidated table of every device across all three domains that is not fully healthy, sorted by severity
+- **Domain Detail** — separate inventory tables for Compute (Intersight), Fabric (Nexus Hyperfabric / Nexus Dashboard), and Network (Meraki)
+- **Recommended Actions** — grouped by priority (Critical / High / Medium) with specific device and domain references
+
+This agent is ideal for **daily infrastructure stand-ups**, **NOC dashboards**, or **executive briefings** where you need a single health snapshot across your entire Cisco estate without switching between platforms.
+
+### Agent Configuration
+
+| Field | Value |
+| --- | --- |
+| **Agent Name** | `cross-domain-infrastructure-health-report` |
+| **Trigger** | Ambient (scheduled — recommended: daily or hourly) |
+| **Integrations Required** | Intersight, Nexus Hyperfabric, Nexus Dashboard, Meraki |
+| **Output Format** | Structured Markdown report with tables |
+
+### Instructions Prompt
+
+Copy the prompt below and paste it into the **Instructions** field in Agent Builder:
+
+<div style="position:relative;background:#1e2a3a;border:1px solid #2a3f5f;border-radius:6px;padding:1.2rem 1rem;margin:1rem 0">
+<button onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="position:absolute;top:.6rem;right:.6rem;background:#0d6efd;color:#fff;border:none;border-radius:4px;padding:3px 10px;font-size:.72rem;cursor:pointer">Copy</button>
+<pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-size:.68rem;line-height:1.65;color:#c9d1d9;font-family:monospace;overflow:visible">You are a cross-domain infrastructure monitoring agent for a Cisco environment. Your job is to produce a single unified health report that spans three domains: COMPUTE (Cisco Intersight managed servers), FABRIC (Cisco Nexus Hyperfabric fabrics and Nexus Dashboard), and NETWORK (Cisco Meraki networks/devices).
+
+What to do on every run:
+
+COMPUTE: Fetch all Cisco Intersight managed servers with their health status, power state, and any alarms.
+FABRIC: Fetch all Nexus Hyperfabric fabrics and their nodes, plus any Nexus Dashboard fabric anomalies.
+NETWORK: Fetch Meraki organizations/networks and device health, flagging offline or alerting devices.
+Produce the report in Markdown with these sections:
+
+Cross-Domain Infrastructure Health Report
+Generated: &lt;current UTC timestamp&gt;
+
+Executive Summary
+One short paragraph plus a table with one row per domain (Compute, Fabric, Network) showing: Domain | Total Devices | Healthy | Needs Attention | Overall Status.
+
+Cross-Domain Flags - Requiring Attention
+A single consolidated table of every device across ALL domains that is not fully healthy. Columns: Domain | Device | Type | Status | Issue. Sort with the most severe first.
+
+Domain Detail
+Three subsections (### Compute, ### Fabric, ### Network). In each, give a short inventory table of that domain&#x27;s devices with their key health fields.
+
+Recommended Actions
+Group by priority (Critical, High, Medium). Reference the specific device and domain for each action.
+
+At the very end append two lines exactly:
+[SUMMARY: &lt;one-line summary of total flagged across all domains&gt;]
+[SEVERITY: &lt;low|medium|high&gt;]
+
+Rules:
+
+Use ONLY real data returned by the Cisco tools. Never invent devices, serials, or IPs.
+If a domain&#x27;s tools return no data or error, state that clearly in that domain&#x27;s section and continue with the other domains rather than failing the whole report.
+Keep it concise and scannable. Prefer tables over long paragraphs.</pre>
+</div>
+
+---
+
+## Intersight Server Health Report Agent
+
+### What This Agent Does
+
+The **Intersight Server Health Report** agent (`intersight-server-health-report`) gives you a complete snapshot of every server managed by Cisco Intersight in your tenant — both blade and rack-mount compute — in a single structured table. It runs on a schedule and automatically flags any server that is not healthy or not powered on, so your team never has to manually check each server individually.
+
+Each time the agent runs it produces:
+
+- **Server Inventory Table** — every managed server with columns for Server Name, Model, Serial Number, Health Status, Power State, Firmware Version, and Management IP
+- **Summary Section** — total server count, breakdown by health status (Healthy / Warning / Critical), and an explicit flags list of any server that needs attention
+- **Clean no-issues confirmation** — if everything is healthy, the agent explicitly states "No issues detected" so you know the report ran successfully
+
+This agent is ideal for **hourly infrastructure monitoring**, **pre-maintenance checks**, or as a **first responder tool** that tells your team exactly which servers need attention before diving into Intersight directly.
+
+### Agent Configuration
+
+| Field | Value |
+| --- | --- |
+| **Agent Name** | `intersight-server-health-report` |
+| **Trigger** | Ambient (scheduled — recommended: hourly) |
+| **Integration Required** | Cisco Intersight |
+| **Output Format** | Markdown table + summary |
+
+### Instructions Prompt
+
+Copy the prompt below and paste it into the **Instructions** field in Agent Builder:
+
+<div style="position:relative;background:#1e2a3a;border:1px solid #2a3f5f;border-radius:6px;padding:1.2rem 1rem;margin:1rem 0">
+<button onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="position:absolute;top:.6rem;right:.6rem;background:#0d6efd;color:#fff;border:none;border-radius:4px;padding:3px 10px;font-size:.72rem;cursor:pointer">Copy</button>
+<pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-size:.68rem;line-height:1.65;color:#c9d1d9;font-family:monospace;overflow:visible">You are a reporting agent for Cisco Intersight. On each run, query Cisco Intersight for all managed servers in this tenant (both blade and rack-mount compute). Produce an inventory and health report.
+
+Format the output as a Markdown table with these columns: Server Name, Model, Serial Number, Health Status, Power State, Firmware Version, Management IP.
+
+After the table, add a short Summary section that includes: total number of servers, a breakdown of count by health status (Healthy / Warning / Critical), and an explicit Flags list calling out any server whose health status is not Healthy or whose power state is not On. If there are no issues, say &#x27;No issues detected.&#x27;
+
+Only use data returned by the Intersight tools. Do not fabricate or guess values. If a field is unavailable, show &#x27;N/A&#x27;. If no servers are found, state that clearly.</pre>
+</div>
 

@@ -36,27 +36,26 @@ Once it completes, **spend some time exploring** the various capabilities of the
 
 ---
 
-1. Within Canvas, practice entering **/** for a set of pre-populated prompts and **#** for accessing and managing a knowledge base of context to leverage.
+1. Within Canvas, practice entering **/** for a set of pre-populated prompts and **#** for accessing and managing a knowledge base of contextual information.
 
 1. Notice that you can toggle between **Default** and **Reasoning Mode**. See the detailed differences below:
 
-**Default mode** uses a standard language model optimized for speed and general-purpose assistance. It is well-suited for everyday tasks such as writing boilerplate code, asking quick questions, getting explanations, or making minor code edits. Responses are generated quickly, making this mode ideal when you need fast, iterative feedback during active development.
+**Default Mode** uses a standard language model optimized for speed and general-purpose assistance. It is well-suited for everyday tasks such as writing boilerplate code, asking quick questions, getting explanations, or making minor code edits. Responses are generated quickly, making this mode ideal when you need fast, iterative feedback during active development.
 
-**Deep Reasoning mode** leverages a more advanced model capable of multi-step reasoning and complex problem analysis. This mode is better suited for tasks that require careful, methodical thinking, such as:
+**Reasoning Mode** leverages a more advanced model capable of multi-step reasoning and complex problem analysis. This mode is better suited for tasks that require careful, methodical thinking, such as:
 
-- Debugging complex, hard-to-reproduce issues that span multiple files or systems.
+- Debugging complex, hard-to-reproduce issues that span multiple systems
 
-- Architecting solutions to intricate design problems where trade-offs need to be carefully considered.
-
-- Analyzing algorithms for correctness, performance, or edge cases.
-
-- Working through problems that require the model to plan several steps ahead before producing an answer.
-
-The trade-off with Deep Reasoning mode is that responses take longer to generate due to the additional computational steps involved. For straightforward tasks, Default mode will typically be faster and sufficient, while Deep Reasoning mode is most valuable when accuracy and thoroughness outweigh the need for speed.
+- Working through problems that require the model to plan several steps ahead before producing an answer
 
 ---
 
 ![](../screenshots/e25c577f41.png)
+
+---
+
+!!! info "Note"
+    The trade-off with Reasoning mode is that responses take longer to generate due to the additional computational steps involved. For straightforward tasks, Default mode will typically be faster and sufficient, while Reasoning mode is most valuable when accuracy and thoroughness outweigh the need for speed.
 
 ---
 

@@ -32,6 +32,10 @@ Once it completes, **spend some time exploring** the various capabilities of the
 
 ---
 
+![](../screenshots/d48186e8fa.png)
+
+---
+
 1. Within Canvas, practice entering **/** for a set of pre-populated prompts and **#** for accessing and managing a knowledge base of context to leverage.
 
 1. Notice that you can toggle between **Default** and **Reasoning Mode**. See the detailed differences below:

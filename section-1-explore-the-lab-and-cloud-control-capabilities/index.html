@@ -1,0 +1,965 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework">
+      
+      
+        <meta name="author" content="Cisco">
+      
+      
+      
+        <link rel="prev" href="../introduction/">
+      
+      
+        <link rel="next" href="../section-2-experience-the-agentic-ai-canvas/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/cisco_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Section 1: Explore the LAB and Cloud Control Capabilities -  (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#section-1-explore-the-lab-and-cloud-control-capabilities" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework" class="md-header__button md-logo" aria-label=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework" data-md-component="logo">
+      
+  <img src="../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+             (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Section 1: Explore the LAB and Cloud Control Capabilities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework" class="md-nav__button md-logo" aria-label=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework" data-md-component="logo">
+      
+  <img src="../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+     (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1: Explore the LAB and Cloud Control Capabilities
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1: Explore the LAB and Cloud Control Capabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#step-1-lab-and-topoloy-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Lab and Topoloy Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab Topology
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-logging-into-with-your-assigned-cloud-control-user-and-exploring-the-home-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Logging into with your assigned Cloud Control user and exploring the Home Screen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-explore-9-dot-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Explore 9-Dot Menu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-explore-inventory-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Explore Inventory Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-2-experience-the-agentic-ai-canvas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 2: Experience the Agentic AI Canvas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-3-build-an-agent-with-agent-builder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 3: Build an Agent with Agent Builder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-4-team-challenge-agentic-ops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 4: Team Challenge - Agentic Ops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-a-sample-ai-prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix A: Sample AI Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-b-sample-agent-prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B: Sample Agent Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#step-1-lab-and-topoloy-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Lab and Topoloy Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab Topology
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-logging-into-with-your-assigned-cloud-control-user-and-exploring-the-home-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Logging into with your assigned Cloud Control user and exploring the Home Screen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-explore-9-dot-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Explore 9-Dot Menu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-explore-inventory-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Explore Inventory Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="section-1-explore-the-lab-and-cloud-control-capabilities">Section 1: Explore the LAB and Cloud Control Capabilities</h1>
+<p>In this section, you will discover how Cloud Control streamlines the management of your cloud infrastructure through a centralized interface. You'll gain hands-on experience with its core monitoring, automation, and governance features to understand how they work together to simplify operations at scale.</p>
+<h2 id="step-1-lab-and-topoloy-overview">Step 1: Lab and Topoloy  Overview</h2>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>This lab is based on the dCloud <strong>"Cisco Cloud Control: AgenticOps in Action"</strong> experience. Your assigned login has been provisioned with elevated permissions that unlock advanced capabilities beyond the standard dCloud environment — most notably <strong>Agent Studio</strong>, which is the primary focus of this lab.</p>
+<p>These special permissions allow you to build, test, and deploy agentic workflows across the Cisco Cloud Control platform in ways that reflect real-world production use cases. Throughout this lab, you will move from exploration to hands-on creation, gaining practical experience with the tools and services that power Cisco's Agentic Operations framework.</p>
+</div>
+<hr>
+<h2 id="lab-topology">Lab Topology</h2>
+<p>Your lab environment is pre-integrated with a broad set of Cisco platforms and third-party services. The topology reflects a realistic enterprise deployment, giving you visibility and control across networking, security, cloud, and collaboration domains.</p>
+<p>The following products and controllers are available in your environment:</p>
+<ul>
+<li>
+<p><strong>Cisco Security Cloud Control</strong> — The unified management plane that ties all security services together. This is your primary interface throughout the lab.</p>
+</li>
+<li>
+<p><strong>AI Defense</strong> — Provides AI-powered threat detection and policy enforcement across your environment.</p>
+</li>
+<li>
+<p><strong>Multicloud Defense</strong> — Delivers consistent security policy and visibility across multiple cloud providers.</p>
+</li>
+<li>
+<p><strong>Secure Access</strong> — A cloud-delivered SSE solution combining ZTNA, SWG, CASB, and DNS security.</p>
+</li>
+<li>
+<p><strong>Secure Firewall</strong> — Next-generation firewall capabilities managed through the unified control plane.</p>
+</li>
+<li>
+<p><strong>Secure Workload</strong> — Provides workload segmentation, micro-segmentation policy, and application dependency mapping.</p>
+</li>
+<li>
+<p><strong>Cisco Meraki</strong> — Cloud-managed networking including switching, wireless, and SD-WAN, integrated directly into Cloud Control.</p>
+</li>
+<li>
+<p><strong>Cisco Intersight</strong> — Unified infrastructure management for compute, storage, and HCI across on-premises and cloud.</p>
+</li>
+<li>
+<p><strong>Cisco Nexus Dashboard</strong> — Centralized operations hub for data center networking, providing analytics, orchestration, and insights.</p>
+</li>
+<li>
+<p><strong>Nexus Hyperfabric</strong> — A cloud-managed, AI-driven data center fabric solution for simplified network operations.</p>
+</li>
+<li>
+<p><strong>Cisco Collaboration Control Hub</strong> <em>(formerly Webex Control Hub)</em> — The administration portal for managing Webex collaboration services, users, and devices at scale.</p>
+</li>
+</ul>
+<p>Not all products listed above will be actively used in every section of this lab. However, their presence in the topology reflects the breadth of the Cisco Cloud Control platform and the scope of what agentic workflows can reach and act upon.</p>
+<hr>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p>You have been granted elevated permissions necessary to complete the exercises in this lab. With these additional privileges comes an expectation of responsible use. Please confine your activities strictly to the tasks and resources outlined in this lab guide. Unauthorized actions — such as modifying shared infrastructure, accessing resources outside the scope of this lab, or interfering with other participants' environments — can disrupt the experience for everyone. Any actions you take may be logged and audited. Please be a good steward of the shared environment.</p>
+</div>
+<hr>
+<h2 id="step-2-logging-into-with-your-assigned-cloud-control-user-and-exploring-the-home-screen">Step 2: Logging into with your assigned Cloud Control user and exploring the Home Screen</h2>
+<p>Open a web browser and navigate to the lab landing page at: <a href="https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-cloud-control-for-ai-canvas-team?returnPathTitleKey=content-view">http://cs.co/TEDC24</a> . Then <strong>Click</strong> View.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/554d865750.png" data-desc-position="top"><img alt="" src="../screenshots/554d865750.png"></a></p>
+<hr>
+<p>Next, <strong>Click</strong> on your assigned <strong>user credentials </strong>and click <strong>Sign In</strong> to authenticate and login.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/6afb15a844.png" data-desc-position="top"><img alt="" src="../screenshots/6afb15a844.png"></a></p>
+<hr>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>If you are unable to locate your POD login credentials, please contact a proctor. Please use caution and verify you are logging into your assigned POD, as this will ensure a successful lab experience for all.</p>
+</div>
+<hr>
+<p>After logging in, explore the three sections on the home screen.</p>
+<p><strong>1. Selected Organization</strong> — If you have access to more than one organization, use this section to switch between them.</p>
+<p><strong>2.</strong> <strong>AI Assistant</strong> — Use this natural language interface to interact with the platform. Explore the pre-built prompts and run sample queries. Note that data is limited in this lab environment and results may differ from a production deployment.</p>
+<p><strong>3. Actions</strong> — Review any actions required in your environment. Take note of what is displayed. These actions can be engaged agentically, which will be covered in detail later in this lab.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/560ac7baae.png" data-desc-position="top"><img alt="" src="../screenshots/560ac7baae.png"></a></p>
+<hr>
+<p>Next, navigate to <a href="../appendix-a-sample-ai-prompts/"><strong>Appendix A: Sample AI Prompts</strong></a> and spend time running the validated prompts for this environment. Use the <strong>copy button</strong> on each prompt block to paste directly into the AI Assistant or Agentic Canvas — this ensures accuracy and eliminates the risk of transcription errors. As you work through each prompt, observe how the system interprets the input, what format the response takes, and how quickly results are returned.</p>
+<p>The goal of this exercise is to thoroughly prepare yourself for live customer demonstrations by building familiarity and confidence with a core set of prompts that consistently produce clear, accurate, and compelling results. Consider the following as you explore:</p>
+<ul>
+<li>
+<p><strong>Identify your strongest examples.</strong> Some prompts will generate output that is particularly well-suited for showcasing the capabilities of the environment. Take note of these and prioritize them for use in demos.</p>
+</li>
+<li>
+<p><strong>Understand the output.</strong> Be prepared to explain to a customer not just what the output shows, but why it is useful and how it maps to a real-world business scenario or use case.</p>
+</li>
+<li>
+<p><strong>Anticipate follow-up questions.</strong> As you review each result, think about questions a customer might ask and ensure you can speak confidently to the underlying functionality.</p>
+</li>
+<li>
+<p><strong>Practice your delivery.</strong> Running through these prompts multiple times will help you develop a smooth, natural delivery so that the demonstration feels polished and professional rather than scripted.</p>
+</li>
+</ul>
+<p>Take as much time as needed during this section to become comfortable with the material. A well-rehearsed demonstration using familiar prompts is far more effective than presenting new or untested examples under the pressure of a live customer engagement.</p>
+<p><strong>Example prompts you can use:</strong></p>
+<hr>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can access <a href="../appendix-a-sample-ai-prompts/"><strong>Appendix A: Sample AI Prompts</strong></a> at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.</p>
+</div>
+<hr>
+<div class="highlight"><pre><span></span><code>How is my organization doing?
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Are there any outages affecting my monitored services right now?
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Is my data center fabric healthy right now?
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>why can lee chang not access jira via ZTA in secure access?
+</code></pre></div>
+<hr>
+<p><strong>Example:</strong></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/a95715657f.png" data-desc-position="top"><img alt="" src="../screenshots/a95715657f.png"></a></p>
+<hr>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>Actual responses will vary due to the nature of Agentic Systems</p>
+</div>
+<hr>
+<p>Finally, <strong>click</strong> on <strong>Actions</strong> in the AI Assistant. Notice how the agentic system automatically analyzes these actions and  <strong>correlates</strong> the related events for you, eliminating the need for <strong>manual investigation</strong>. Rather than requiring you to sift through individual log entries or alerts, the AI Assistant groups and connects relevant activities into a cohesive, contextualized narrative — making it significantly easier to understand the full scope and sequence of an incident. See the <strong>example below:</strong></p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/55652ad2ad.png" data-desc-position="top"><img alt="" src="../screenshots/55652ad2ad.png"></a></p>
+<hr>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>Notice that we can also move an Action to "<strong>Collaborate in Canvas</strong>". We will be exploring the Agentic AI Canvas in the next section.</p>
+</div>
+<hr>
+<h2 id="step-3-explore-9-dot-menu">Step 3: Explore 9-Dot Menu</h2>
+<p>Click the <strong>9-dot menu</strong> (grid icon) located in the top navigation bar of Cloud Control to explore the available options and applications.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/f735b80124.png" data-desc-position="top"><img alt="" src="../screenshots/f735b80124.png"></a></p>
+<hr>
+<p>Explore the three main sections available on the platform.</p>
+<p><strong>1.</strong> <strong>Platform Services</strong> — These services span the entire infrastructure. Each will be explored in detail throughout this lab. Additional services, such as Fabric, will continue to be added over time.</p>
+<p><strong>2. Products</strong> — These are the products currently integrated with your tenant. In this lab, only Meraki is integrated. In a production environment, multiple products would typically be present. For a full list of supported products and onboarding requirements, visit the <a href="https://cisco.sharepoint.com/sites/CiscoCloudControl-ControlledAvailability/SitePages/Home.aspx">Cloud Control Onboarding SharePoint site</a>.</p>
+<p><strong>3.</strong> <strong>Apps</strong> — Common applications residing in Cloud Control.</p>
+<p><strong>4. Favorites</strong> — Save frequently visited pages from any product in this section for quick access during future sessions.</p>
+<hr>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>Click a Platform Service or Product to pin it to the navigation bar. This bar remains visible throughout Cloud Control, enabling quick and consistent access regardless of where you navigate.</p>
+</div>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/8e31effd5c.png" data-desc-position="top"><img alt="" src="../screenshots/8e31effd5c.png"></a></p>
+<hr>
+<h2 id="step-4-explore-inventory-capabilities">Step 4: Explore Inventory Capabilities</h2>
+<p>Navigate to the <strong>Inventory</strong> section of Cisco Cloud Control to explore the available inventory capabilities.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/f017eb63c9.png" data-desc-position="top"><img alt="" src="../screenshots/f017eb63c9.png"></a></p>
+<hr>
+<p>Next, explore the available capabilities. Review the Inventory Insights dashboard to examine detected issues, recommendations, and asset visibility across your managed devices.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/6f8e9d0b9d.png" data-desc-position="top"><img alt="" src="../screenshots/6f8e9d0b9d.png"></a></p>
+<hr>
+<p>Click <strong>Show Device Inventory</strong> or select an alternative view to change the display format.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/bd8aee830c.png" data-desc-position="top"><img alt="" src="../screenshots/bd8aee830c.png"></a></p>
+<hr>
+<p>Practice using the <strong>AI-assisted search</strong> functionality within the Inventory section. <strong>Collaborate</strong> with your team to explore the available Inventory capabilities, including filtering, sorting, and device categorization options.</p>
+<p><strong>1.</strong> Enter the sample prompt below into the AI-Assisted Search and press Enter:</p>
+<div class="highlight"><pre><span></span><code>show me my Mexico City Devices
+</code></pre></div>
+<p><strong>2.</strong> <strong>Click</strong> the <strong>C9300-X-Leaf-1</strong> switch to view it.</p>
+<p><strong>3.</strong> Observe the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your <strong>C9300-X-Leaf-1</strong> switch. Review the <strong>General</strong> tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows <strong><em>Reachable</em></strong>, indicating the device is actively communicating with the management platform, and that the Compliance status shows <strong><em>Compliant</em></strong>, confirming the device configuration meets your organisation's defined policy standards.</p>
+<p><strong>4.</strong> <strong>Click</strong> <strong>View in Topology</strong>. This will take you directly to the switch in the Global Topology Service.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/a5266bb0c4.png" data-desc-position="top"><img alt="" src="../screenshots/a5266bb0c4.png"></a></p>
+<hr>
+<p>The Topology view displays your global network topology organized by site, providing a visual representation of device relationships and connectivity across your environment. In this case, we pivoted directly to the <strong>C9300-X-Leaf1 i</strong>n the local site topology. Notice the navigation options available to go directly to the device in Meraki or pivot back to the device in inventory.</p>
+<p>To demonstrate the seamless pivot to the<strong> Mexico City</strong> network, <strong>Click Meraki</strong> on the top navigation banner.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/8668d35970.png" data-desc-position="top"><img alt="" src="../screenshots/8668d35970.png"></a></p>
+<p>This action opens the Meraki Dashboard in context for the selected device, demonstrating the seamless cross-platform navigation capability within Cisco Cloud Control.</p>
+<p>This integration allows network administrators to move fluidly between unified inventory management and platform-specific dashboards without separately logging in or searching for the device within Meraki.</p>
+<p>Notice the top navigation bar, which reflects the unified Cloud Control interface. Click <strong>Home</strong> to return to the Cloud Control home screen, or click any other element in the banner to navigate directly to it. These tabs allow you to seamlessly move between management planes within a single dashboard.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/c126892f9c.png" data-desc-position="top"><img alt="" src="../screenshots/c126892f9c.png"></a></p>
+<hr>
+<div class="admonition abstract">
+<p class="admonition-title">Congratulations</p>
+<p>Congratulations on completing this section! You have successfully navigated the Cisco Cloud Control platform and gained hands-on experience with its core services, including the AI Assistant, Inventory, and Topology. These foundational skills will serve as building blocks as you progress through the remaining sections of this lab.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../section-2-experience-the-agentic-ai-canvas/" class="md-footer__link md-footer__link--next" aria-label="Next: Section 2: Experience the Agentic AI Canvas">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Section 2: Experience the Agentic AI Canvas
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2024 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "navigation.expand", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

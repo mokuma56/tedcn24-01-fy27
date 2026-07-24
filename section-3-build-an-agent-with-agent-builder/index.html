@@ -1,0 +1,880 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework">
+      
+      
+        <meta name="author" content="Cisco">
+      
+      
+      
+        <link rel="prev" href="../section-2-experience-the-agentic-ai-canvas/">
+      
+      
+        <link rel="next" href="../section-4-team-challenge-agentic-ops/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/cisco_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Section 3: Build an Agent with Agent Builder -  (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#section-3-build-an-agent-with-agent-builder" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework" class="md-header__button md-logo" aria-label=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework" data-md-component="logo">
+      
+  <img src="../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+             (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Section 3: Build an Agent with Agent Builder
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework" class="md-nav__button md-logo" aria-label=" (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework" data-md-component="logo">
+      
+  <img src="../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+     (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-1-explore-the-lab-and-cloud-control-capabilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1: Explore the LAB and Cloud Control Capabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-2-experience-the-agentic-ai-canvas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 2: Experience the Agentic AI Canvas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 3: Build an Agent with Agent Builder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-4-team-challenge-agentic-ops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 4: Team Challenge - Agentic Ops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-a-sample-ai-prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix A: Sample AI Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-b-sample-agent-prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B: Sample Agent Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="section-3-build-an-agent-with-agent-builder">Section 3: Build an Agent with Agent Builder</h1>
+<p>In this section, you will use Agent Builder to configure and deploy a functional agent. You'll explore available integrations and connect the necessary components to bring your agent to life.</p>
+<p>Agent Builder is Cisco's platform for designing, deploying, and managing autonomous AI agents that execute tasks on a defined schedule, as well as for integrating third-party tools and services directly into AI Canvas workflows. Autonomous agents built on this platform can perform complex, multi-step operations without requiring manual intervention — such as monitoring data sources, triggering alerts, processing records, or coordinating actions across connected systems. The scheduling capability allows agents to run at specified intervals or in response to defined conditions, making them well-suited for recurring business processes and automated data pipelines. The third-party integration layer extends AI Canvas by allowing external applications, APIs, and services to participate in AI-driven workflows, enabling a unified environment where both Cisco-native and external tools can collaborate seamlessly. This guide walks through the initial platform setup, the step-by-step process of building and configuring agents, and the methods available for connecting and managing third-party integrations.</p>
+<hr>
+<p>First, we will navigate to Agent Builder:</p>
+<ol>
+<li>
+<p>Click the <strong>nine-dots menu</strong> in the top header.</p>
+</li>
+<li>
+<p>Under <strong>Platform Services</strong>, click <strong>Studio</strong>. If it is not visible, click <strong>Show more</strong> to expand the list.</p>
+</li>
+<li>
+<p>If <strong>Studio</strong> has been pinned, you can also click it directly from the header.</p>
+</li>
+</ol>
+<p>This opens the Agent Builder <strong>Overview</strong> page. The top navigation bar has four tabs: <strong>Overview</strong>, <strong>Integrations</strong>, <strong>Agent Builder</strong>, and <strong>Observability</strong>.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/c28bc4c371.png" data-desc-position="top"><img alt="" src="../screenshots/c28bc4c371.png"></a></p>
+<hr>
+<p>Next, notice the <strong>Studio</strong> overview page within Cisco Cloud Control, which serves as the central hub for building and managing AI agents. Observe the four navigation tabs at the top: <strong>Overview</strong>, <strong>Integrations</strong>, <strong>Agent Builder</strong>, and <strong>Observability</strong>.</p>
+<p>To begin building your first agent, <strong>Click</strong> <strong>+ Create Agent</strong> to launch the Agent Builder workflow, or click <strong>+ Browse Integrations</strong> to first explore the configured integrations that your could leverage.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/a3a607641c.png" data-desc-position="top"><img alt="" src="../screenshots/a3a607641c.png"></a></p>
+<hr>
+<p>Agent creation has three steps: <strong>Agent Profile → Triggers → Review</strong>.</p>
+<h3 id="step-1-agent-profile">Step 1: Agent Profile</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Agent Name</strong></td>
+<td>Yes</td>
+<td>A clear, descriptive name for the agent</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>No</td>
+<td>A short summary of what the agent does — displayed on the agent card</td>
+</tr>
+<tr>
+<td><strong>Instructions</strong></td>
+<td>Yes</td>
+<td>The system prompt — detailed instructions defining what the agent should do, what data to retrieve, and how to format its output</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tips for writing effective instructions:</strong></p>
+<ul>
+<li>
+<p>Be specific about what data to retrieve and from which source</p>
+</li>
+<li>
+<p>Specify the output format (e.g., a table with defined columns)</p>
+</li>
+<li>
+<p>Include thresholds or conditions to flag (e.g., "flag any incident not updated in the last 4 hours")</p>
+</li>
+</ul>
+<hr>
+<p>To help provide context and guidance while creating your first agent, please refer to the examples provided in <a href="../appendix-b-sample-agent-prompts/"><strong>Appendix B: Sample Agent Prompts</strong></a>. Appendix B contains several pre-built prompt examples that demonstrate best practices for structuring agent instructions, defining scope, and setting expected behaviors. You are welcome to explore and create agents based on any of the examples listed, and you are encouraged to experiment with multiple configurations throughout this lab.</p>
+<p>However, for this first agent, please use the <a href="../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent"><strong>Meraki Daily Health Report</strong></a> example from Appendix B. This sample prompt is designed to instruct the agent to automatically gather and summarize key health metrics from your Meraki network environment — such as device connectivity status, alert summaries, and performance indicators — and present them in a structured, easy-to-read daily report format. Using this example as your starting point will ensure you have a consistent baseline configuration that aligns with the exercises and validation steps in the sections that follow.</p>
+<hr>
+<p>On the <strong>Agent Profile</strong> page, configure the following:</p>
+<ol>
+<li>
+<p>Set the <strong>Agent name</strong> to: meraki-daily-health-report-<strong><em>Your-CCO-ID</em></strong><strong> (Please append your CCO ID to all agents you create to prevent conflicts)</strong></p>
+</li>
+<li>
+<p>Set the <strong>Description</strong> to: "<strong>Generates a Daily Meraki Health Report.</strong>"</p>
+</li>
+<li>
+<p>Set the <strong>Instructions Prompt</strong> using the detailed sample prompt from <a href="../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent"><strong>Appendix B: Sample Agent Prompts</strong></a>, which defines the agent's behavior and report structure.</p>
+</li>
+</ol>
+<p>Once you have reviewed all three fields and confirmed the information is correct, click <strong>Continue</strong> to proceed to the next step.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p>Due to the shared nature of the lab environment, when naming your Agent please <strong>ALWAYS</strong> append your <strong>CCO ID </strong>to the end of the agent name. This will ensure there are no conflicting agent names.</p>
+<p>Example: <strong>meraki-daily-health-report-maokuma</strong></p>
+</div>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/363ae56a0e.png" data-desc-position="top"><img alt="" src="../screenshots/363ae56a0e.png"></a></p>
+<hr>
+<p>On the triggers configuration page, configure the following agent settings:</p>
+<ul>
+<li>
+<p>Set the Trigger mode to <strong>Ambient</strong></p>
+</li>
+<li>
+<p>Set the Activation cadence to <strong>Daily</strong></p>
+</li>
+<li>
+<p>Set the Local run time to <strong>09:00 AM</strong></p>
+</li>
+</ul>
+<p>This means the agent will run <strong>automatically every day at 9:00 AM local time</strong>.</p>
+<p>In the Trigger prompt field, enter <strong>"Generate the Meraki Daily Health Report"</strong>. This defines the instruction the agent will execute during its scheduled runs.</p>
+<p>Click the <strong>Continue</strong> button in the bottom-right corner of the screen to proceed to the Review step and finalize the agent configuration.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/77e1e18a53.png" data-desc-position="top"><img alt="" src="../screenshots/77e1e18a53.png"></a></p>
+<hr>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p><strong>Trigger Mode</strong> determines how the agent is activated</p>
+<ul>
+<li>
+<p><strong>Ambient:</strong> Agent runs automatically on a schedule</p>
+</li>
+<li>
+<p><strong>Interactive:</strong> Agent is available for users to invoke in Canvas <em>(</em><strong><em>coming soon</em></strong><em>)</em></p>
+</li>
+<li>
+<p><strong>Ambient + Interactive:</strong> Agent runs both <em>(</em><strong><em>coming soon</em></strong><em>)</em></p>
+</li>
+</ul>
+</div>
+<hr>
+<p>Review the agent configuration summary, which displays the following:</p>
+<ul>
+<li>
+<p>Agent name: <strong>meraki-daily-health-report</strong></p>
+</li>
+<li>
+<p>Description: <strong>Generate a Daily Meraki Health Report</strong></p>
+</li>
+<li>
+<p>Trigger type: <strong>Ambient</strong></p>
+</li>
+<li>
+<p>Activation schedule: <strong>Runs daily at 9:00 AM local time</strong></p>
+</li>
+<li>
+<p>Trigger prompt: <strong>Generate the Meraki Daily Report</strong></p>
+</li>
+</ul>
+<p>Verify that all settings are correct before proceeding. Click the <strong>Create Agent</strong> button in the bottom-right corner of the screen to finalize and deploy your agent.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/45b5810d5d.png" data-desc-position="top"><img alt="" src="../screenshots/45b5810d5d.png"></a></p>
+<hr>
+<h4 id="what-happens-when-you-click-create-agent">What Happens When You Click Create Agent</h4>
+<p>Studio runs through a <strong>series of automated steps</strong> that typically take one to a few minutes:</p>
+<ol>
+<li>
+<p><strong>Validating inputs</strong> — Checks that all required fields are present and correctly formatted.</p>
+</li>
+<li>
+<p><strong>Selecting tools</strong> — Automatically identifies and scopes the MCP tools the agent needs based on its instructions and integrations. The agent only has access to the tools relevant to its role, which improves accuracy, reduces token usage, and increases speed. In a future release, you will be able to view and modify this tool scope directly.</p>
+</li>
+<li>
+<p><strong>AI Defense reviewing</strong> — Scans the agent configuration for safety and security issues.</p>
+</li>
+<li>
+<p><strong>Building manifest</strong> — Assembles the agent's runtime manifest.</p>
+</li>
+<li>
+<p><strong>Validating configuration</strong> — Validates the full configuration package.</p>
+</li>
+<li>
+<p><strong>Generating agent package</strong> — Generates the deployable agent artifact.</p>
+</li>
+<li>
+<p><strong>Saving configuration</strong> — Persists the agent configuration.</p>
+</li>
+<li>
+<p><strong>Opening launch setup</strong> — Initializes the agent and opens the confirmation page.</p>
+</li>
+</ol>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/d89ca2940b.png" data-desc-position="top"><img alt="" src="../screenshots/d89ca2940b.png"></a></p>
+<hr>
+<p>The <strong>meraki-daily-health-report</strong> agent has been successfully created and is now in <strong>Draft</strong> status, ready for validation. Review the Agent Summary panel on the right, which confirms that the agent is not yet deployed, is set to version <strong>v1</strong>, uses a <strong>Scheduled</strong> trigger, and is protected by <strong>Cisco AI Defense</strong>. Observe the connectors listed on the left, which include a variety of Meraki data retrieval and display actions that the agent will utilize when generating the daily health report. Click <strong>Test Agent</strong> to validate the agent's functionality before proceeding to deployment.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/35a9518f19.png" data-desc-position="top"><img alt="" src="../screenshots/35a9518f19.png"></a></p>
+<hr>
+<p>Next, inspect the <strong>Live Test</strong> panel, which allows you to validate the selected agent version against the registered runtime and inspect the execution trace. Enter the test prompt <em>"</em><strong><em>Generate the Daily Meraki Health Report</em></strong><em>"</em>  in the input field at the bottom of the panel.</p>
+<p>Click the <strong>Run Test</strong> button to execute the agent and generate the daily Meraki health report. The results, including the agent response and full execution trace, will appear directly within this panel.</p>
+<p>There are also several pre-built scenarios you can run and explore the outputs of:</p>
+<ul>
+<li>
+<p>Summarize Configuration</p>
+</li>
+<li>
+<p>Explain Guardrails</p>
+</li>
+<li>
+<p>Run Readiness Check</p>
+</li>
+</ul>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/4a5ff1788a.png" data-desc-position="top"><img alt="" src="../screenshots/4a5ff1788a.png"></a></p>
+<hr>
+<p>Next, review that the <strong>Live Test</strong> has successfully executed the agent, displaying the generated <strong>Daily Meraki Health Report</strong>. Review the key findings highlighted in the summary report.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/2ca1a13dd7.png" data-desc-position="top"><img alt="" src="../screenshots/2ca1a13dd7.png"></a></p>
+<hr>
+<p>Next, we will review the Agent configuration and then promote the agent to production.</p>
+<p>First, <strong>click</strong> back to the <strong>Overview</strong> page, then <strong>click</strong> on the newly created agent to open it.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/29bd12789d.png" data-desc-position="top"><img alt="" src="../screenshots/29bd12789d.png"></a></p>
+<hr>
+<p>Review the agent configuration, which contains detailed instructions for generating a structured six-section daily health report covering organization health, active alerts, device status, wireless performance, firmware compliance, and an executive summary.</p>
+<p>Notice that the agent is <strong>Protected by AI Defense</strong>, which checks prompts, retrieved content, and tool calls to ensure write actions are gated and read tools are scoped to approved targets.</p>
+<p>In the <strong>Release history</strong> section at the bottom of the page, observe that version <strong>v1</strong> is currently in a <strong>Candidate</strong> state.</p>
+<p>Finally, click <strong>Promote to production</strong> to make this version the active production release.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/fd706d11c5.png" data-desc-position="top"><img alt="" src="../screenshots/fd706d11c5.png"></a></p>
+<hr>
+<p>A confirmation dialog box will appear asking whether you want to promote v1 to production. <em>Notice that the dialog explains this will make v1 the active production release used for activation and customer testing, replacing any version currently in production.</em></p>
+<p>Click <strong>Promote to production</strong> to confirm the action and deploy v1 as the production release.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/d25f59e17d.png" data-desc-position="top"><img alt="" src="../screenshots/d25f59e17d.png"></a></p>
+<hr>
+<p>Once in production, you can:</p>
+<ul>
+<li>
+<p><strong>Update the config</strong> — Edit the agent's profile or instructions to create a new version, test it, and promote it when ready</p>
+</li>
+<li>
+<p><strong>Monitor runs</strong> — Check the <strong>Run</strong> tab to view execution history, outputs, and any errors</p>
+</li>
+<li>
+<p><strong>Update the trigger</strong> — Go to the <strong>Trigger</strong> tab to change the cadence or trigger prompt</p>
+</li>
+<li>
+<p><strong>Roll back</strong> — Promote any previously published version from the Release History table</p>
+</li>
+<li>
+<p><strong>Delete the agent</strong> — Remove the agent entirely from the agent detail page if it is no longer needed</p>
+</li>
+</ul>
+<hr>
+<p>Finally, click back on the <strong>Observability</strong> tab. This section displays a summary of all agent execution metrics available for review.</p>
+<p>In the <strong>Recent executions</strong> table, you can see that our agent ran version <strong>v1</strong>, which was triggered by the <strong>Scheduler</strong> and completed with a status of <strong>Passed</strong>.</p>
+<p>Click <strong>Open run</strong> to inspect the detailed execution trace and step-by-step results for this agent run.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ba7e6704e7.png" data-desc-position="top"><img alt="" src="../screenshots/ba7e6704e7.png"></a></p>
+<hr>
+<div class="admonition abstract">
+<p class="admonition-title">Congratulations</p>
+<p>Excellent work completing Section 3! You have successfully built, tested, and promoted your first production AI agent on Cisco Cloud Control — taking it all the way from a blank profile to a live, scheduled agent running autonomously in production. The skills you just practiced are exactly what you will need to tackle the Team Challenge ahead. 🎉</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../section-2-experience-the-agentic-ai-canvas/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Section 2: Experience the Agentic AI Canvas">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Section 2: Experience the Agentic AI Canvas
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../section-4-team-challenge-agentic-ops/" class="md-footer__link md-footer__link--next" aria-label="Next: Section 4: Team Challenge - Agentic Ops">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Section 4: Team Challenge - Agentic Ops
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2024 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "navigation.expand", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

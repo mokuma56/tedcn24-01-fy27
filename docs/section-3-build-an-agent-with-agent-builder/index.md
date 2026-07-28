@@ -108,7 +108,7 @@ Click the **Continue** button in the bottom-right corner of the screen to procee
 
 Review the agent configuration summary, which displays the following:
 
-- Agent name: **meraki-daily-health-report**
+- Agent name: meraki-daily-health-report-***Your-CCO-ID***** (Please append your CCO ID to all agents you create to prevent conflicts)**
 
 - Description: **Generate a Daily Meraki Health Report**
 

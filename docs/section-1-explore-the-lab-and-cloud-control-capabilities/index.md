@@ -15,11 +15,11 @@ In this section, you will discover how Cloud Control streamlines the management 
 
 ## Lab Topology
 
-Your lab environment is pre-integrated with a broad set of Cisco platforms and third-party services. The topology reflects a realistic enterprise deployment, giving you visibility and control across networking, security, cloud, and collaboration domains.
+Your lab environment is pre-integrated with a broad set of Cisco platforms and services. The topology reflects a realistic enterprise deployment, giving you visibility and control across networking, security, cloud, and collaboration domains.
 
 The following products and controllers are available in your environment:
 
-- **Cisco Security Cloud Control** — The unified management plane that ties all security services together. This is your primary interface throughout the lab.
+- **Cisco Security Cloud Control** — The unified management plane that ties all security services together. 
 
 - **AI Defense** — Provides AI-powered threat detection and policy enforcement across your environment.
 
@@ -77,7 +77,7 @@ After logging in, explore the three sections on the home screen.
 
 **1. Selected Organization** — If you have access to more than one organization, use this section to switch between them.
 
-**2.** **AI Assistant** — Use this natural language interface to interact with the platform. Explore the pre-built prompts and run sample queries. Note that data is limited in this lab environment and results may differ from a production deployment.
+**2.** **AI Assistant** — Use this natural language interface to interact with the platform. Explore the pre-built prompts.
 
 **3. Actions** — Review any actions required in your environment. Take note of what is displayed. These actions can be engaged agentically, which will be covered in detail later in this lab.
 
@@ -164,7 +164,7 @@ Explore the three main sections available on the platform.
 
 **1.** **Platform Services** — These services span the entire infrastructure. Each will be explored in detail throughout this lab. Additional services, such as Fabric, will continue to be added over time.
 
-**2. Products** — These are the products currently integrated with your tenant. In this lab, only Meraki is integrated. In a production environment, multiple products would typically be present. For a full list of supported products and onboarding requirements, visit the [Cloud Control Onboarding SharePoint site](https://cisco.sharepoint.com/sites/CiscoCloudControl-ControlledAvailability/SitePages/Home.aspx).
+**2. Products** — These are the products currently integrated with your tenant. In a production environment, multiple products would typically be present. For a full list of supported products and onboarding requirements, visit the [Cloud Control Onboarding SharePoint site](https://cisco.sharepoint.com/sites/CiscoCloudControl-ControlledAvailability/SitePages/Home.aspx).
 
 **3.** **Apps** — Common applications residing in Cloud Control.
 
@@ -247,4 +247,4 @@ Notice the top navigation bar, which reflects the unified Cloud Control interfac
 ---
 
 !!! abstract "Congratulations"
-    Congratulations on completing this section! You have successfully navigated the Cisco Cloud Control platform and gained hands-on experience with its core services, including the AI Assistant, Inventory, and Topology. These foundational skills will serve as building blocks as you progress through the remaining sections of this lab.
+    Congratulations on completing this section! You have successfully navigated the Cisco Cloud Control platform and gained hands-on experience with its core services, including the AI Assistant, Inventory, Topology, and Actions. These foundational skills will serve as building blocks as you progress through the remaining sections of this lab.

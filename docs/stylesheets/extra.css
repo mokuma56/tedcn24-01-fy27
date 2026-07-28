@@ -68,3 +68,11 @@
 .md-typeset code {
     font-size: .68rem;
 }
+
+/* ── Hide right-hand TOC sidebar, expand content area ── */
+.md-sidebar--secondary {
+    display: none;
+}
+.md-content {
+    max-width: 900px;
+}

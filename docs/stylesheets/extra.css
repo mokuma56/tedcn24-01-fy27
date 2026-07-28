@@ -70,9 +70,23 @@
 }
 
 /* ── Hide right-hand TOC sidebar, expand content area ── */
-.md-sidebar--secondary {
-    display: none;
+.md-sidebar--secondary,
+.md-sidebar--secondary * {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
 }
 .md-content {
-    max-width: 900px;
+    max-width: none !important;
+    margin-right: 0 !important;
+}
+@media screen and (min-width: 60em) {
+    .md-content {
+        margin-right: 0 !important;
+    }
+}
+@media screen and (min-width: 76.25em) {
+    .md-content {
+        margin-right: 0 !important;
+    }
 }

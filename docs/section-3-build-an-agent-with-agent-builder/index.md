@@ -1,7 +1,5 @@
 # Section 3: Build an Agent with Agent Builder
 
-In this section, you will use Agent Builder to configure and deploy a functional agent. You'll explore available integrations and connect the necessary components to bring your agent to life.
-
 Agent Builder is Cisco's platform for building autonomous agents that run on a schedule, and for connecting third-party tools to AI Canvas. This section walks through building, configuring, and observability of Agents.
 
 First, we will navigate to Agent Builder:

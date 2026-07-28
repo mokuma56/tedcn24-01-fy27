@@ -2,9 +2,7 @@
 
 In this section, you will use Agent Builder to configure and deploy a functional agent. You'll explore available integrations and connect the necessary components to bring your agent to life.
 
-Agent Builder is Cisco's platform for designing, deploying, and managing autonomous AI agents that execute tasks on a defined schedule, as well as for integrating third-party tools and services directly into AI Canvas workflows. Autonomous agents built on this platform can perform complex, multi-step operations without requiring manual intervention — such as monitoring data sources, triggering alerts, processing records, or coordinating actions across connected systems. The scheduling capability allows agents to run at specified intervals or in response to defined conditions, making them well-suited for recurring business processes and automated data pipelines. The third-party integration layer extends AI Canvas by allowing external applications, APIs, and services to participate in AI-driven workflows, enabling a unified environment where both Cisco-native and external tools can collaborate seamlessly. This guide walks through the initial platform setup, the step-by-step process of building and configuring agents, and the methods available for connecting and managing third-party integrations.
-
----
+Agent Builder is Cisco's platform for building autonomous agents that run on a schedule, and for connecting third-party tools to AI Canvas. This section walks through building, configuring, and observability of Agents.
 
 First, we will navigate to Agent Builder:
 
@@ -52,7 +50,7 @@ Agent creation has three steps: **Agent Profile → Triggers → Review**.
 
 ---
 
-To help provide context and guidance while creating your first agent, please refer to the examples provided in [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/). Appendix B contains several pre-built prompt examples that demonstrate best practices for structuring agent instructions, defining scope, and setting expected behaviors. You are welcome to explore and create agents based on any of the examples listed, and you are encouraged to experiment with multiple configurations throughout this lab.
+To help provide context and guidance while creating your first agent, please refer to the examples provided in [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/). (***open in new Tab for easy navigation***) Appendix B contains several pre-built prompt examples that demonstrate best practices for structuring agent instructions, defining scope, and setting expected behaviors. You are welcome to explore and create agents based on any of the examples listed, and you are encouraged to experiment with multiple configurations throughout this lab.
 
 However, for this first agent, please use the [**Meraki Daily Health Report**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent) example from Appendix B. This sample prompt is designed to instruct the agent to automatically gather and summarize key health metrics from your Meraki network environment — such as device connectivity status, alert summaries, and performance indicators — and present them in a structured, easy-to-read daily report format. Using this example as your starting point will ensure you have a consistent baseline configuration that aligns with the exercises and validation steps in the sections that follow.
 
@@ -64,7 +62,7 @@ On the **Agent Profile** page, configure the following:
 
 1. Set the **Description** to: "**Generates a Daily Meraki Health Report.**"
 
-1. Set the **Instructions Prompt** using the detailed sample prompt from [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent), which defines the agent's behavior and report structure.
+1. Set the **Instructions Prompt** using the detailed sample prompt from [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent), (***open in new Tab for easy navigation***) which defines the agent's behavior and report structure.
 
 Once you have reviewed all three fields and confirmed the information is correct, click **Continue** to proceed to the next step.
 

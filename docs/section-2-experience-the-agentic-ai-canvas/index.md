@@ -40,7 +40,7 @@ Once it completes, **spend some time exploring** the various capabilities of the
 
 1. Notice that you can toggle between **Default** and **Reasoning Mode**. See the detailed differences below:
 
-**Default Mode** uses a standard language model optimized for speed and general-purpose assistance. It is well-suited for everyday tasks such as writing boilerplate code, asking quick questions, getting explanations, or making minor code edits. Responses are generated quickly, making this mode ideal when you need fast, iterative feedback during active development.
+**Default Mode** uses a standard language model optimized for speed and general-purpose assistance. It is well-suited for everyday tasks, asking quick questions, and getting explanations. Responses are generated quickly, making this mode ideal when you need fast, iterative feedback.
 
 **Reasoning Mode** leverages a more advanced model capable of multi-step reasoning and complex problem analysis. This mode is better suited for tasks that require careful, methodical thinking, such as:
 
@@ -69,7 +69,7 @@ The scenario below involves a **Network Operator** who wants to perform Root Cau
 
 **Example sequence of prompts you can use:**
 
-**Prompt #1 **Summarize my Catalyst SD-WAN deploymentCopy
+**Prompt #1 **Summarize my Catalyst SD-WAN deployment
 
 **Prompt #2 **Give me the list of sites with low availability
 

@@ -20,11 +20,21 @@ This opens the Agent Builder **Overview** page. The top navigation bar has four 
 
 Next, notice the **Studio** overview page within Cisco Cloud Control, which serves as the central hub for building and managing AI agents. Observe the four navigation tabs at the top: **Overview**, **Integrations**, **Agent Builder**, and **Observability**.
 
-To begin building your first agent, **Click** **+ Create Agent** to launch the Agent Builder workflow, or click **+ Browse Integrations** to first explore the configured integrations that your could leverage.
+You will see one existing Agent that ends with (**GSX**) we will explore the agents output later. 
+
+To begin building your first agent, **Click** the ** Agent Builder **tab**.**
 
 ---
 
-![](../screenshots/a3a607641c.png)
+![](../screenshots/fc48237919.png)
+
+---
+
+** Click Create Agent** to launch the Agent Builder workflow.
+
+---
+
+![](../screenshots/bbd98b3b4f.png)
 
 ---
 
@@ -152,7 +162,7 @@ Studio runs through a **series of automated steps** that typically take one to a
 
 ---
 
-The **meraki-daily-health-report** agent has been successfully created and is now in **Draft** status, ready for validation. Review the Agent Summary panel on the right, which confirms that the agent is not yet deployed, is set to version **v1**, uses a **Scheduled** trigger, and is protected by **Cisco AI Defense**. Observe the connectors listed on the left, which include a variety of Meraki data retrieval and display actions that the agent will utilize when generating the daily health report. Click **Test Agent** to validate the agent's functionality before proceeding to deployment.
+The **meraki-daily-health-report** agent has been successfully created and is now in **Draft** status, ready for validation. Review the Agent Summary panel on the right, which confirms that the agent is not yet deployed, is set to version **v1**, uses a **Scheduled** trigger, and is protected by **Cisco AI Defense**. Observe the connectors listed on the left, which include a variety of Meraki data retrieval and display actions that the agent will utilize when generating the daily health report.
 
 ---
 
@@ -160,11 +170,16 @@ The **meraki-daily-health-report** agent has been successfully created and is no
 
 ---
 
-Next, inspect the **Live Test** panel, which allows you to validate the selected agent version against the registered runtime and inspect the execution trace. Enter the test prompt *"****Generate the Daily Meraki Health Report****"*  in the input field at the bottom of the panel.
+!!! warning "Caution"
+    We will not be testing the Agent live during this lab. Due to the scale of the lab environment, the testing experience is not representative of real-world conditions, as approximately 300 agents will be created simultaneously across all lab participants. This high volume of concurrent agent creation places unusual demand on the shared environment, which may result in degraded performance, unexpected errors, or inconsistent behavior that would not occur under normal circumstances. Therefore, **PLEASE DO NOT TEST** your agent at this time. The following section will walk you through the typical testing experience so you can familiarize yourself with the process and expected outcomes. Once you have reviewed the testing walkthrough, click **Overview** to return to the agent summary page and review your agent's configuration.
 
-Click the **Run Test** button to execute the agent and generate the daily Meraki health report. The results, including the agent response and full execution trace, will appear directly within this panel.
+**Sample Live Test:**
 
-There are also several pre-built scenarios you can run and explore the outputs of:
+Inspect the sample **Live Test** panel, which allows you to validate the selected agent version against the registered runtime and inspect the execution trace. Notice the test prompt *"****Generate the Daily Meraki Health Report****"*  in the input field at the bottom of the panel.
+
+The test is then executed and the agent generates the daily Meraki health report. The results, including the agent response and full execution trace, appear directly within this panel.
+
+Notice there are also several pre-built scenarios
 
 - Summarize Configuration
 
@@ -234,7 +249,7 @@ Once in production, you can:
 
 ---
 
-Finally, click back on the **Observability** tab. This section displays a summary of all agent execution metrics available for review.
+Next, **Click **back on the **Observability** tab. This section displays a summary of all agent execution metrics available for review.
 
 In the **Recent executions** table, you can see that our agent ran version **v1**, which was triggered by the **Scheduler** and completed with a status of **Passed**.
 
@@ -242,9 +257,19 @@ Click **Open run** to inspect the detailed execution trace and step-by-step resu
 
 ---
 
-![](../screenshots/ba7e6704e7.png)
+![](../screenshots/e84c0b801c.png)
 
 ---
+
+Finally, **click** the **Notifications Bell** icon located in the **top-right** corner of the Cloud Control interface. This is where the outputs and results generated by your Ambient Agent will appear once it has completed its assigned tasks. A **red dot** next to the bell icon indicates that new notifications are available. Locate the notification labeled **Agent Builder** — it will include a summary of the completed task and the name of the agent that generated it. **Click See Report**, then review the agent's findings, generated content, or recommended actions. Take a moment to verify that the output aligns with the instructions and goals you configured for the agent.
+
+---
+
+![](../screenshots/ec3c34f2a5.png)
+
+---
+
+![](../screenshots/6b8b645c42.png)
 
 !!! abstract "Congratulations"
     Excellent work completing Section 3! You have successfully built, tested, and promoted your first production AI agent on Cisco Cloud Control — taking it all the way from a blank profile to a live, scheduled agent running autonomously in production. The skills you just practiced are exactly what you will need to tackle the Team Challenge ahead. 🎉

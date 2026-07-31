@@ -30,7 +30,7 @@ To begin building your first agent, **Click** the **Agent Builder **tab**.**
 
 ---
 
-** Click Create Agent** to launch the Agent Builder workflow.
+** Click Create Agent **to launch the Agent Builder workflow.
 
 ---
 

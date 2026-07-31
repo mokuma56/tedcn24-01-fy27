@@ -52,24 +52,20 @@ Not all products listed above will be actively used in every section of this lab
 
 ## Step 2: Logging into with your assigned Cloud Control user and exploring the Home Screen
 
-Open a web browser and navigate to the lab landing page at: [http://cs.co/TEDC24](https://dcloud2-rtp.cisco.com/content/instantdemo/cisco-cloud-control-for-ai-canvas-team?returnPathTitleKey=content-view) . Then **Click** View.
+Open a web browser and navigate to the lab landing page at: [http://cs.co/tedc24-lab](https://idac.cat-dcloud.com/api/v2.0/request/stateless/0?owner=dschuema&recipeName=c3-instant-v2-gsx-v2&recipePath=sec/&dc=sjc)
 
 ---
 
-![](../screenshots/554d865750.png)
+Next, **locate **your assigned **POD** and click **Login to POD **to authenticate and log in.
 
 ---
 
-Next, **Click** on your assigned **user credentials **and click **Sign In** to authenticate and login.
-
----
-
-![](../screenshots/6afb15a844.png)
+![](../screenshots/d70ee2d9ef.png)
 
 ---
 
 !!! info "Note"
-    If you are unable to locate your POD login credentials, please contact a proctor. Please use caution and verify you are logging into your assigned POD, as this will ensure a successful lab experience for all.
+    If you are unable to locate your assigned POD, please contact a proctor. Please use caution and verify you are logging into your assigned POD, as this will ensure a successful lab experience for all.
 
 ---
 

@@ -22,7 +22,7 @@ Next, notice the **Studio** overview page within Cisco Cloud Control, which serv
 
 You will see one existing Agent that ends with (**GSX**) we will explore the agents output later. 
 
-To begin building your first agent, **Click** the ** Agent Builder **tab**.**
+To begin building your first agent, **Click** the **Agent Builder **tab**.**
 
 ---
 
@@ -166,7 +166,7 @@ The **meraki-daily-health-report** agent has been successfully created and is no
 
 ---
 
-![](../screenshots/35a9518f19.png)
+![](../screenshots/af6c7aa8d7.png)
 
 ---
 

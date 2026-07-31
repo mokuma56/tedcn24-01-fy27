@@ -201,20 +201,7 @@ Click **Show Device Inventory** or select an alternative view to change the disp
 
 ---
 
-Practice using the **AI-assisted search** functionality within the Inventory section. **Collaborate** with your team to explore the available Inventory capabilities, including filtering, sorting, and device categorization options.
-
-**1.** Enter the sample prompt below into the AI-Assisted Search and press Enter:
-
-```
-show me my Mexico City Devices
-```
-
-**2.** **Click** the **C9300-X-Leaf-1** switch to view it.
-
-**3.** Observe the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your **C9300-X-Leaf-1** switch. Review the **General** tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows ***Reachable***, indicating the device is actively communicating with the management platform, and that the Compliance status shows ***Compliant***, confirming the device configuration meets your organisation's defined policy standards.
-
-**4.** **Click** **View in Topology**. This will take you directly to the switch in the Global Topology Service.
-
+Practice using the **AI-assisted search** functionality within the Inventory section. **Collaborate** with your team to explore the available Inventory capabilities, including filtering, sorting, and device categorization options. **1.** Enter the sample prompt below into the AI-Assisted Search and press Enter: ``` show me my Mexico City Devices ``` **2.** **Click** the **C9300-X-Leaf-1** switch to view it. **3.** Review the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your **C9300-X-Leaf-1** switch. Review the **General** tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows ***Reachable***, indicating the device is actively communicating with the management platform, and that the Compliance status shows ***Compliant***, confirming the device configuration meets your organizations defined policy standards. **4.** **Click** **View in Topology**. This will take you directly to the switch in the Global Topology Service.
 
 ---
 
@@ -230,7 +217,7 @@ To demonstrate the seamless pivot to the** Mexico City** network, **Click Meraki
 
 ![](../screenshots/8668d35970.png)
 
-This action opens the Meraki Dashboard in context for the selected device, demonstrating the seamless cross-platform navigation capability within Cisco Cloud Control.
+This action opens the Meraki Dashboard in context for the selected site, demonstrating the seamless cross-platform navigation capability within Cisco Cloud Control.
 
 This integration allows network administrators to move fluidly between unified inventory management and platform-specific dashboards without separately logging in or searching for the device within Meraki.
 

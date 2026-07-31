@@ -75,6 +75,13 @@ The scenario below involves a **Network Operator** who wants to perform Root Cau
 
 **Prompt #3 **I can see that Site_101 has 0% availability. Help me troubleshoot and identify the root cause
 
+---
+
+!!! info "Note"
+    Actual responses will vary due to the nature of Agentic Systems
+
+---
+
 **Example screenshots below:**
 
 ---

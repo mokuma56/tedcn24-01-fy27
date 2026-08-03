@@ -59,9 +59,7 @@ Once it completes, **spend some time exploring** the various capabilities of the
 
 ---
 
-The** final step** in this section is to review the **Sample Customer Scenarios** in **Appendix C**. Select one scenario, create a **New Canvas**, and use **defaut or reasoning **to identify the root cause analysis **(RCA)** for the given scenario. Collaborate with your team and share your successes. 
-
-**Next  is an example of how to work through an RCA using AI Canvas**
+Finally, **review the example** below of using Canvas to arrive at a **root cause analysis (RCA) **for a given scenario.
 
 ---
 

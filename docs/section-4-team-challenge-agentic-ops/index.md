@@ -5,7 +5,7 @@ In this section, teams will compete in two hands-on challenges that put their AI
 ---
 
 !!! team-challenge "🏆 Team Challenge — AI Canvas RCA"
-    Work as a team to craft the most effective AI Canvas prompts for your assigned lab pod scenario. Your goal is to engineer a prompt — or a sequence of prompts — that produces a comprehensive **Root Cause Analysis (RCA)** for a real network or security issue relevant to your environment.
+    Work as a team to craft the most effective AI Canvas prompts to solve one of the  scenarios in Appendix C. Your goal is to engineer a prompt — or a sequence of prompts — that produces a comprehensive **Root Cause Analysis (RCA)** for a real network or security issue relevant to your environment.
 
     A strong RCA should clearly identify:
 

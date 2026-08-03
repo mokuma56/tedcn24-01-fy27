@@ -1,6 +1,6 @@
 # Appendix B: Sample Agent Prompts
 
-## Step 1: Agent Instruction Prompts for Agent Builder
+## Agent Instruction Prompts for Agent Builder
 
 
 

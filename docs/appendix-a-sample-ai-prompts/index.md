@@ -1,6 +1,6 @@
 # Appendix A: Sample AI Prompts
 
-## Step 1: Sample Prompts for AI Assistant and Agentic Canvas
+## Sample Prompts for AI Assistant and Agentic Canvas
 
 
 

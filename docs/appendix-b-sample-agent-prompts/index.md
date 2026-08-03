@@ -132,7 +132,7 @@ Keep it concise and scannable. Prefer tables over long paragraphs.</pre>
 
 ### What This Agent Does
 
-The **Intersight Server Health Report** agent (`intersight-server-health-report`) gives you a complete snapshot of every server managed by Cisco Intersight in your tenant — both blade and rack-mount compute — in a single structured table. It runs on a schedule and automatically flags any server that is not healthy or not powered on, so your team never has to manually check each server individually.
+The **Intersight Server Health Report** agent (`intersight-server-health-report-Your-CCO-ID`) gives you a complete snapshot of every server managed by Cisco Intersight in your tenant — both blade and rack-mount compute — in a single structured table. It runs on a schedule and automatically flags any server that is not healthy or not powered on, so your team never has to manually check each server individually.
 
 Each time the agent runs it produces:
 
@@ -146,7 +146,7 @@ This agent is ideal for **hourly infrastructure monitoring**, **pre-maintenance 
 
 | Field | Value |
 | --- | --- |
-| **Agent Name** | `intersight-server-health-report` |
+| **Agent Name** | `intersight-server-health-report-Your-CCO-ID` |
 | **Trigger** | Ambient (scheduled — recommended: hourly) |
 | **Integration Required** | Cisco Intersight |
 | **Output Format** | Markdown table + summary |

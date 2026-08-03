@@ -14,7 +14,7 @@ Use these prompts as a foundation. You can copy them directly into Agent Builder
 
 ### What This Agent Does
 
-The **Meraki Daily Health Report** agent (`meraki-daily-health-report`) is designed to run on a recurring schedule and automatically generate a comprehensive operational health report for your entire Meraki organization. Instead of manually checking dashboards each morning, this agent retrieves live data across five key areas and assembles them into a single structured report your team can act on immediately.
+The **Meraki Daily Health Report** agent (`meraki-daily-health-report-Your-CCO-ID`) is designed to run on a recurring schedule and automatically generate a comprehensive operational health report for your entire Meraki organization. Instead of manually checking dashboards each morning, this agent retrieves live data across five key areas and assembles them into a single structured report your team can act on immediately.
 
 Each time the agent runs it produces:
 
@@ -31,7 +31,7 @@ This agent is ideal for **daily NOC briefings**, **customer health reviews**, or
 
 | Field | Value |
 | --- | --- |
-| **Agent Name** | `meraki-daily-health-report` |
+| **Agent Name** | `meraki-daily-health-report-Your-CCO-ID` |
 | **Trigger** | Ambient (scheduled — recommended: daily) |
 | **Integration Required** | Meraki Dashboard |
 | **Output Format** | Structured Markdown report |

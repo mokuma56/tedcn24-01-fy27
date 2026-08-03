@@ -193,7 +193,7 @@ Next, explore the available capabilities. Review the Inventory Insights dashboar
 
 ---
 
-Click **Show Device Inventory** or select an alternative view to change the display format.
+Click **Show Devices** or select an alternative view to change the display format.
 
 ---
 

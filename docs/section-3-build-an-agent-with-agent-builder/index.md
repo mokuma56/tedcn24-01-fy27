@@ -40,10 +40,10 @@ To begin building your first agent, **Click** the **Agent Builder **tab**.**
 
 Agent creation has three steps: **Agent Profile → Triggers → Review**.
 
-### Step 1: Agent Profile
+### Agent Profile
 
-| Field | Required | Description |
-| --- | --- | --- |
+| FieldRequiredDescription |
+| --- |
 | **Agent Name** | Yes | A clear, descriptive name for the agent |
 | **Description** | No | A short summary of what the agent does — displayed on the agent card |
 | **Instructions** | Yes | The system prompt — detailed instructions defining what the agent should do, what data to retrieve, and how to format its output |

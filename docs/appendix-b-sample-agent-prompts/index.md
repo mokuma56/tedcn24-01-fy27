@@ -65,7 +65,7 @@ Format the entire report using clear markdown headers for each section. Use tabl
 
 ### What This Agent Does
 
-The **Cross-Domain Infrastructure Health Report** agent (`cross-domain-infrastructure-health-report`) produces a single unified view of your entire Cisco infrastructure across three domains in one report. Instead of checking Intersight, Nexus Dashboard, and Meraki separately, this agent pulls data from all three simultaneously and surfaces any unhealthy device — regardless of domain — in a single consolidated flags table.
+The **Cross-Domain Infrastructure Health Report** agent (`cross-domain-infrastructure-health-report-Your-CCO-ID`) produces a single unified view of your entire Cisco infrastructure across three domains in one report. Instead of checking Intersight, Nexus Dashboard, and Meraki separately, this agent pulls data from all three simultaneously and surfaces any unhealthy device — regardless of domain — in a single consolidated flags table.
 
 Each time the agent runs it produces:
 
@@ -80,7 +80,7 @@ This agent is ideal for **daily infrastructure stand-ups**, **NOC dashboards**, 
 
 | Field | Value |
 | --- | --- |
-| **Agent Name** | `cross-domain-infrastructure-health-report` |
+| **Agent Name** | `cross-domain-infrastructure-health-report-Your-CCO-ID` |
 | **Trigger** | Ambient (scheduled — recommended: daily or hourly) |
 | **Integrations Required** | Intersight, Nexus Hyperfabric, Nexus Dashboard, Meraki |
 | **Output Format** | Structured Markdown report with tables |

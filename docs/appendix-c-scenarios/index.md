@@ -4,10 +4,6 @@ This appendix contains the two scenario briefs for the Section 4 Team Challenge.
 
 ## Scenario 1 — Buenos Aires
 
-**Scenario 1 — Buenos Aires**
-
----
-
 **The Situation**
 
 It is Monday morning and the Buenos Aires branch is on fire. Complaints are flooding the helpdesk — users cannot reach internal applications, VoIP calls are dropping mid-session, and the NOC dashboard is lit with alerts. A change window ran over the weekend: a new access switch was added to the floor and a firewall policy update was pushed. Nothing has been formally verified since. Your team has full access to the Cisco Cloud Control environment — Meraki, ThousandEyes, Catalyst SD-WAN, and AI Canvas — and no one has touched a CLI. It is your job to figure out what happened.
@@ -20,7 +16,8 @@ Use AI Canvas in Cisco Cloud Control to investigate the Buenos Aires site, ident
 
 ---
 
-> **⚠ There are 6 active fault conditions at this site. Your team must identify all of them.**
+!!! warning "Active Fault Conditions"
+    There are **6 active fault conditions** at this site. Your team must identify all of them.
 
 ---
 
@@ -45,13 +42,9 @@ When you are ready to present, your proctor will ask you to:
 
 ---
 
-*If your team gets stuck, refer to Appendix D: Investigation Guide for a worked example using this scenario.*
+*If your team gets stuck, refer to [Appendix D: Investigation Guide](../appendix-d-investigation-guide/) for a worked example using this scenario.*
 
 ## Scenario 2 — Mexico City
-
-**Scenario 2 — Mexico City: Partial Outage, Silent Device, Post-Maintenance Fallout**
-
----
 
 **The Situation**
 
@@ -65,27 +58,30 @@ Use AI Canvas in Cisco Cloud Control to investigate the Mexico City site, identi
 
 ---
 
-> **There are 3 active fault conditions at this site. Your team must identify all of them.**
+!!! warning "Active Fault Conditions"
+    There are **3 active fault conditions** at this site. Your team must identify all of them.
 
 ---
 
 **What a Strong RCA Looks Like**
 
-- **Problem statement:** What is happening, where it is happening, and when it started.
-- **Contributing factors:** The conditions that led to or worsened the outage.
-- **Root cause(s):** The underlying reason — and whether a single thread connects all three faults.
-- **Impact assessment:** Who is affected, how severely, and what the difference is between partial and full loss of service.
-- **Remediation steps:** Clear, prioritized, actionable next steps for each fault condition.
+- **Problem statement** — what is happening and where
+- **Contributing factors** — conditions that led to or worsened the issue
+- **Root cause(s)** — the underlying reason the issue occurred
+- **Impact assessment** — what is affected and how severely
+- **Recommended remediation steps** — clear, actionable next steps
 
 ---
 
 **Proctor Presentation**
 
-- Walk through your prompt approach and explain any iterations or pivots you made during the investigation.
-- Describe the relationships you found between the three fault conditions.
-- Present your complete RCA covering all three faults.
-- Explain how you would walk a customer through this investigation in a live demo context.
+When you are ready to present, your proctor will ask you to:
+
+- Walk through your prompt approach and explain any iterations or pivots you made during the investigation
+- Describe the relationships you found between the fault conditions
+- Present your complete RCA covering all fault conditions
+- Explain how you would walk a customer through this investigation in a live demo context
 
 ---
 
-*If your team gets stuck, refer to Appendix D: Investigation Guide for a worked example using this scenario.*
+*If your team gets stuck, refer to [Appendix D: Investigation Guide](../appendix-d-investigation-guide/) for a worked example using this scenario.*

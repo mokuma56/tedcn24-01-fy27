@@ -10,7 +10,8 @@ This appendix contains a worked example investigation for each Appendix C scenar
 
 ---
 
-> **Note:** This guide shows one effective path through the investigation. It is not the only valid approach — your team may have found the same faults through a different sequence. Use this to compare strategies, not to check a single right answer.
+!!! warning "Note"
+    This guide shows one effective path through the investigation. It is not the only valid approach — your team may have found the same faults through a different sequence. Use this to compare strategies, not to check a single right answer.
 
 ---
 
@@ -101,7 +102,8 @@ Correlate the STP topology changes, Root Guard activation, and port discard even
 
 ---
 
-> **Note:** This guide shows one effective path through the investigation. It is not the only valid approach — your team may have found the same faults through a different sequence. Use this to compare strategies, not to check a single right answer.
+!!! warning "Note"
+    This guide shows one effective path through the investigation. It is not the only valid approach — your team may have found the same faults through a different sequence. Use this to compare strategies, not to check a single right answer.
 
 ---
 

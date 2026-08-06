@@ -33,10 +33,6 @@ The following products and controllers are available in your environment:
 
 - **Cisco Meraki** — Cloud-managed networking including switching, wireless, and SD-WAN, integrated directly into Cloud Control.
 
-- **Cisco Intersight** — Unified infrastructure management for compute, storage, and HCI across on-premises and cloud.
-
-- **Cisco Nexus Dashboard** — Centralized operations hub for data center networking, providing analytics, orchestration, and insights.
-
 - **Nexus Hyperfabric** — A cloud-managed, AI-driven data center fabric solution for simplified network operations.
 
 - **Cisco Collaboration Control Hub** *(formerly Webex Control Hub)* — The administration portal for managing Webex collaboration services, users, and devices at scale.

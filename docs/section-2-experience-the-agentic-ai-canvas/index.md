@@ -63,7 +63,7 @@ Finally, **review the example** below of using Canvas to arrive at a **root caus
 
 ---
 
-The scenario below involves a **Network Operator** who wants to perform Root Cause Analysis (**RCA**) on **SD-WAN sites that are down**. The progression of prompts used is outlined below, and the screenshots are provided for your reference. Please use the scenarios in **Appendix C for your actual RCA**.
+The scenario below involves a **Network Operator** who wants to perform Root Cause Analysis (**RCA**) on **SD-WAN sites that are down**. The progression of prompts used is outlined below, and the screenshots are provided for your reference. ** **
 
 **Example sequence of prompts you can use:**
 

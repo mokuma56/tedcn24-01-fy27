@@ -115,11 +115,11 @@ Are there any outages affecting my monitored services right now?
 ```
 
 ```
-Is my data center fabric healthy right now?
+What are the current latency and packet loss metrics for my critical tests?
 ```
 
 ```
-why can lee chang not access jira via ZTA in secure access?
+What is the current status of all my site-to-site VPN tunnels?
 ```
 
 ---
@@ -177,6 +177,11 @@ Explore the three main sections available on the platform.
 
 ---
 
+!!! warning "Caution"
+    Due to the scale constraints of this lab, Intersight and Nexus Dashboard products are not available as managed Products.
+
+---
+
 ## Step 4: Explore Inventory Capabilities
 
 Navigate to the **Inventory** section of Cisco Cloud Control to explore the available inventory capabilities.
@@ -193,11 +198,11 @@ Next, explore the available capabilities. Review the Inventory Insights dashboar
 
 ---
 
-Click **Show Devices** or select an alternative view to change the display format.
+**Click** the alternative view to display the full inventory.
 
 ---
 
-![](../screenshots/bd8aee830c.png)
+![](../screenshots/ddc3fd3fae.png)
 
 ---
 

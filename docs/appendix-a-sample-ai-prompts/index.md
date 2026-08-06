@@ -4,6 +4,9 @@
 
 
 
+!!! warning "Caution"
+    Due to the scale constraints of this lab, Intersight and Nexus Dashboard products are not available for testing prompts. Please consider them references for the normal dCloud demo environment.
+
 This appendix contains a curated collection of **known-good prompts** that have been tested and validated within this lab environment. These prompts are designed to be used directly with the **AI Assistant** or the **AI Agentic Canvas** inside Cisco Cloud Control to produce high-quality, actionable results.
 
 Throughout the lab, you will find references back to this appendix for relevant prompts at each stage. You are encouraged to use these prompts as a starting point — experiment with variations, combine them, or use them as inspiration for building your own agentic workflows. The more you interact with the AI interfaces using well-formed prompts, the richer the outputs you will receive.

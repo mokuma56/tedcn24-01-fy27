@@ -59,7 +59,7 @@ Once it completes, **spend some time exploring** the various capabilities of the
 
 ---
 
-Finally, **review the example** below of using Canvas to arrive at a **root cause analysis (RCA) **for a given scenario.
+Finally, **review the example** below of using Canvas to arrive at a **root cause analysis (RCA)** for a given scenario. Due to time constraints, we will **NOT** be running the prompts below — they are provided for your reference and for when you demo to customers in the future. Please just review the example.
 
 ---
 

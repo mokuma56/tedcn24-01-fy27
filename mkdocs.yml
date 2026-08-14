@@ -34,6 +34,8 @@ extra:
   generator: false
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/links.js
 plugins:
   - search
   - glightbox:

@@ -55,7 +55,7 @@ Agent creation has three steps: **Agent Profile → Triggers → Review**.
 
 ---
 
-To help provide context and guidance while creating your first agent, please refer to the examples provided in [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/). (***open in new Tab for easy navigation***) Appendix B contains several pre-built prompt examples that demonstrate best practices for structuring agent instructions, defining scope, and setting expected behaviors. You are welcome to explore and create agents based on any of the examples listed, and you are encouraged to experiment with multiple configurations throughout this lab.
+To help provide context and guidance while creating your first agent, please refer to the examples provided in [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/). (***opens in new Tab for easy navigation***) Appendix B contains several pre-built prompt examples that demonstrate best practices for structuring agent instructions, defining scope, and setting expected behaviors. You are welcome to explore and create agents based on any of the examples listed, and you are encouraged to experiment with multiple configurations throughout this lab.
 
 However, for this first agent, please use the [**Meraki Daily Health Report**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent) example from Appendix B. This sample prompt is designed to instruct the agent to automatically gather and summarize key health metrics from your Meraki network environment — such as device connectivity status, alert summaries, and performance indicators — and present them in a structured, easy-to-read daily report format. Using this example as your starting point will ensure you have a consistent baseline configuration that aligns with the exercises and validation steps in the sections that follow.
 
@@ -67,7 +67,7 @@ On the **Agent Profile** page, configure the following:
 
 1. Set the **Description** to: "**Generates a Daily Meraki Health Report.**"
 
-1. Set the **Instructions Prompt** using the detailed sample prompt from [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent), (***open in new Tab for easy navigation***) which defines the agent's behavior and report structure.
+1. Set the **Instructions Prompt** using the detailed sample prompt from [**Appendix B: Sample Agent Prompts**](../appendix-b-sample-agent-prompts/#meraki-daily-health-report-agent), (***opens in new Tab for easy navigation***) which defines the agent's behavior and report structure.
 
 Once you have reviewed all three fields and confirmed the information is correct, click **Continue** to proceed to the next step.
 

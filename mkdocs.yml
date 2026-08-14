@@ -1,0 +1,80 @@
+---
+dev_addr: "0.0.0.0:8000"
+site_name: " (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework"
+site_description: " (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework"
+site_author: "Cisco"
+copyright: Copyright &copy; 2024 Cisco
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - navigation.expand
+    - search.suggest
+    - content.code.copy
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: template_assets/cisco_logo.png
+  favicon: template_assets/cisco_logo.png
+extra:
+  generator: false
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: false
+      auto_caption: true
+      caption_position: top
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - tables
+  - toc:
+      toc_depth: 2
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+nav:
+  - Home: index.md
+  - Introduction: introduction/index.md
+  - "Section 1: Explore the LAB and Cloud Control Capabilities": section-1-explore-the-lab-and-cloud-control-capabilities/index.md
+  - "Section 2: Experience the Agentic AI Canvas": section-2-experience-the-agentic-ai-canvas/index.md
+  - "Section 3: Build an Agent with Agent Builder": section-3-build-an-agent-with-agent-builder/index.md
+  - "Section 4: Team Challenge - Agentic Ops": section-4-team-challenge-agentic-ops/index.md
+  - "Appendix A: Sample AI Prompts": appendix-a-sample-ai-prompts/index.md
+  - "Appendix B: Sample Agent Prompts": appendix-b-sample-agent-prompts/index.md
+  - "Appendix C: Scenarios": appendix-c-scenarios/index.md
+  - "Appendix D: Investigation Guide": appendix-d-investigation-guide/index.md
+  - Conclusion: conclusion/index.md
+

@@ -35,4 +35,4 @@ In this hands-on lab you will experience Cisco Cloud Control end-to-end across i
 - Learn the  use of Cloud Control capabilities
 - Learn the Agentic AI Canvas capabilities within Cloud Control
 - Create and test an Ambient agent with a profile, trigger, and cadence
-- [Optional Challenge] Students will collaborate and share effective AI prompts to generate a RCA using AI Canvas tools. The outcome of this challenge will help participants to deliver more effective demos using dCloud
+- [Optional Challenge] Students will collaborate and share effective AI prompts to generate a RCA (root cause analysis) using AI Canvas tools. The outcome of this challenge will help participants to deliver more effective demos using dCloud

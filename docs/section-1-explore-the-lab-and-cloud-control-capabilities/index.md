@@ -7,7 +7,7 @@ In this section, you will discover how Cloud Control streamlines the management 
 
 
 !!! info "Note"
-    This lab is based on the dCloud **"Cisco Cloud Control: AgenticOps in Action"** experience. Your assigned login has been provisioned with elevated permissions that unlock advanced capabilities beyond the standard dCloud environment — most notably **Agent Studio**, which is the primary focus of this lab.
+    This lab is based on the dCloud **"Cisco Cloud Control: AgenticOps in Action"** experience. Your assigned login has been provisioned with elevated permissions that unlock advanced capabilities beyond the standard dCloud environment — most notably **Agent Studio.**
 
     These special permissions allow you to build, test, and deploy agentic workflows across the Cisco Cloud Control platform in ways that reflect real-world production use cases. Throughout this lab, you will move from exploration to hands-on creation, gaining practical experience with the tools and services that power Cisco's Agentic Operations framework.
 
@@ -33,10 +33,6 @@ The following products and controllers are available in your environment:
 
 - **Cisco Meraki** — Cloud-managed networking including switching, wireless, and SD-WAN, integrated directly into Cloud Control.
 
-- **Cisco Intersight** — Unified infrastructure management for compute, storage, and HCI across on-premises and cloud.
-
-- **Cisco Nexus Dashboard** — Centralized operations hub for data center networking, providing analytics, orchestration, and insights.
-
 - **Nexus Hyperfabric** — A cloud-managed, AI-driven data center fabric solution for simplified network operations.
 
 - **Cisco Collaboration Control Hub** *(formerly Webex Control Hub)* — The administration portal for managing Webex collaboration services, users, and devices at scale.
@@ -52,7 +48,7 @@ Not all products listed above will be actively used in every section of this lab
 
 ## Step 2: Logging into with your assigned Cloud Control user and exploring the Home Screen
 
-Open a web browser and navigate to the lab landing page at: [http://cs.co/tedc24-lab](https://idac.cat-dcloud.com/api/v2.0/request/stateless/0?owner=dschuema&recipeName=c3-instant-v2-gsx-v2&recipePath=sec/&dc=sjc)
+Open a web browser and navigate to the lab landing page at: [http://cs.co/tedc24-lab](https://idac.cat-dcloud.com/api/v2.0/request/stateless/0?owner=dschuema&recipeName=c3-instant-v2-gsx-v2&recipePath=sec/&dc=sjc)  (opens in new window)
 
 ---
 
@@ -83,7 +79,7 @@ After logging in, explore the three sections on the home screen.
 
 ---
 
-Next, navigate to [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) (***open in new Tab for easy navigation***) and spend time running the validated prompts for this environment. Use the **copy button** on each prompt block to paste directly into the AI Assistant or Agentic Canvas — this ensures accuracy and eliminates the risk of transcription errors. As you work through each prompt, observe how the system interprets the input, what format the response takes, and how quickly results are returned.
+Next, navigate to [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) (***opens in new Tab for easy navigation***) and spend time running the validated prompts for this environment. Use the **copy button** on each prompt block to paste directly into the AI Assistant or Agentic Canvas — this ensures accuracy and eliminates the risk of transcription errors. As you work through each prompt, observe how the system interprets the input, what format the response takes, and how quickly results are returned.
 
 The goal of this exercise is to thoroughly prepare yourself for live customer demonstrations by building familiarity and confidence with a core set of prompts that consistently produce clear, accurate, and compelling results. Consider the following as you explore:
 
@@ -102,7 +98,7 @@ Take as much time as needed during this section to become comfortable with the m
 ---
 
 !!! tip "Tip"
-    You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) (***open in new Tab for easy navigation***) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
+    You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) (***opens in new Tab for easy navigation***) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
 
 ---
 
@@ -115,11 +111,11 @@ Are there any outages affecting my monitored services right now?
 ```
 
 ```
-Is my data center fabric healthy right now?
+What are the current latency and packet loss metrics for my critical tests?
 ```
 
 ```
-why can lee chang not access jira via ZTA in secure access?
+What is the current status of all my site-to-site VPN tunnels?
 ```
 
 ---
@@ -173,6 +169,11 @@ Explore the three main sections available on the platform.
 
 ---
 
+!!! warning "Caution"
+    Due to the scale constraints of this lab, Intersight and Nexus Dashboard products are not available as managed Products.
+
+---
+
 ![](../screenshots/8e31effd5c.png)
 
 ---
@@ -193,15 +194,28 @@ Next, explore the available capabilities. Review the Inventory Insights dashboar
 
 ---
 
-Click **Show Devices** or select an alternative view to change the display format.
+**Click** the alternative view to display the full inventory.
 
 ---
 
-![](../screenshots/bd8aee830c.png)
+![](../screenshots/ddc3fd3fae.png)
 
 ---
 
-Practice using the **AI-assisted search** functionality within the Inventory section. **Collaborate** with your team to explore the available Inventory capabilities, including filtering, sorting, and device categorization options. **1.** Enter the sample prompt below into the AI-Assisted Search and press Enter: ``` show me my Mexico City Devices ``` **2.** **Click** the **C9300-X-Leaf-1** switch to view it. **3.** Review the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your **C9300-X-Leaf-1** switch. Review the **General** tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows ***Reachable***, indicating the device is actively communicating with the management platform, and that the Compliance status shows ***Compliant***, confirming the device configuration meets your organizations defined policy standards. **4.** **Click** **View in Topology**. This will take you directly to the switch in the Global Topology Service.
+Practice using the **AI-assisted search** functionality within the Inventory section. **Collaborate** with your team to explore the available Inventory capabilities, including filtering, sorting, and device categorization options.
+
+**1.** Enter the sample prompt below into the AI-Assisted Search and press Enter:
+
+```
+show me my Mexico City Devices
+```
+
+**2.** **Click** the **C9300-X-Leaf-1** switch to view it.
+
+**3.** Review the device details panel that opens on the right side of the screen. This panel displays comprehensive information for your **C9300-X-Leaf-1** switch. Review the **General** tab, which provides a high-level device overview including key operational indicators. Confirm that the Reachability status shows ***Reachable***, indicating the device is actively communicating with the management platform, and that the Compliance status shows ***Compliant***, confirming the device configuration meets your organisation's defined policy standards.
+
+**4.** **Click** **View in Topology**. This will take you directly to the switch in the Global Topology Service.
+
 
 ---
 

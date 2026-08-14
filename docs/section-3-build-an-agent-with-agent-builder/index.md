@@ -10,15 +10,13 @@ First, we will navigate to Agent Builder:
 
 1. If **Studio** has been pinned, you can also click it directly from the header.
 
-This opens the Agent Builder **Overview** page. The top navigation bar has four tabs: **Overview**, **Integrations**, **Agent Builder**, and **Observability**.
+---
+
+![](../screenshots/d7e249db50.png)
 
 ---
 
-![](../screenshots/c28bc4c371.png)
-
----
-
-Next, notice the **Studio** overview page within Cisco Cloud Control, which serves as the central hub for building and managing AI agents. Observe the four navigation tabs at the top: **Overview**, **Integrations**, **Agent Builder**, and **Observability**.
+This opens the **Studio** overview page within Cisco Cloud Control, which serves as the central hub for building and managing AI agents. Observe the four navigation tabs at the top: **Overview**, **Integrations**, **Agent Builder**, and **Observability**.
 
 You will see one existing Agent that ends with (**GSX**) we will explore the agents output later. 
 
@@ -42,8 +40,8 @@ Agent creation has three steps: **Agent Profile → Triggers → Review**.
 
 ### Agent Profile
 
-| FieldRequiredDescription |
-| --- |
+| Field | Required | Description |
+| --- | --- | --- |
 | **Agent Name** | Yes | A clear, descriptive name for the agent |
 | **Description** | No | A short summary of what the agent does — displayed on the agent card |
 | **Instructions** | Yes | The system prompt — detailed instructions defining what the agent should do, what data to retrieve, and how to format its output |
@@ -51,10 +49,9 @@ Agent creation has three steps: **Agent Profile → Triggers → Review**.
 **Tips for writing effective instructions:**
 
 - Be specific about what data to retrieve and from which source
-
 - Specify the output format (e.g., a table with defined columns)
-
 - Include thresholds or conditions to flag (e.g., "flag any incident not updated in the last 4 hours")
+
 
 ---
 
@@ -93,6 +90,8 @@ On the triggers configuration page, configure the following agent settings:
 
 - Set the Local run time to **09:00 AM**
 
+- Leave the Max recurrences **set to 5**
+
 This means the agent will run **automatically every day at 9:00 AM local time**.
 
 In the Trigger prompt field, enter **"Generate the Meraki Daily Health Report"**. This defines the instruction the agent will execute during its scheduled runs.
@@ -101,7 +100,7 @@ Click the **Continue** button in the bottom-right corner of the screen to procee
 
 ---
 
-![](../screenshots/77e1e18a53.png)
+![](../screenshots/fa375513ff.png)
 
 ---
 
@@ -162,52 +161,25 @@ Studio runs through a **series of automated steps** that typically take one to a
 
 ---
 
-The **meraki-daily-health-report** agent has been successfully created and is now in **Draft** status, ready for validation. Review the Agent Summary panel on the right, which confirms that the agent is not yet deployed, is set to version **v1**, uses a **Scheduled** trigger, and is protected by **Cisco AI Defense**. Observe the connectors listed on the left, which include a variety of Meraki data retrieval and display actions that the agent will utilize when generating the daily health report.
+The **meraki-daily-health-report** agent has been successfully created and is now in **Draft** status, ready for validation. Review the Agent Summary panel on the right, which confirms that the agent is not yet deployed, is set to version **v1**, uses a **Scheduled** trigger, and is protected by **Cisco AI Defense**. Click **View Agent** to view the details of your agent.  (**We will NOT be testing the Agent**)
 
 ---
 
-![](../screenshots/af6c7aa8d7.png)
+!!! info "Note"
+    We will **NOT** be testing our agent in this lab. Instead, after reviewing and promoting your agent, you will examine a pre-built agent that is already running, called **meraki-daily-health-report-GSX**
+
+---
+
+![](../screenshots/7437c5c6c9.png)
 
 ---
 
 !!! warning "Caution"
-    We will not be testing the Agent live during this lab. Due to the scale of the lab environment, the testing experience is not representative of real-world conditions, as approximately 300 agents will be created simultaneously across all lab participants. This high volume of concurrent agent creation places unusual demand on the shared environment, which may result in degraded performance, unexpected errors, or inconsistent behavior that would not occur under normal circumstances. Therefore, **PLEASE DO NOT TEST** your agent at this time. The following section will walk you through the typical testing experience so you can familiarize yourself with the process and expected outcomes. Once you have reviewed the testing walkthrough, click **Overview** to return to the agent summary page and review your agent's configuration.
-
-**Sample Live Test:**
-
-Inspect the sample **Live Test** panel, which allows you to validate the selected agent version against the registered runtime and inspect the execution trace. Notice the test prompt *"****Generate the Daily Meraki Health Report****"*  in the input field at the bottom of the panel.
-
-The test is then executed and the agent generates the daily Meraki health report. The results, including the agent response and full execution trace, appear directly within this panel.
-
-Notice there are also several pre-built scenarios
-
-- Summarize Configuration
-
-- Explain Guardrails
-
-- Run Readiness Check
+    We will not be testing the Agent live during this lab. Due to the scale of the lab environment, the testing experience is not representative of real-world conditions, as hundreds of agents will be created simultaneously across all lab participants. This high volume of concurrent agent creation places unusual demand on the shared environment, which may result in degraded performance, unexpected errors, or inconsistent behavior that would not occur under normal circumstances. Therefore, **PLEASE DO NOT TEST** your agent at this time.
 
 ---
 
-![](../screenshots/4a5ff1788a.png)
-
----
-
-Next, review that the **Live Test** has successfully executed the agent, displaying the generated **Daily Meraki Health Report**. Review the key findings highlighted in the summary report.
-
----
-
-![](../screenshots/2ca1a13dd7.png)
-
----
-
-Next, we will review the Agent configuration and then promote the agent to production.
-
-First, **click** back to the **Overview** page, then **click** on the newly created agent to open it.
-
----
-
-![](../screenshots/29bd12789d.png)
+Next, we will review the agent configuration and then promote the agent to production.
 
 ---
 
@@ -217,7 +189,7 @@ Notice that the agent is **Protected by AI Defense**, which checks prompts, retr
 
 In the **Release history** section at the bottom of the page, observe that version **v1** is currently in a **Candidate** state.
 
-Finally, click **Promote to production** to make this version the active production release.
+Finally,  in this example we click **Promote to production** to make this version the active production release.
 
 ---
 
@@ -225,9 +197,9 @@ Finally, click **Promote to production** to make this version the active product
 
 ---
 
-A confirmation dialog box will appear asking whether you want to promote v1 to production. *Notice that the dialog explains this will make v1 the active production release used for activation and customer testing, replacing any version currently in production.*
+A confirmation dialog box appears asking whether you want to promote v1 to production. *Notice that the dialog explains this will make v1 the active production release used for activation and customer testing, replacing any version currently in production.*
 
-Click **Promote to production** to confirm the action and deploy v1 as the production release.
+In the example we Click **Promote to production** to confirm the action and deploy v1 as the production release.
 
 ---
 
@@ -249,11 +221,16 @@ Once in production, you can:
 
 ---
 
+!!! info "Note"
+    The final steps of this lab will involve reviewing the already running **meraki-daily-health-report-GSX** agent, which has been pre-configured in your environment. You will also explore the observability features and notifications associated with the scheduled agent runs. These steps are designed to give you visibility into how a fully operational agent behaves over time, including how it logs activity, surfaces insights, and delivers alerts. Please note that these steps will **NOT** be performed using the agent you created earlier in this lab — you will instead be observing the pre-configured agent to examine its output and scheduling behavior.
+
+---
+
 Next, **Click **back on the **Observability** tab. This section displays a summary of all agent execution metrics available for review.
 
-In the **Recent executions** table, you can see that our agent ran version **v1**, which was triggered by the **Scheduler** and completed with a status of **Passed**.
+In the **Recent executions** table, you can see that our agent **meraki-daily-health-report-GSX **has been running version **v1**, which was triggered by the **Scheduler** and completed with a status of **Passed**.
 
-Click **Open run** to inspect the detailed execution trace and step-by-step results for this agent run.
+Click **Open run** (on one of the past runs) to inspect the detailed execution trace and step-by-step results for this agent run.
 
 ---
 

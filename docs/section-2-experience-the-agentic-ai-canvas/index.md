@@ -26,6 +26,11 @@ Next, **click** the Wireless Quick Start tile and let's put AI Canvas to work.
 
 ---
 
+!!! info "Note"
+    Canvas may prompt you to answer a set of clarifying questions before generating content. These questions are designed to help Canvas better understand your specific requirements, preferences, and goals, ensuring that the output is tailored precisely to your needs. Simply read each question carefully and provide your answers as you see fit. There are no right or wrong responses — your answers serve as guidance to help Canvas produce the most relevant and accurate result possible.
+
+---
+
 Next, watch closely as AI Canvas **generates the Wireless session**, reviewing wireless performance, clients, and alerts in the environment.
 
 Once it completes, **spend some time exploring** the various capabilities of the Canvas interface, such as the ability to share and invite others, annotate, resize cards, generate a summary, and more.
@@ -59,13 +64,13 @@ Once it completes, **spend some time exploring** the various capabilities of the
 
 ---
 
-Finally, **review the example** below of using Canvas to arrive at a **root cause analysis (RCA) **for a given scenario.
+Finally, **review the example** below of using Canvas to arrive at a **root cause analysis (RCA)** for a given scenario. Due to time constraints, we will **NOT** be running the prompts below — they are provided for your reference and for when you demo to customers in the future. Please just review the example.
 
 ---
 
-The scenario below involves a **Network Operator** who wants to perform Root Cause Analysis (**RCA**) on **SD-WAN sites that are down**. The progression of prompts used is outlined below, and the screenshots are provided for your reference. Please use the scenarios in **Appendix C for your actual RCA**.
+The scenario below involves a **Network Operator** who wants to perform Root Cause Analysis (**RCA**) on **SD-WAN sites that are down**. The progression of prompts used is outlined below, and the screenshots are provided for your reference.
 
-**Example sequence of prompts you can use:**
+**Example sequence of prompts:**
 
 **Prompt #1 **Summarize my Catalyst SD-WAN deployment
 

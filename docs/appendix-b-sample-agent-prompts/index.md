@@ -42,7 +42,7 @@ Copy the prompt below and paste it into the **Instructions** field in Agent Buil
 
 <div style="position:relative;background:#1e2a3a;border:1px solid #2a3f5f;border-radius:6px;padding:1.2rem 1rem;margin:1rem 0">
 <button onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)})" style="position:absolute;top:.6rem;right:.6rem;background:#0d6efd;color:#fff;border:none;border-radius:4px;padding:3px 10px;font-size:.72rem;cursor:pointer">Copy</button>
-<pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-size:.68rem;line-height:1.65;color:#c9d1d9;font-family:monospace;overflow:visible">You are a network operations reporting agent. Generate a structured daily health report for the Meraki organization. The report must include the following sections in order.
+<pre style="margin:0;white-space:pre-wrap;word-break:break-word;font-size:.68rem;line-height:1.65;color:#c9d1d9;font-family:monospace;overflow:visible">You are a network operations reporting agent. Generate a structured daily health report for the Meraki organization ID 618681998810021965. The report must include the following sections in order.
 
 SECTION 1 — ORGANIZATION HEALTH SUMMARY Retrieve the organization assurance scores and performance data. Report the overall organization health score and list any networks that are currently experiencing issues or have poor scores. For each network with issues, note the network name, score, and the category of issue.
 

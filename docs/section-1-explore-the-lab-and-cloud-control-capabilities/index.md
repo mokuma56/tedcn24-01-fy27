@@ -6,13 +6,6 @@ In this section, you will discover how Cloud Control streamlines the management 
 
 
 
-!!! info "Note"
-    This lab is based on the dCloud **"Cisco Cloud Control: AgenticOps in Action"** experience. Your assigned login has been provisioned with elevated permissions that unlock advanced capabilities beyond the standard dCloud environment — most notably **Agent Studio.**
-
-    These special permissions allow you to build, test, and deploy agentic workflows across the Cisco Cloud Control platform in ways that reflect real-world production use cases. Throughout this lab, you will move from exploration to hands-on creation, gaining practical experience with the tools and services that power Cisco's Agentic Operations framework.
-
----
-
 ## Lab Topology
 
 Your lab environment is pre-integrated with a broad set of Cisco platforms and services. The topology reflects a realistic enterprise deployment, giving you visibility and control across networking, security, cloud, and collaboration domains.
@@ -41,27 +34,15 @@ Not all products listed above will be actively used in every section of this lab
 
 ---
 
-!!! warning "Caution"
-    You have been granted elevated permissions necessary to complete the exercises in this lab. With these additional privileges comes an expectation of responsible use. Please confine your activities strictly to the tasks and resources outlined in this lab guide. Unauthorized actions — such as modifying shared infrastructure, accessing resources outside the scope of this lab, or interfering with other participants' environments — can disrupt the experience for everyone. Any actions you take may be logged and audited. Please be a good steward of the shared environment.
+## Step 2: Log into the dCloud Cloud Control Lab
+
+Open a web browser and navigate to the lab landing page at: [https://dcloud2-rtp.cisco.com/content/instantdemo/agenticops-with-cisco-cloud-control](https://dcloud2-rtp.cisco.com/content/instantdemo/agenticops-with-cisco-cloud-control)  (opens in new window)
+
+Next, **Click Login**
 
 ---
 
-## Step 2: Logging into with your assigned Cloud Control user and exploring the Home Screen
-
-Open a web browser and navigate to the lab landing page at: [http://cs.co/tedc24-lab](https://idac.cat-dcloud.com/api/v2.0/request/stateless/0?owner=dschuema&recipeName=c3-instant-v2-gsx-v2&recipePath=sec/&dc=sjc)  (opens in new window)
-
----
-
-Next, **locate **your assigned **POD** and click **Login to POD **to authenticate and log in.
-
----
-
-![](../screenshots/d70ee2d9ef.png)
-
----
-
-!!! info "Note"
-    If you are unable to locate your assigned POD, please contact a proctor. Please use caution and verify you are logging into your assigned POD, as this will ensure a successful lab experience for all.
+![](../screenshots/b505c687fc.png)
 
 ---
 

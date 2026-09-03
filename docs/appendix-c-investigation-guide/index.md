@@ -1,12 +1,12 @@
-# Appendix D: Investigation Guide
+# Appendix C: Investigation Guide
 
-This appendix contains a worked example investigation for each Appendix C scenario. Use it if your team gets stuck during the Team Challenge, or after the challenge to compare your approach against one possible path. Each guide shows a sample prompt sequence, explains the reasoning behind each step, and walks through how the fault conditions can be surfaced and correlated into a complete RCA. These are not the only valid approaches — your team's own prompt strategy may be equally effective or better. Return to Appendix C: Scenarios for the original challenge briefs.
+This appendix contains a worked example investigation for each Appendix B scenario. Use it if your team gets stuck during the Team Challenge, or after the challenge to compare your approach against one possible path. Each guide shows a sample prompt sequence, explains the reasoning behind each step, and walks through how the fault conditions can be surfaced and correlated into a complete RCA. These are not the only valid approaches - your team's own prompt strategy may be equally effective or better. Return to Appendix B: Scenarios for the original challenge briefs.
 
 ## Investigation Guide — Scenario 1: Buenos Aires
 
 **Investigation Guide — Scenario 1: Buenos Aires**
 
-*Return to the challenge brief: [Appendix C — Scenario 1: Buenos Aires](../appendix-c-scenarios/)*
+*Return to the challenge brief: [Appendix B — Scenario 1: Buenos Aires](../appendix-b-scenarios/)*
 
 ---
 
@@ -92,13 +92,13 @@ Correlate the STP topology changes, Root Guard activation, and port discard even
 
 ---
 
-*Return to the challenge: [Appendix C — Scenario 1: Buenos Aires](../appendix-c-scenarios/)*
+*Return to the challenge: [Appendix B — Scenario 1: Buenos Aires](../appendix-b-scenarios/)*
 
 ## Investigation Guide — Scenario 2: Mexico City
 
 **Investigation Guide — Scenario 2: Mexico City**
 
-*Return to the challenge brief: [Appendix C — Scenario 2: Mexico City](../appendix-c-scenarios/)*
+*Return to the challenge brief: [Appendix B — Scenario 2: Mexico City](../appendix-b-scenarios/)*
 
 ---
 
@@ -174,4 +174,4 @@ The Mexico City C9300-X-Leaf-1 went unreachable after an overnight firmware upgr
 
 ---
 
-*Return to the challenge: [Appendix C — Scenario 2: Mexico City](../appendix-c-scenarios/)*
+*Return to the challenge: [Appendix B — Scenario 2: Mexico City](../appendix-b-scenarios/)*

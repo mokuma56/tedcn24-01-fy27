@@ -1,6 +1,6 @@
-# Appendix C: Scenarios
+# Appendix B: Scenarios
 
-This appendix contains the two scenario briefs for the Section 4 Team Challenge. Each scenario places your team inside a real operational situation at a specific branch site — your job is to use AI Canvas to investigate, identify every active fault condition, and build a complete root cause analysis. No hints, no prescribed steps, no suggested prompts: your team decides how to approach it, and you'll be evaluated on the quality of your RCA and the creativity of your prompt engineering. If you get stuck or want to compare your approach after the challenge, Appendix D: Investigation Guide contains a worked example for each scenario.
+This appendix contains the two scenario briefs for the Section 4 Team Challenge. Each scenario places your team inside a real operational situation at a specific branch site — your job is to use AI Canvas to investigate, identify every active fault condition, and build a complete root cause analysis. No hints, no prescribed steps, no suggested prompts: your team decides how to approach it, and you'll be evaluated on the quality of your RCA and the creativity of your prompt engineering. If you get stuck or want to compare your approach after the challenge, Appendix C: Investigation Guide contains a worked example for each scenario.
 
 ## Scenario 1 — Buenos Aires
 
@@ -42,7 +42,7 @@ When you are ready to present, your proctor will ask you to:
 
 ---
 
-*If your team gets stuck, refer to [Appendix D: Investigation Guide](../appendix-d-investigation-guide/) for a worked example using this scenario.*
+*If your team gets stuck, refer to [Appendix C: Investigation Guide](../appendix-c-investigation-guide/) for a worked example using this scenario.*
 
 ## Scenario 2 — Mexico City
 
@@ -84,4 +84,4 @@ When you are ready to present, your proctor will ask you to:
 
 ---
 
-*If your team gets stuck, refer to [Appendix D: Investigation Guide](../appendix-d-investigation-guide/) for a worked example using this scenario.*
+*If your team gets stuck, refer to [Appendix C: Investigation Guide](../appendix-c-investigation-guide/) for a worked example using this scenario.*

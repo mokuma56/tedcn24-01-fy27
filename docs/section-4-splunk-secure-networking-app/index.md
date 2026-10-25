@@ -2,7 +2,7 @@
 
 In this section, you will explore Splunk Secure Networking Essentials (SSNE), the Splunk app built into Cisco Cloud Control. SSNE correlates telemetry from Cisco ISE, Duo, Secure Access, Secure Firewall, Meraki, Catalyst Center, Catalyst SD-WAN, Nexus Dashboard, ACI, ThousandEyes, XDR, and AI Defense into executive workspaces and investigation dashboards organized around five secure-networking pillars: Zero Trust Access, Secure Infrastructure, Scalable Network Segmentation, Hybrid Mesh Firewalling, and Agentic Ops.
 
-## Step 15: Launch Splunk Secure Networking Essentials
+## Step 1: Launch Splunk Secure Networking Essentials
 
 
 
@@ -25,7 +25,7 @@ The left navigation groups every dashboard by pillar. Hover a pillar to open its
 !!! tip "Tip"
     Click the **open** icon on any headline tile to jump straight to the dashboard behind that number.
 
-## Step 16: Zero Trust Access
+## Step 2: Zero Trust Access
 
 
 
@@ -70,7 +70,7 @@ Connects remote-session health with endpoint posture and access risk: VPN client
 !!! info "Note"
     Each panel shows its data domain and pillar under the title (for example *Identity · Zero Trust Access*), and its description states exactly what is — and is not — being counted.
 
-## Step 17: Secure Infrastructure
+## Step 3: Secure Infrastructure
 
 
 
@@ -103,7 +103,7 @@ Correlates WAN health, reachability, and service impact: SD-WAN **Site Health**,
 !!! info "Note"
     Panels with no data in the selected window say so explicitly and suggest checking that the data source is onboarded or widening the time range.
 
-## Step 18: Scalable Network Segmentation
+## Step 4: Scalable Network Segmentation
 
 
 
@@ -124,7 +124,7 @@ Summarizes segment health, policy alignment, and areas needing investigation: ta
 !!! tip "Tip"
     Use **Sites With No Observed SGT Coverage** as a rollout checklist: each listed site authenticates users but never assigns a non-default Security Group Tag.
 
-## Step 19: Hybrid Mesh Firewalling
+## Step 5: Hybrid Mesh Firewalling
 
 
 
@@ -148,7 +148,7 @@ Tracks high-confidence detections and the controls enforcing policy: allowed vs 
 
 Exposes data-loss risk and cloud-native workload controls: **Data Loss Findings** by severity, Secure Workload **Workload Alert Pressure**, the cloud enforcement rate, runtime detection severity, and native AWS / Azure / GCP **Cloud Security Activity**.
 
-## Step 20: Agentic Ops
+## Step 6: Agentic Ops
 
 
 
@@ -175,7 +175,7 @@ Summarizes posture, operational risk, and business-relevant outcomes for leaders
 !!! info "Note"
     If the assurance score shows *N/A*, one of its inputs had no data in the selected window. Widen the time range to see the trend.
 
-## Step 21: Investigate Any Panel
+## Step 7: Investigate Any Panel
 
 
 

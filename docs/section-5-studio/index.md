@@ -2,7 +2,7 @@
 
 Cisco Cloud Control Studio is the extensibility, governance, and customization engine of the Cisco Cloud Control platform. Part of Cisco's AgenticOps strategy, it gives IT and security operations teams a design space to build autonomous AI agents and applications that bridge Cisco infrastructure and third-party tools. In this section, you will use its two environments — App Builder and Agent Builder — and see how everything built in Studio is governed by AI Defense guardrails, traced through Splunk AI Agent Monitoring, and published for use across the platform.
 
-## Step 22: Open Cloud Control Studio
+## Step 1: Open Cloud Control Studio
 
 
 
@@ -18,7 +18,7 @@ Studio has two tabs:
 
 You will build an agent first, then an app.
 
-## Step 23: Shape an Agent with Agent Builder
+## Step 2: Shape an Agent with Agent Builder
 
 
 
@@ -33,7 +33,7 @@ The recommended **Meraki operations** prompt is already filled in: *Build a Mera
 !!! info "Note"
     This lab environment runs **approved prompts only**, so you build from the recommended or Quick start prompts. In your own tenant you can describe any agent you need.
 
-## Step 24: Watch Studio Build the Agent and Review Its Manifest
+## Step 3: Watch Studio Build the Agent and Review Its Manifest
 
 
 
@@ -56,7 +56,7 @@ In under a minute the draft is ready and saved as version **v1**. Review the gen
 !!! tip "Tip"
     Repetitive operational logic and diagnostic routines can be encoded as **reusable agent skills**, so every agent you build can call them instead of re-learning them.
 
-## Step 25: Test the Agent in the Sandbox
+## Step 4: Test the Agent in the Sandbox
 
 
 
@@ -121,7 +121,7 @@ After a successful test, you would **publish** the agent. Publishing moves it ou
 !!! info "Note"
     The agent only gathers **permitted** context, and **AI Defense guardrails** are applied to every run — they enforce what data the agent can see and which actions require human approval. A successful test also enables the agent's scheduling actions.
 
-## Step 26: Generate an App with App Builder
+## Step 5: Generate an App with App Builder
 
 
 
@@ -140,7 +140,7 @@ Studio first turns the requirements into a **build plan** — who the app is for
 !!! info "Note"
     An app build takes several minutes. Studio's embedded agentic coding assistant writes the code, tests it, and fixes failures before declaring the build complete.
 
-## Step 27: Review the Generated App
+## Step 6: Review the Generated App
 
 
 
@@ -173,7 +173,7 @@ The generated code passed its full verification gate — **76 tests**, type chec
 !!! warning "Caution"
     **Publishing is not available in this lab.** Due to permissions in the dCloud environment, you cannot publish the app here. The app stays in **Draft**.
 
-## Step 28: Update with Natural Language, Then Publish
+## Step 7: Update with Natural Language, Then Publish
 
 
 

@@ -2,9 +2,12 @@
 
 In this section, you will explore Identity Intelligence in Cisco Cloud Control. You will review the identities in the environment — users, endpoints, agents, and non-human identities — and see how trust levels, identity checks, and MFA posture surface risky accounts before they become incidents.
 
-## Step 5: Open Identity Intelligence and Review the Posture Dashboard
+## Step 1: Open Identity Intelligence and Review the Posture Dashboard
 
 
+
+!!! warning "Caution"
+    This is a live lab environment. The identities, counts, scores, and dashboards you see in Identity Intelligence will vary from the screenshots in this guide as data changes over time.
 
 From the Cloud Control top bar, open the **9-Dot Menu** and select **Identity**. The Identity Intelligence **Dashboard** opens by default.
 
@@ -21,7 +24,7 @@ The Dashboard answers one question: *how healthy is the identity posture of this
 !!! tip "Tip"
     Click any **users** or **contributing check** link on a recommendation card to jump straight to the filtered list of affected identities.
 
-## Step 6: Explore Users
+## Step 2: Explore Users
 
 
 
@@ -44,7 +47,7 @@ Use the filter panel on the left (Status, Source, Trust Level, Compiled Status, 
 !!! info "Note"
     **Default filters** hide deleted, deprovisioned, and disabled accounts. Toggle **Default filters** off to see the full population.
 
-## Step 7: Explore Applications
+## Step 3: Explore Applications
 
 
 
@@ -63,7 +66,7 @@ Applications lists every application your identity providers authenticate users 
 !!! tip "Tip"
     An app tagged **No Assignment Required** can be reached by any user in the directory. Combine that tag with **Sensitive = Yes** to find your highest-risk applications.
 
-## Step 8: Explore Endpoints
+## Step 4: Explore Endpoints
 
 
 
@@ -84,7 +87,7 @@ Endpoints shows the devices your users authenticate from, correlated from **Duo*
 !!! info "Note"
     Phone-number device names are masked automatically to protect personal data.
 
-## Step 9: Explore AI Agents
+## Step 5: Explore AI Agents
 
 
 
@@ -99,7 +102,7 @@ As teams adopt agentic tools, this view answers who owns each agent, what it can
 !!! info "Note"
     No AI agents are present in this lab tenant, so the list is empty.
 
-## Step 10: Explore Non-Human Identities
+## Step 6: Explore Non-Human Identities
 
 
 
@@ -114,7 +117,7 @@ This lab has one NHI: a **PowerPlatform** agentic app from Entra ID. Note its fa
 !!! tip "Tip"
     This NHI is the one behind the Dashboard recommendation *“Assign owners to non-human identities without an accountable owner.”*
 
-## Step 11: Review Integrations
+## Step 7: Review Integrations
 
 
 
@@ -129,7 +132,7 @@ For each one, check **Connectivity**, **Collection Status**, **Recent Usage**, a
 !!! warning "Caution"
     Do not add, edit, or remove integrations in this shared lab tenant.
 
-## Step 12: Explore Identity Checks
+## Step 8: Explore Identity Checks
 
 
 
@@ -150,7 +153,7 @@ Examples in this lab include *NHI with No Owners Assigned*, *Never Logged In*, *
 !!! warning "Caution"
     Leave **Run checks now**, the enable toggles, and **Report Channels** unchanged in this shared tenant.
 
-## Step 13: Monitor ISE Health
+## Step 9: Monitor ISE Health
 
 
 
@@ -168,7 +171,7 @@ The **ISE Health Dashboard** (Beta) monitors the on-premises Cisco ISE deploymen
 
 This brings on-prem ISE health into the same cloud console as the rest of your identity estate.
 
-## Step 14: Audit Activity in System Logs
+## Step 10: Audit Activity in System Logs
 
 
 

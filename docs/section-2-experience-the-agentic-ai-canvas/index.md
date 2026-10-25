@@ -2,13 +2,19 @@
 
 In this section we will explore the AI Canvas and Agentic Ops capabilities in Cisco Cloud Control
 
+## Step 1: Open AI Canvas
+
+
+
 Start on the Home section by **clicking Canvas**.
 
 ---
 
 ![](../screenshots/e4bc15699c.png)
 
----
+## Step 2: Explore the AI Canvas Home and Launch a Quick Start
+
+
 
 Now in the AI Canvas section you will see:
 
@@ -29,7 +35,9 @@ Next, **click** the Wireless Quick Start tile and let's put AI Canvas to work.
 !!! info "Note"
     Canvas may prompt you to answer a set of clarifying questions before generating content. These questions are designed to help Canvas better understand your specific requirements, preferences, and goals, ensuring that the output is tailored precisely to your needs. Simply read each question carefully and provide your answers as you see fit. There are no right or wrong responses — your answers serve as guidance to help Canvas produce the most relevant and accurate result possible.
 
----
+## Step 3: Explore the Wireless Canvas Session
+
+
 
 Next, watch closely as AI Canvas **generates the Wireless session**, reviewing wireless performance, clients, and alerts in the environment.
 
@@ -39,7 +47,9 @@ Once it completes, **spend some time exploring** the various capabilities of the
 
 ![](../screenshots/d48186e8fa.png)
 
----
+## Step 4: Use Prompt Shortcuts and Reasoning Mode
+
+
 
 1. Within Canvas, practice entering **/** for a set of pre-populated prompts and **#** for accessing and managing a knowledge base of contextual information.
 
@@ -62,7 +72,9 @@ Once it completes, **spend some time exploring** the various capabilities of the
 !!! info "Note"
     The trade-off with Reasoning mode is that responses take longer to generate due to the additional computational steps involved. For straightforward tasks, Default mode will typically be faster and sufficient, while Reasoning mode is most valuable when accuracy and thoroughness outweigh the need for speed.
 
----
+## Step 5: Review an AI Canvas Root Cause Analysis Example
+
+
 
 Finally, **review the example** below of using Canvas to arrive at a **root cause analysis (RCA)** for a given scenario. Due to time constraints, we will **NOT** be running the prompts below — they are provided for your reference and for when you demo to customers in the future. Please just review the example.
 

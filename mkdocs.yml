@@ -1,7 +1,7 @@
 ---
 dev_addr: "0.0.0.0:8000"
-site_name: " (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework"
-site_description: " (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework"
+site_name: "Cisco Cloud Control Value Realization"
+site_description: "Cisco Cloud Control Value Realization"
 site_author: "Cisco"
 copyright: Copyright &copy; 2024 Cisco
 theme:
@@ -32,6 +32,7 @@ theme:
   favicon: template_assets/cisco_logo.png
 extra:
   generator: false
+  event: "AMER Stay Ready Friday"
 extra_css:
   - stylesheets/extra.css
 extra_javascript:

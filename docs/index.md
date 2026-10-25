@@ -1,9 +1,11 @@
 ---
-description: " (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework"
+description: "Cisco Cloud Control Value Realization"
 template: home.html
 ---
 
-#  (TEDC24) Unlock the Potential of Cisco’s Agentic Ops Framework
+# Cisco Cloud Control Value Realization
+
+AMER Stay Ready Friday
 
 **Author:** Matt Okuma   |  **Version:** 1.0 Draft
 

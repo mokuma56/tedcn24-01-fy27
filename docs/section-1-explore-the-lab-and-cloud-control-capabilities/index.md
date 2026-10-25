@@ -2,7 +2,7 @@
 
 In this section, you will discover how Cloud Control streamlines the management of your cloud infrastructure through a centralized interface. You'll gain hands-on experience with its core monitoring, automation, and governance features to understand how they work together to simplify operations at scale.
 
-## Step 1: Lab and Topoloy  Overview
+## Step 1: Lab and Topology Overview
 
 
 

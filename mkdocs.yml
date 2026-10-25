@@ -72,7 +72,10 @@ nav:
   - Introduction: introduction/index.md
   - "Section 1: Explore the LAB and Cloud Control Capabilities": section-1-explore-the-lab-and-cloud-control-capabilities/index.md
   - "Section 2: Experience the Agentic AI Canvas": section-2-experience-the-agentic-ai-canvas/index.md
-  - "Section 4: Challenge - Agentic Ops": section-4-challenge-agentic-ops/index.md
+  - "Section 3: Identity": section-3-identity/index.md
+  - "Section 4: Splunk Secure Networking App": section-4-splunk-secure-networking-app/index.md
+  - "Section 5: Studio": section-5-studio/index.md
+  - "Section 6: Challenge - Agentic Ops": section-6-challenge-agentic-ops/index.md
   - "Appendix A: Sample AI Prompts": appendix-a-sample-ai-prompts/index.md
   - "Appendix B: Scenarios": appendix-b-scenarios/index.md
   - "Appendix C: Investigation Guide": appendix-c-investigation-guide/index.md

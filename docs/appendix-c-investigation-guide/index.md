@@ -1,17 +1,17 @@
 # Appendix C: Investigation Guide
 
-This appendix contains a worked example investigation for each Appendix B scenario. Use it if your team gets stuck during the Team Challenge, or after the challenge to compare your approach against one possible path. Each guide shows a sample prompt sequence, explains the reasoning behind each step, and walks through how the fault conditions can be surfaced and correlated into a complete RCA. These are not the only valid approaches - your team's own prompt strategy may be equally effective or better. Return to Appendix B: Scenarios for the original challenge briefs.
+This appendix contains a worked example investigation for each Appendix B practice scenario. Use it if you get stuck, or after you finish to compare your approach with one possible path. Each guide shows a sample prompt sequence, explains the reasoning behind each step, and shows how the fault conditions can be surfaced and connected into a complete RCA. These are not the only valid approaches — your own prompting strategy may be just as effective, or better. Return to Appendix B: Scenarios for the original scenario briefs.
 
 ## Investigation Guide — Scenario 1: Buenos Aires
 
 **Investigation Guide — Scenario 1: Buenos Aires**
 
-*Return to the challenge brief: [Appendix B — Scenario 1: Buenos Aires](../appendix-b-scenarios/)*
+*Return to the scenario brief: [Appendix B — Scenario 1: Buenos Aires](../appendix-b-scenarios/)*
 
 ---
 
 !!! warning "Note"
-    This guide shows one effective path through the investigation. It is not the only valid approach — your team may have found the same faults through a different sequence. Use this to compare strategies, not to check a single right answer.
+    This guide shows one effective path through the investigation. It is not the only valid approach — you may have found the same faults through a different sequence. Use this to compare strategies, not to check a single right answer.
 
 ---
 
@@ -92,18 +92,18 @@ Correlate the STP topology changes, Root Guard activation, and port discard even
 
 ---
 
-*Return to the challenge: [Appendix B — Scenario 1: Buenos Aires](../appendix-b-scenarios/)*
+*Return to the scenario: [Appendix B — Scenario 1: Buenos Aires](../appendix-b-scenarios/)*
 
 ## Investigation Guide — Scenario 2: Mexico City
 
 **Investigation Guide — Scenario 2: Mexico City**
 
-*Return to the challenge brief: [Appendix B — Scenario 2: Mexico City](../appendix-b-scenarios/)*
+*Return to the scenario brief: [Appendix B — Scenario 2: Mexico City](../appendix-b-scenarios/)*
 
 ---
 
 !!! warning "Note"
-    This guide shows one effective path through the investigation. It is not the only valid approach — your team may have found the same faults through a different sequence. Use this to compare strategies, not to check a single right answer.
+    This guide shows one effective path through the investigation. It is not the only valid approach — you may have found the same faults through a different sequence. Use this to compare strategies, not to check a single right answer.
 
 ---
 
@@ -174,4 +174,4 @@ The Mexico City C9300-X-Leaf-1 went unreachable after an overnight firmware upgr
 
 ---
 
-*Return to the challenge: [Appendix B — Scenario 2: Mexico City](../appendix-b-scenarios/)*
+*Return to the scenario: [Appendix B — Scenario 2: Mexico City](../appendix-b-scenarios/)*

@@ -20,11 +20,22 @@ Cisco Cloud Control delivers three foundational capabilities:
 
 ## What You Will Do in This Lab
 
-In this hands-on lab you will experience Cisco Cloud Control end-to-end across its key platform areas:
+In this hands-on lab you will experience Cisco Cloud Control end-to-end, moving from exploring the platform to building on it:
 
-1. **Explore the Lab and Cloud Control Capabilities** — Navigate Cisco Cloud Control and understand its capabilities across Platform Services, getting familiar with the unified operational environment.
+1. **Explore the Lab and Cloud Control Capabilities** — Navigate Cisco Cloud Control and get familiar with the unified operational environment, the 9-Dot Menu, and the inventory that ties every platform together.
 
-2. **Experience the Agentic AI Canvas** — Work with the AI Canvas to see how operators and AI agents collaborate to investigate and resolve cross-domain issues across your infrastructure.
+2. **Experience the Agentic AI Canvas** — See how operators and AI agents collaborate in AI Canvas to investigate and resolve cross-domain issues across your infrastructure.
+
+3. **Identity** — Use Identity Intelligence to review your posture score and see how human identities, non-human identities, applications, and endpoints come together in one view.
+
+4. **Splunk Secure Networking App** — Explore Splunk Secure Networking Essentials and its five secure-networking pillars, from Zero Trust Access to Agentic Ops.
+
+5. **Studio** — Build and test an AI agent with Agent Builder and generate a working application with App Builder, all governed by AI Defense guardrails.
+
+6. **Cloud Control and Cisco IQ** — Follow a device from an inventory insight into Cisco IQ, plan for quantum readiness, and use AI Canvas to explain and remediate a hardening risk.
+
+When you finish, keep going with the appendices: **Appendix A** is an interactive library of tested AI Canvas prompts you can search, rate, and copy, and **Appendices B and C** offer optional practice scenarios for anyone who wants more hands-on time solving real problems with AI Canvas.
+
 
 ## Learning Objectives
 

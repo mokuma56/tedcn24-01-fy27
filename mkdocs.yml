@@ -76,7 +76,8 @@ nav:
   - "Section 3: Identity": section-3-identity/index.md
   - "Section 4: Splunk Secure Networking App": section-4-splunk-secure-networking-app/index.md
   - "Section 5: Studio": section-5-studio/index.md
-  - "Section 6: Challenge - Agentic Ops": section-6-challenge-agentic-ops/index.md
+  - "Section 6: Cloud Control and Cisco IQ": section-6-cloud-control-and-cisco-iq/index.md
+  - "Section 7: Challenge - Agentic Ops": section-7-challenge-agentic-ops/index.md
   - "Appendix A: Sample AI Prompts": appendix-a-sample-ai-prompts/index.md
   - "Appendix B: Scenarios": appendix-b-scenarios/index.md
   - "Appendix C: Investigation Guide": appendix-c-investigation-guide/index.md

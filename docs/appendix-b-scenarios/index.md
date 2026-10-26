@@ -1,6 +1,6 @@
 # Appendix B: Scenarios
 
-This appendix contains the two scenario briefs for the Section 6 Team Challenge. Each scenario places your team inside a real operational situation at a specific branch site — your job is to use AI Canvas to investigate, identify every active fault condition, and build a complete root cause analysis. No hints, no prescribed steps, no suggested prompts: your team decides how to approach it, and you'll be evaluated on the quality of your RCA and the creativity of your prompt engineering. If you get stuck or want to compare your approach after the challenge, Appendix C: Investigation Guide contains a worked example for each scenario.
+This appendix contains the two scenario briefs for the Section 7 Team Challenge. Each scenario places your team inside a real operational situation at a specific branch site — your job is to use AI Canvas to investigate, identify every active fault condition, and build a complete root cause analysis. No hints, no prescribed steps, no suggested prompts: your team decides how to approach it, and you'll be evaluated on the quality of your RCA and the creativity of your prompt engineering. If you get stuck or want to compare your approach after the challenge, Appendix C: Investigation Guide contains a worked example for each scenario.
 
 ## Scenario 1 — Buenos Aires
 

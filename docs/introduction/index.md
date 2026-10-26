@@ -26,10 +26,7 @@ In this hands-on lab you will experience Cisco Cloud Control end-to-end across i
 
 2. **Experience the Agentic AI Canvas** — Work with the AI Canvas to see how operators and AI agents collaborate to investigate and resolve cross-domain issues across your infrastructure.
 
-3. **Challenge** —  Work to solve challenge scenarios based on what was learned in the lab. 
-
 ## Learning Objectives
 
 - Learn the  use of Cloud Control capabilities
 - Learn the Agentic AI Canvas capabilities within Cloud Control
-- [Optional Challenge] Students will collaborate and share effective AI prompts to generate a RCA (root cause analysis) using AI Canvas tools. The outcome of this challenge will help participants to deliver more effective demos using dCloud

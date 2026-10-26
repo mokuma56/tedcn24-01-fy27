@@ -13,4 +13,3 @@ AMER Stay Ready Friday
 
 - Learn the  use of Cloud Control capabilities
 - Learn the Agentic AI Canvas capabilities within Cloud Control
-- [Optional Challenge] Students will collaborate and share effective AI prompts to generate a RCA (root cause analysis) using AI Canvas tools. The outcome of this challenge will help participants to deliver more effective demos using dCloud

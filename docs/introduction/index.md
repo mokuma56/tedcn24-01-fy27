@@ -34,7 +34,7 @@ In this hands-on lab you will experience Cisco Cloud Control end-to-end, moving 
 
 6. **Cloud Control and Cisco IQ** — Follow a device from an inventory insight into Cisco IQ, plan for quantum readiness, and use AI Canvas to explain and remediate a hardening risk.
 
-When you finish, keep going with the appendices: **Appendix A** is an interactive library of tested AI Canvas prompts you can search, rate, and copy, and **Appendices B and C** offer optional practice scenarios for anyone who wants more hands-on time solving real problems with AI Canvas.
+When you finish, keep going: the **AI Canvas Prompt Library** is an interactive library of tested AI Canvas prompts you can search, rate, and copy, and **Appendices B and C** offer optional practice scenarios for anyone who wants more hands-on time solving real problems with AI Canvas.
 
 
 ## Learning Objectives

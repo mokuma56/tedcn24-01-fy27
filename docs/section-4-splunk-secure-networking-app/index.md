@@ -20,7 +20,7 @@ The Insights Workspace is the executive starting point for the whole app:
 
 - **Controls** — layout toggles, time range (default *Last 24 hours*), and refresh rate.
 
-The left navigation groups every dashboard by pillar. Hover a pillar to open its dashboards.
+The left navigation groups every dashboard by pillar. Click a pillar to open a menu of its dashboards.
 
 !!! tip "Tip"
     Click the **open** icon on any headline tile to jump straight to the dashboard behind that number.
@@ -29,9 +29,13 @@ The left navigation groups every dashboard by pillar. Hover a pillar to open its
 
 
 
-In the left navigation, hover **Zero Trust Access** and open each dashboard in turn. This pillar answers: *are the right users and devices getting access, and are policies being enforced?*
+In the left navigation, click **Zero Trust Access**. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: *are the right users and devices getting access, and are policies being enforced?*
 
 ### Zero Trust Posture
+
+Click **Zero Trust Access** in the left navigation, then click **Zero Trust Posture** in the menu.
+
+![](../screenshots/ssne-menu-zero-trust-posture.png)
 
 ![](../screenshots/ssne-sn_zta_posture.png)
 
@@ -39,11 +43,19 @@ The pillar summary. It connects identity, posture, policy, and response signals 
 
 ### Authentication and Policy Enforcement
 
+Click **Zero Trust Access** again to reopen the menu, then click **Authentication and Policy Enforcement**.
+
+![](../screenshots/ssne-menu-authentication-and-policy-enforcement.png)
+
 ![](../screenshots/ssne-sn_zta_authentication_policy_enforcement.png)
 
 Validates that authentication works and policy is applied: ISE failure rate, RADIUS vs TACACS+ **Policy Family Activity**, **RADIUS Outcomes**, **RadSec Transport Activity**, **Duo Policy Outcomes** (denied, success, fraud), and the **ISE Enforcement Footprint** — how many network access devices are actively enforcing.
 
 ### Policy Management
+
+Click **Zero Trust Access** again to reopen the menu, then click **Policy Management**.
+
+![](../screenshots/ssne-menu-policy-management.png)
 
 ![](../screenshots/ssne-sn_zta_policy_management.png)
 
@@ -51,17 +63,29 @@ Monitors access-policy coverage, change, and exceptions that need review: RADIUS
 
 ### User Activity Monitoring
 
+Click **Zero Trust Access** again to reopen the menu, then click **User Activity Monitoring**.
+
+![](../screenshots/ssne-menu-user-activity-monitoring.png)
+
 ![](../screenshots/ssne-sn_zta_user_activity_monitoring.png)
 
 Reveals unusual access behavior and the identities, devices, and resources involved: private application access, access denial causes, MFA activity, and — from endpoint telemetry — **User** and **Process Egress Concentration**, which rank the users and processes sending the most data out.
 
 ### Detection & Response
 
+Click **Zero Trust Access** again to reopen the menu, then click **Detection & Response**.
+
+![](../screenshots/ssne-menu-detection-response.png)
+
 ![](../screenshots/ssne-sn_zta_detection_response.png)
 
 Surfaces access-related detections and the response actions that contain risk: Cisco XDR **Incident Severity** and **Incident Risk Pressure**, Attack Analyzer flows and forensic detections, **External Egress Activity** by destination, and **File Source Hotspots**.
 
 ### Remote Access VPN (RaVPN) Sessions and Posture
+
+Click **Zero Trust Access** again to reopen the menu, then click **Remote Access VPN (RaVPN) Sessions and Posture**.
+
+![](../screenshots/ssne-menu-remote-access-vpn-ravpn-sessions-and-posture.png)
 
 ![](../screenshots/ssne-sn_zta_ravpn_sessions_and_posture.png)
 
@@ -74,9 +98,13 @@ Connects remote-session health with endpoint posture and access risk: VPN client
 
 
 
-Hover **Secure Infrastructure**. This pillar answers: *is the network and data center healthy, and where is it exposed?*
+In the left navigation, click **Secure Infrastructure**. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: *is the network and data center healthy, and where is it exposed?*
 
 ### Secure Infrastructure Status
+
+Click **Secure Infrastructure** in the left navigation, then click **Secure Infrastructure Status** in the menu.
+
+![](../screenshots/ssne-menu-secure-infrastructure-status.png)
 
 ![](../screenshots/ssne-sn_secure_infrastructure_status.png)
 
@@ -84,17 +112,29 @@ One cross-source health view of wireless, Catalyst Center, SD-WAN, data center, 
 
 ### Infrastructure Posture
 
+Click **Secure Infrastructure** again to reopen the menu, then click **Infrastructure Posture**.
+
+![](../screenshots/ssne-menu-infrastructure-posture.png)
+
 ![](../screenshots/ssne-sn_secure_infrastructure_posture.png)
 
 Unifies assurance, exposure, and operational control signals: data center anomalies, Nexus Dashboard **Critical Advisories**, Meraki **Wireless Containment** of rogue access points, **Wireless Clients Observed**, and SD-WAN site reporting.
 
 ### Secure Data Center Operations
 
+Click **Secure Infrastructure** again to reopen the menu, then click **Secure Data Center Operations**.
+
+![](../screenshots/ssne-menu-secure-data-center-operations.png)
+
 ![](../screenshots/ssne-sn_data_center_operations.png)
 
 Fabric health, capacity, policy enforcement, runtime security, and change intelligence for ACI, APIC, Nexus Dashboard, Secure Firewall, and Cisco Isovalent. Tabs across the top switch between **Fabric Operations**, **Data Center Security**, **Runtime Security**, and **Runtime Investigation**. Fabric Operations shows the **ACI Fabric Health Score**, critical and major ACI faults, security advisories, interface anomalies, peak port utilization, and ACI configuration changes.
 
 ### SD-WAN and Network Health Monitoring
+
+Click **Secure Infrastructure** again to reopen the menu, then click **SD-WAN and Network Health Monitoring**.
+
+![](../screenshots/ssne-menu-sd-wan-and-network-health-monitoring.png)
 
 ![](../screenshots/ssne-sn_hmf_sdwan_network_health.png)
 
@@ -107,15 +147,23 @@ Correlates WAN health, reachability, and service impact: SD-WAN **Site Health**,
 
 
 
-Hover **Scalable Network Segmentation**. This pillar answers: *how far has TrustSec/SGT segmentation been adopted, and is it being enforced?*
+In the left navigation, click **Scalable Network Segmentation**. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: *how far has TrustSec/SGT segmentation been adopted, and is it being enforced?*
 
 ### Segmentation Readiness
+
+Click **Scalable Network Segmentation** in the left navigation, then click **Segmentation Readiness** in the menu.
+
+![](../screenshots/ssne-menu-segmentation-readiness.png)
 
 ![](../screenshots/ssne-sn_segmentation_readiness.png)
 
 Connects segmentation posture, trust boundaries, and enforcement coverage: the TrustSec-capable **Hardware Inventory**, endpoint-to-SGT assignments, which **Security Groups** are in use, the **Segmentation Adoption Rate**, **Sites With No Observed SGT Coverage**, and tagged authentication events by location.
 
 ### Segmentation Operations
+
+Click **Scalable Network Segmentation** again to reopen the menu, then click **Segmentation Operations**.
+
+![](../screenshots/ssne-menu-segmentation-operations.png)
 
 ![](../screenshots/ssne-sn_segmentation_operations.png)
 
@@ -128,9 +176,13 @@ Summarizes segment health, policy alignment, and areas needing investigation: ta
 
 
 
-Hover **Hybrid Mesh Firewalling**. This pillar answers: *is policy enforced consistently across every firewall — on-prem, branch, cloud, and workload?*
+In the left navigation, click **Hybrid Mesh Firewalling**. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: *is policy enforced consistently across every firewall — on-prem, branch, cloud, and workload?*
 
 ### Hybrid Mesh Enforcement
+
+Click **Hybrid Mesh Firewalling** in the left navigation, then click **Hybrid Mesh Enforcement** in the menu.
+
+![](../screenshots/ssne-menu-hybrid-mesh-enforcement.png)
 
 ![](../screenshots/ssne-sn_hmf_enforcement.png)
 
@@ -138,11 +190,19 @@ Unifies firewall posture, enforcement, and workload protection: **Reporting Fire
 
 ### Threat Detection and Enforcement
 
+Click **Hybrid Mesh Firewalling** again to reopen the menu, then click **Threat Detection and Enforcement**.
+
+![](../screenshots/ssne-menu-threat-detection-and-enforcement.png)
+
 ![](../screenshots/ssne-sn_hmf_threat_detection_enforcement.png)
 
 Tracks high-confidence detections and the controls enforcing policy: allowed vs blocked **Firewall Decisions**, **Cloud Firewall Blocks**, the Multicloud Defense **Deny Rate**, Isovalent **Runtime Alerts**, **Branch IPS Pressure** from SD-WAN UTD, and a unified enforcement trend.
 
 ### DLP and Cloud Native Security
+
+Click **Hybrid Mesh Firewalling** again to reopen the menu, then click **DLP and Cloud Native Security**.
+
+![](../screenshots/ssne-menu-dlp-and-cloud-native-security.png)
 
 ![](../screenshots/ssne-sn_hmf_dlp_cloud_native_security.png)
 
@@ -152,9 +212,13 @@ Exposes data-loss risk and cloud-native workload controls: **Data Loss Findings*
 
 
 
-Hover **Agentic Ops**. This pillar answers: *are users getting a good digital experience, and what should operators and executives act on first?*
+In the left navigation, click **Agentic Ops**. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: *are users getting a good digital experience, and what should operators and executives act on first?*
 
 ### Operational Intelligence
+
+Click **Agentic Ops** in the left navigation, then click **Operational Intelligence** in the menu.
+
+![](../screenshots/ssne-menu-operational-intelligence.png)
 
 ![](../screenshots/ssne-sn_agentic_ops_operational_intelligence.png)
 
@@ -162,11 +226,19 @@ Coordinates test health, path quality, routing instability, and AI Defense signa
 
 ### Secure Networking Assurance
 
+Click **Agentic Ops** again to reopen the menu, then click **Secure Networking Assurance**.
+
+![](../screenshots/ssne-menu-secure-networking-assurance.png)
+
 ![](../screenshots/ssne-sn_agentic_ops_secure_networking_assurance.png)
 
 Rolls protected-application access into one decision-ready **Secure Networking Assurance Score** built from **A**ttainability (ThousandEyes HTTP availability), **R**etainability (ISE and ZTNA success), and **Q**uality (latency and packet loss), adjusted by a **Contextual risk multiplier** from active XDR incidents.
 
 ### Executive Assurance
+
+Click **Agentic Ops** again to reopen the menu, then click **Executive Assurance**.
+
+![](../screenshots/ssne-menu-executive-assurance.png)
 
 ![](../screenshots/ssne-sn_agentic_ops_executive_assurance.png)
 

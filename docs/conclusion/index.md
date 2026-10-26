@@ -1,5 +1,14 @@
 # Conclusion
 
-In this lab, you explored Cisco's Agentic Ops through hands-on experience with Cloud Control. You navigated the platform's core capabilities, including the Home Screen, the 9-Dot Menu, and Inventory management, gaining familiarity with how the environment is organized and accessed. You also experimented with AI Assistant sample prompts and the Agentic Canvas, discovering how natural language interactions can simplify complex operational tasks. Finally, you worked with Agent Builder instruction prompts to understand how agents can be configured and tailored to specific use cases.
+In this lab, you experienced Cisco Cloud Control end-to-end — from exploring the platform to building on it. You navigated the unified operational environment, the 9-Dot Menu, and the inventory that ties every Cisco platform together, then worked alongside AI agents in AI Canvas to investigate cross-domain issues and reach a root cause.
 
-As a next step, consider building and deploying your own custom agent using the Agent Builder, leveraging the prompt techniques practiced in this lab. Explore integrating additional tools and vendor-specific connections to expand your agent's capabilities across your environment. Use the Observability tab and Notifications pane to monitor agent runs and refine agent behavior based on real-world results. The more you experiment with different prompts and workflows, the better positioned you will be to unlock the full potential of Cisco's Agentic Ops Framework in your organization.
+From there, you explored how Cloud Control delivers value across the estate:
+
+- **Identity** — you reviewed identity posture in Identity Intelligence and saw human identities, non-human identities, applications, and endpoints come together in one view.
+- **Splunk Secure Networking App** — you navigated the five secure-networking pillars and saw how correlated telemetry shows where the network is healthy and where it is exposed.
+- **Studio** — you built and tested an AI agent with Agent Builder and generated a working application with App Builder, all governed by AI Defense guardrails.
+- **Cloud Control and Cisco IQ** — you followed a device from an inventory insight into Cisco IQ, planned for quantum readiness, and used AI Canvas to turn a hardening finding into remediation guidance and a Cisco Workflows action.
+
+**Value realization:** together, these capabilities turn the Cisco investments customers already own into measurable outcomes — risks found sooner, issues resolved faster with shared context, and new agents and apps built on the same trusted platform.
+
+As a next step, keep practicing. Use the **AI Canvas Prompt Library** to find, rate, and share prompts that work well, try the optional practice scenarios in **Appendices B and C**, and think about the value story you would tell a customer for each section of this lab. The more you work with AI Canvas, Studio, and Cisco IQ, the more confidently you will be able to show customers what Cisco Cloud Control can do for them.

@@ -1,8 +1,4 @@
-# Appendix A: AI Canvas Prompt Library
-
-## Find, Rate, and Share Prompts
-
-
+# AI Canvas Prompt Library
 
 !!! warning "Caution"
     Due to the scale constraints of this lab, Intersight and Nexus Dashboard products are not available for testing prompts. Please consider them references for the normal dCloud demo environment.

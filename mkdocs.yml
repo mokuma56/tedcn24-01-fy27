@@ -73,11 +73,12 @@ nav:
   - Introduction: introduction/index.md
   - "Section 1: Explore the LAB and Cloud Control Capabilities": section-1-explore-the-lab-and-cloud-control-capabilities/index.md
   - "Section 2: Experience the Agentic AI Canvas": section-2-experience-the-agentic-ai-canvas/index.md
+  - Value Realization: value-realization/index.md
   - "Section 3: Identity": section-3-identity/index.md
   - "Section 4: Splunk Secure Networking App": section-4-splunk-secure-networking-app/index.md
   - "Section 5: Studio": section-5-studio/index.md
   - "Section 6: Cloud Control and Cisco IQ": section-6-cloud-control-and-cisco-iq/index.md
-  - "Appendix A: AI Canvas Prompt Library": appendix-a-ai-canvas-prompt-library/index.md
+  - AI Canvas Prompt Library: ai-canvas-prompt-library/index.md
   - "Appendix B: Scenarios": appendix-b-scenarios/index.md
   - "Appendix C: Investigation Guide": appendix-c-investigation-guide/index.md
   - Conclusion: conclusion/index.md

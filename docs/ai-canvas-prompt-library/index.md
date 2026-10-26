@@ -1,8 +1,5 @@
 # AI Canvas Prompt Library
 
-!!! warning "Caution"
-    Due to the scale constraints of this lab, Intersight and Nexus Dashboard products are not available for testing prompts. Please consider them references for the normal dCloud demo environment.
-
 This appendix is an interactive library of **353 AI Canvas prompts**, each one tested repeatedly in the dCloud lab environment. Every prompt shows how it performed in testing, so you can pick the ones most likely to give a strong, consistent answer.
 
 **How to use it**

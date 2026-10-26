@@ -21,7 +21,7 @@ In this section, teams will compete in two hands-on challenges that put their AI
 
     - **Recommended remediation steps** — clear, actionable next steps
 
-    As a team, iterate on your prompts, compare outputs, and agree on the approach that produces the clearest and most complete RCA. Use the **Appendix A: Sample AI Prompts** as a starting point — build on them, combine them, or go beyond them entirely.
+    As a team, iterate on your prompts, compare outputs, and agree on the approach that produces the clearest and most complete RCA. Use the **Appendix A: AI Canvas Prompt Library** as a starting point — build on them, combine them, or go beyond them entirely.
 
     Once your team has agreed on the best-performing prompt and validated the quality of its output, nominate a spokesperson to **present your findings to your assigned proctor**. Be prepared to walk through:
 

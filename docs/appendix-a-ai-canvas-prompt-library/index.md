@@ -1,6 +1,6 @@
-# Appendix A: Sample AI Prompts
+# Appendix A: AI Canvas Prompt Library
 
-## AI Canvas Prompt Library
+## Find, Rate, and Share Prompts
 
 
 
@@ -18,6 +18,8 @@ This appendix is an interactive library of **353 AI Canvas prompts**, each one t
 - Prompts with a **follow-up** show the next question to ask in the same canvas.
 - Values highlighted in yellow, such as `<alert-id>`, must be replaced with a value from your environment before you run the prompt.
 - Click **☆** to save a prompt to **My favorites** in this browser.
+- Tried a prompt? Click **👍** or **👎** to tell other students whether it worked for you. Votes from everyone are combined, and **Sort: Students' favorites** puts the best-loved prompts first. Click your vote again to remove it.
+- Found a prompt that works well? Click **➕ Share a prompt**. Shared prompts are reviewed before they appear in the library with a **Community** badge.
 
 <iframe src="../apps/prompt-library.html" title="AI Canvas Prompt Library" style="width:100%;height:80vh;min-height:620px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;" allow="clipboard-write" loading="eager"></iframe>
 

@@ -60,7 +60,7 @@ After logging in, explore the three sections on the home screen.
 
 ---
 
-Next, navigate to [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) (***opens in new Tab for easy navigation***) and spend time running the validated prompts for this environment. Use the **copy button** on each prompt block to paste directly into the AI Assistant or Agentic Canvas — this ensures accuracy and eliminates the risk of transcription errors. As you work through each prompt, observe how the system interprets the input, what format the response takes, and how quickly results are returned.
+Next, navigate to [**Appendix A: AI Canvas Prompt Library**](../appendix-a-ai-canvas-prompt-library/) (***opens in new Tab for easy navigation***) and spend time running the validated prompts for this environment. Use the **copy button** on each prompt block to paste directly into the AI Assistant or Agentic Canvas — this ensures accuracy and eliminates the risk of transcription errors. As you work through each prompt, observe how the system interprets the input, what format the response takes, and how quickly results are returned.
 
 The goal of this exercise is to thoroughly prepare yourself for live customer demonstrations by building familiarity and confidence with a core set of prompts that consistently produce clear, accurate, and compelling results. Consider the following as you explore:
 
@@ -79,7 +79,7 @@ Take as much time as needed during this section to become comfortable with the m
 ---
 
 !!! tip "Tip"
-    You can access [**Appendix A: Sample AI Prompts**](../appendix-a-sample-ai-prompts/) (***opens in new Tab for easy navigation***) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
+    You can access [**Appendix A: AI Canvas Prompt Library**](../appendix-a-ai-canvas-prompt-library/) (***opens in new Tab for easy navigation***) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
 
 ---
 

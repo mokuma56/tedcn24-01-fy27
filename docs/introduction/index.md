@@ -39,5 +39,11 @@ When you finish, keep going with the appendices: **Appendix A** is an interactiv
 
 ## Learning Objectives
 
-- Learn the  use of Cloud Control capabilities
-- Learn the Agentic AI Canvas capabilities within Cloud Control
+- Navigate Cisco Cloud Control and explain how its unified inventory, 9-Dot Menu, and insights bring the Cisco estate into one operational view.
+- Use AI Canvas with Default and Reasoning modes to investigate cross-domain issues and work through a root cause analysis.
+- Assess identity posture in Identity Intelligence, including users, applications, endpoints, AI agents, and non-human identities.
+- Interpret the Splunk Secure Networking Essentials dashboards across the five secure-networking pillars, from Zero Trust Access to Agentic Ops.
+- Build and test an AI agent with Agent Builder and generate an application with App Builder, and explain how AI Defense governs what Studio builds.
+- Trace a device from a Cloud Control inventory insight into Cisco IQ to evaluate quantum readiness, certificate expiry, and security hardening findings.
+- Use AI Canvas to turn Cisco IQ findings into device-specific remediation guidance and a review-ready Cisco Workflows action.
+- Find, rate, and share effective AI Canvas prompts with the AI Canvas Prompt Library to build stronger customer demos.

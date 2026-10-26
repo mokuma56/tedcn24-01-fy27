@@ -1,219 +1,32 @@
 # Appendix A: Sample AI Prompts
 
-## Sample Prompts for AI Assistant and Agentic Canvas
+## AI Canvas Prompt Library
 
 
 
 !!! warning "Caution"
     Due to the scale constraints of this lab, Intersight and Nexus Dashboard products are not available for testing prompts. Please consider them references for the normal dCloud demo environment.
 
-This appendix contains a curated collection of **known-good prompts** that have been tested and validated within this lab environment. These prompts are designed to be used directly with the **AI Assistant** or the **AI Agentic Canvas** inside Cisco Cloud Control to produce high-quality, actionable results.
+This appendix is an interactive library of **353 AI Canvas prompts**, each one tested repeatedly in the dCloud lab environment. Every prompt shows how it performed in testing, so you can pick the ones most likely to give a strong, consistent answer.
 
-Throughout the lab, you will find references back to this appendix for relevant prompts at each stage. You are encouraged to use these prompts as a starting point — experiment with variations, combine them, or use them as inspiration for building your own agentic workflows. The more you interact with the AI interfaces using well-formed prompts, the richer the outputs you will receive.
+**How to use it**
 
-Prompts are organized by product integration so you can quickly locate the right prompt for the context you are working in.
+- **Search** for a product, site, or problem (press `/` to jump to the search box).
+- **Filter** by product area, by consistency, or turn on **✨ Top picks** — prompts that scored 4.5 or higher with High consistency.
+- **Sort** by recommended, highest AI grade, most consistent, or fastest response.
+- Click the **copy** button on any prompt, then paste it into **AI Canvas** or the **AI Assistant**.
+- Prompts with a **follow-up** show the next question to ask in the same canvas.
+- Values highlighted in yellow, such as `<alert-id>`, must be replaced with a value from your environment before you run the prompt.
+- Click **☆** to save a prompt to **My favorites** in this browser.
 
-### Meraki Dashboard
+<iframe src="../apps/prompt-library.html" title="AI Canvas Prompt Library" style="width:100%;height:80vh;min-height:620px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;" allow="clipboard-write" loading="eager"></iframe>
 
-```
-How is my organization doing?
-```
+[Open the prompt library in a new tab](../apps/prompt-library.html){ target=_blank }
 
-```
-Are there any critical alerts?
-```
 
-```
-Show my WAN port utilization.
-```
+---
 
-```
-Show my WAN port status.
-```
+!!! info "Note"
+    AI grades and consistency ratings come from automated test runs in the dCloud lab. Actual responses will vary due to the nature of the Live Lab environment and Agentic Systems
 
-```
-SD-WAN uplink/WAN port status across your fabric
-```
-
-```
-Meraki appliance uplink status for the Mexico City network
-```
-
-```
-yes please pull real-time client usage data directly from Meraki for that network
-```
-
-### ThousandEyes
-
-```
-Are there any outages affecting my monitored services right now?
-```
-
-```
-What are the current latency and packet loss metrics for my critical tests?
-```
-
-```
-Are there any anomalies in my ThousandEyes tests?
-```
-
-### Nexus Dashboard
-
-```
-Is my data center fabric healthy right now?
-```
-
-```
-Give me an overall health summary of my data center fabrics.
-```
-
-```
-Are there any critical issues across my data center fabrics?
-```
-
-```
-Which fabric components need attention today?
-```
-
-```
-Show me a health overview of all fabrics managed by Nexus Dashboard.
-```
-
-### Hyperfabric
-
-```
-Show me all devices discovered in my Nexus Hyperfabric organization.
-```
-
-```
-Are any devices in my fabric unable to communicate?
-```
-
-```
-Are there any reachability issues between endpoints in my fabric?
-```
-
-```
-Show me all endpoints currently connected to my fabric and their locations.
-```
-
-```
-Show me the topology of my Nexus Hyperfabric deployment.
-```
-
-```
-Can I add any connections to my fabrics?
-```
-
-### Intersight
-
-```
-Which servers are running the oldest firmware version?
-```
-
-```
-Are there any storage drives in a degraded or failed state?
-```
-
-```
-List all servers with inactive or disconnected network adapters.
-```
-
-```
-Who made changes to my server profiles in the last 24 hours?
-```
-
-```
-Give me an overall health summary of my compute infrastructure.
-```
-
-### Secure Access
-
-```
-why can lee chang not access jira via ZTA in secure access?
-```
-
-### Secure Firewall
-
-```
-What is the current status of all my site-to-site VPN tunnels?
-```
-
-```
-Are there any IKE negotiation failures on my VPN tunnels?
-```
-
-```
-Which tunnels have had the most disruptions this month?
-```
-
-```
-What are the best practices for site-to-site VPN configuration?
-```
-
-### Catalyst SD-WAN
-
-```
-Give me a summary of my network and application health.
-```
-
-```
-Give me a summary of my SD-WAN network and application health.
-```
-
-```
-Can you show the Rx/Tx bandwidth rates, utilization, and peak usage for all my WAN links?
-```
-
-```
-How are my applications performing, and are there any SLA violations in my SD-WAN network?
-```
-
-```
-What is the usage of applications in my SD-WAN network?
-```
-
-```
-Give me an overall health summary of my Catalyst SD-WAN deployment.
-```
-
-### Cisco Collaboration Hub
-
-```
-Show me poor quality meetings for Dace Waters
-```
-
-```
-can you diagnose why the device called Jane Rodriquez DM had issues in its last meeting. Conference ID 721823729975301029. Please provide the ThousandEyes network path as well.
-```
-
-```
-Show me calls with poor quality for Victoria Price
-```
-
-```
-Analyze calls in the last 7 days for device Michael Chang 9871
-```
-
-```
-Tell me about the last meeting in the SJC Conf Room
-```
-
-### Splunk Cloud
-
-```
-How is the health of my Splunk deployment?
-```
-
-```
-What is the p95 latency per Splunk service for the last 24 hours?
-```
-
-```
-Summarize any alerts from our Splunk system
-```
-
-```
-Show any failed Splunk login attempts in the last 24 hours grouped by user
-```
-
+---

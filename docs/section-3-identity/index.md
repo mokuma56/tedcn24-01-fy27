@@ -57,7 +57,7 @@ Use the filter panel on the left (Status, Source, Trust Level, Compiled Status, 
 
 ---
 
-Next sech for the user **Alex Garcia.** Once found **Click** to explore the user details in a new tab
+Next search for the user **Alex Garcia.** Once found **Click** to explore the user details in a new tab
 
 ![](../screenshots/c950c240d7.png)
 

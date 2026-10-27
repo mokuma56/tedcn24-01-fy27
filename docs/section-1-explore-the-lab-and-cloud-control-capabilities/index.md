@@ -36,7 +36,7 @@ Not all products listed above will be actively used in every section of this lab
 
 ## Step 2: Log into the dCloud Cloud Control Lab
 
-Open a web browser and navigate to the lab landing page at: [https://dcloud2-rtp.cisco.com/content/instantdemo/agenticops-with-cisco-cloud-control](https://dcloud2-rtp.cisco.com/content/instantdemo/agenticops-with-cisco-cloud-control)  (opens in new window)
+Open a web browser and navigate to the lab landing page at: [https://dcloud2-rtp.cisco.com/content/instantdemo/agenticops-with-cisco-cloud-control](https://dcloud2-rtp.cisco.com/content/instantdemo/agenticops-with-cisco-cloud-control)  Click View  + Answer questions are how you plan to use the demo (new window opens)
 
 Next, **Click Login**
 
@@ -80,6 +80,13 @@ Take as much time as needed during this section to become comfortable with the m
 
 !!! tip "Tip"
     You can access [**AI Canvas Prompt Library**](../ai-canvas-prompt-library/) (***opens in new Tab for easy navigation***) at any time from the navigation menu on the left. Each prompt has a copy button — click it to copy the prompt instantly to your clipboard, then paste it directly into the AI Assistant or Agentic Canvas.
+
+---
+
+![](../screenshots/bc112430ed.png)
+
+!!! info "Note"
+    Since this environment is integrated with both Meraki and Catalyst Center orgs, for prompts related to the network, you will be prompted to select the correct organization.
 
 ---
 

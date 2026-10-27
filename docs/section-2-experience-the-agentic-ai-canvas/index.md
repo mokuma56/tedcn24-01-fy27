@@ -20,15 +20,15 @@ Now in the AI Canvas section you will see:
 
 1. The ability to create a **New Canvas**
 
-1. The **Quick Start** tiles, which allow you to run a set of pre-populated prompts
+1. **Integrations**, which allow you to add API integrations into Cavas
 
 1. The **Recent** list of Canvases
 
-Next, **click** the Wireless Quick Start tile and let's put AI Canvas to work.
+Next, **click**  **+ New**  and let's put AI Canvas to work with a new Canvas.
 
 ---
 
-![](../screenshots/92dec771bf.png)
+![](../screenshots/c58100514a.png)
 
 ---
 
@@ -39,13 +39,27 @@ Next, **click** the Wireless Quick Start tile and let's put AI Canvas to work.
 
 
 
-Next, watch closely as AI Canvas **generates the Wireless session**, reviewing wireless performance, clients, and alerts in the environment.
+---
+
+Next, we will use a built-in Meraki Health & Availability prompt to create a Wireless Health Check.
+
+From the "**Where should we begin?**" menu:
+
+1. Select **Health & Availability**
+
+1. Select **Meraki**
+
+1. Finally, select "**Run a WiFi health check on my Meraki networks**"
+
+![](../screenshots/e8db011719.png)
+
+Next, watch closely as AI Canvas **generates the Wireless Health Report** reviewing wireless performance, clients, and alerts in the environment.
 
 Once it completes, **spend some time exploring** the various capabilities of the Canvas interface, such as the ability to share and invite others, annotate, resize cards, generate a summary, and more.
 
 ---
 
-![](../screenshots/d48186e8fa.png)
+![](../screenshots/54e6692dfd.png)
 
 ## Step 4: Use Prompt Shortcuts and Reasoning Mode
 

@@ -1,0 +1,1097 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cisco Cloud Control Value Realization">
+      
+      
+        <meta name="author" content="Cisco">
+      
+      
+      
+        <link rel="prev" href="../section-3-identity/">
+      
+      
+        <link rel="next" href="../section-5-studio/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/cisco_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Section 4: Splunk Secure Networking App - Cisco Cloud Control Value Realization</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#section-4-splunk-secure-networking-app" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Cisco Cloud Control Value Realization" class="md-header__button md-logo" aria-label="Cisco Cloud Control Value Realization" data-md-component="logo">
+      
+  <img src="../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cisco Cloud Control Value Realization
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Section 4: Splunk Secure Networking App
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cisco Cloud Control Value Realization" class="md-nav__button md-logo" aria-label="Cisco Cloud Control Value Realization" data-md-component="logo">
+      
+  <img src="../template_assets/cisco_logo.png" alt="logo">
+
+    </a>
+    Cisco Cloud Control Value Realization
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-1-explore-the-lab-and-cloud-control-capabilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1: Explore the LAB and Cloud Control Capabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-2-experience-the-agentic-ai-canvas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 2: Experience the Agentic AI Canvas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../value-realization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Value Realization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-3-identity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 3: Identity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 4: Splunk Secure Networking App
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 4: Splunk Secure Networking App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#step-1-launch-splunk-secure-networking-essentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Launch Splunk Secure Networking Essentials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-zero-trust-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Zero Trust Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-secure-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Secure Infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-scalable-network-segmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Scalable Network Segmentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-hybrid-mesh-firewalling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Hybrid Mesh Firewalling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-agentic-ops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Agentic Ops
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-investigate-any-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Investigate Any Panel
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-5-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 5: Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-6-cloud-control-and-cisco-iq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 6: Cloud Control and Cisco IQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-canvas-prompt-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Canvas Prompt Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-b-scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B: Scenarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-c-investigation-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix C: Investigation Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#step-1-launch-splunk-secure-networking-essentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Launch Splunk Secure Networking Essentials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-zero-trust-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Zero Trust Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-secure-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Secure Infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-scalable-network-segmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Scalable Network Segmentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-hybrid-mesh-firewalling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Hybrid Mesh Firewalling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-agentic-ops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Agentic Ops
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-investigate-any-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Investigate Any Panel
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="section-4-splunk-secure-networking-app">Section 4: Splunk Secure Networking App</h1>
+<p>In this section, you will explore Splunk Secure Networking Essentials (SSNE), the Splunk app built into Cisco Cloud Control. SSNE correlates telemetry from Cisco ISE, Duo, Secure Access, Secure Firewall, Meraki, Catalyst Center, Catalyst SD-WAN, Nexus Dashboard, ACI, ThousandEyes, XDR, and AI Defense into executive workspaces and investigation dashboards organized around five secure-networking pillars: Zero Trust Access, Secure Infrastructure, Scalable Network Segmentation, Hybrid Mesh Firewalling, and Agentic Ops.</p>
+<h2 id="step-1-launch-splunk-secure-networking-essentials">Step 1: Launch Splunk Secure Networking Essentials</h2>
+<p>From the Cloud Control top bar, open the <strong>9-Dot Menu</strong> and click <strong>Splunk</strong>. Splunk Cloud opens inside Cloud Control on the <strong>Splunk Secure Networking Essentials</strong> <strong>Insights Workspace</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-home.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-home.png"></a></p>
+<p>The Insights Workspace is the executive starting point for the whole app:</p>
+<ul>
+<li>
+<p><strong>Headline tiles</strong> — one health signal per pillar, each with a status badge (<em>Healthy</em>, <em>Warning</em>, <em>Critical</em>): ZTA auth failure rate, DC critical anomalies, active SGT assignments, Hybrid Mesh Firewall blocked flows, degraded digital paths, and Palo Alto policy blocks.</p>
+</li>
+<li>
+<p><strong>Pillar rows</strong> — collapsible Zero Trust Access, Secure Infrastructure, and other rows of trend tiles. Page through them with the arrows, or change how many tiles show per page.</p>
+</li>
+<li>
+<p><strong>Secure Network Command Map</strong> — live sites, trust paths, and policy-enforcement health on a geographic map (switch to <em>Table</em> for a list), with inter-site and site-link availability below it.</p>
+</li>
+<li>
+<p><strong>Controls</strong> — layout toggles, time range (default <em>Last 24 hours</em>), and refresh rate.</p>
+</li>
+</ul>
+<p>The left navigation groups every dashboard by pillar. Click a pillar to open a menu of its dashboards.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Click the <strong>open</strong> icon on any headline tile to jump straight to the dashboard behind that number.</p>
+</div>
+<h2 id="step-2-zero-trust-access">Step 2: Zero Trust Access</h2>
+<p>In the left navigation, click <strong>Zero Trust Access</strong>. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: <em>are the right users and devices getting access, and are policies being enforced?</em></p>
+<h3 id="zero-trust-posture">Zero Trust Posture</h3>
+<p>Click <strong>Zero Trust Access</strong> in the left navigation, then click <strong>Zero Trust Posture</strong> in the menu.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-zero-trust-posture.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-zero-trust-posture.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_zta_posture.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_zta_posture.png"></a></p>
+<p>The pillar summary. It connects identity, posture, policy, and response signals across the access journey: ISE <strong>Authentication Outcomes</strong> and <strong>Friction</strong> (failure rate), Secure Access ZTNA <strong>Private Access Status</strong>, <strong>Remote Access Health</strong>, Duo <strong>Risky MFA Outcomes</strong> ranked by application and factor, and <strong>Control Telemetry Volume</strong> from ISE, ZTNA, and FMC.</p>
+<h3 id="authentication-and-policy-enforcement">Authentication and Policy Enforcement</h3>
+<p>Click <strong>Zero Trust Access</strong> again to reopen the menu, then click <strong>Authentication and Policy Enforcement</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-authentication-and-policy-enforcement.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-authentication-and-policy-enforcement.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_zta_authentication_policy_enforcement.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_zta_authentication_policy_enforcement.png"></a></p>
+<p>Validates that authentication works and policy is applied: ISE failure rate, RADIUS vs TACACS+ <strong>Policy Family Activity</strong>, <strong>RADIUS Outcomes</strong>, <strong>RadSec Transport Activity</strong>, <strong>Duo Policy Outcomes</strong> (denied, success, fraud), and the <strong>ISE Enforcement Footprint</strong> — how many network access devices are actively enforcing.</p>
+<h3 id="policy-management">Policy Management</h3>
+<p>Click <strong>Zero Trust Access</strong> again to reopen the menu, then click <strong>Policy Management</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-policy-management.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-policy-management.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_zta_policy_management.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_zta_policy_management.png"></a></p>
+<p>Monitors access-policy coverage, change, and exceptions that need review: RADIUS enforcement, secure transport, MFA policy outcomes, <strong>ZTNA Denial Reasons</strong> (which policy, posture, certificate, or connector reason is blocking users), and TrustSec <strong>SGACL Enforcement</strong>.</p>
+<h3 id="user-activity-monitoring">User Activity Monitoring</h3>
+<p>Click <strong>Zero Trust Access</strong> again to reopen the menu, then click <strong>User Activity Monitoring</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-user-activity-monitoring.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-user-activity-monitoring.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_zta_user_activity_monitoring.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_zta_user_activity_monitoring.png"></a></p>
+<p>Reveals unusual access behavior and the identities, devices, and resources involved: private application access, access denial causes, MFA activity, and — from endpoint telemetry — <strong>User</strong> and <strong>Process Egress Concentration</strong>, which rank the users and processes sending the most data out.</p>
+<h3 id="detection-response">Detection &amp; Response</h3>
+<p>Click <strong>Zero Trust Access</strong> again to reopen the menu, then click <strong>Detection &amp; Response</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-detection-response.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-detection-response.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_zta_detection_response.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_zta_detection_response.png"></a></p>
+<p>Surfaces access-related detections and the response actions that contain risk: Cisco XDR <strong>Incident Severity</strong> and <strong>Incident Risk Pressure</strong>, Attack Analyzer flows and forensic detections, <strong>External Egress Activity</strong> by destination, and <strong>File Source Hotspots</strong>.</p>
+<h3 id="remote-access-vpn-ravpn-sessions-and-posture">Remote Access VPN (RaVPN) Sessions and Posture</h3>
+<p>Click <strong>Zero Trust Access</strong> again to reopen the menu, then click <strong>Remote Access VPN (RaVPN) Sessions and Posture</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-remote-access-vpn-ravpn-sessions-and-posture.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-remote-access-vpn-ravpn-sessions-and-posture.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_zta_ravpn_sessions_and_posture.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_zta_ravpn_sessions_and_posture.png"></a></p>
+<p>Connects remote-session health with endpoint posture and access risk: VPN clients and sessions, connection outcomes, VPN profiles and regions in use, ranked <strong>Failure Reasons</strong>, and <strong>Posture Outcomes</strong> (non-compliant, failed, warning).</p>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>Each panel shows its data domain and pillar under the title (for example <em>Identity · Zero Trust Access</em>), and its description states exactly what is — and is not — being counted.</p>
+</div>
+<h2 id="step-3-secure-infrastructure">Step 3: Secure Infrastructure</h2>
+<p>In the left navigation, click <strong>Secure Infrastructure</strong>. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: <em>is the network and data center healthy, and where is it exposed?</em></p>
+<h3 id="secure-infrastructure-status">Secure Infrastructure Status</h3>
+<p>Click <strong>Secure Infrastructure</strong> in the left navigation, then click <strong>Secure Infrastructure Status</strong> in the menu.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-secure-infrastructure-status.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-secure-infrastructure-status.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_secure_infrastructure_status.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_secure_infrastructure_status.png"></a></p>
+<p>One cross-source health view of wireless, Catalyst Center, SD-WAN, data center, endpoint, and firewall: Meraki <strong>Reporting Access Points</strong>, <strong>Catalyst Active Issues</strong>, <strong>Reporting SD-WAN Sites</strong>, Nexus Dashboard <strong>Data Center Signals</strong>, Secure Endpoint <strong>Endpoint Incidents</strong>, and FMC <strong>Firewall Activity</strong>.</p>
+<h3 id="infrastructure-posture">Infrastructure Posture</h3>
+<p>Click <strong>Secure Infrastructure</strong> again to reopen the menu, then click <strong>Infrastructure Posture</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-infrastructure-posture.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-infrastructure-posture.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_secure_infrastructure_posture.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_secure_infrastructure_posture.png"></a></p>
+<p>Unifies assurance, exposure, and operational control signals: data center anomalies, Nexus Dashboard <strong>Critical Advisories</strong>, Meraki <strong>Wireless Containment</strong> of rogue access points, <strong>Wireless Clients Observed</strong>, and SD-WAN site reporting.</p>
+<h3 id="secure-data-center-operations">Secure Data Center Operations</h3>
+<p>Click <strong>Secure Infrastructure</strong> again to reopen the menu, then click <strong>Secure Data Center Operations</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-secure-data-center-operations.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-secure-data-center-operations.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_data_center_operations.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_data_center_operations.png"></a></p>
+<p>Fabric health, capacity, policy enforcement, runtime security, and change intelligence for ACI, APIC, Nexus Dashboard, Secure Firewall, and Cisco Isovalent. Tabs across the top switch between <strong>Fabric Operations</strong>, <strong>Data Center Security</strong>, <strong>Runtime Security</strong>, and <strong>Runtime Investigation</strong>. Fabric Operations shows the <strong>ACI Fabric Health Score</strong>, critical and major ACI faults, security advisories, interface anomalies, peak port utilization, and ACI configuration changes.</p>
+<h3 id="sd-wan-and-network-health-monitoring">SD-WAN and Network Health Monitoring</h3>
+<p>Click <strong>Secure Infrastructure</strong> again to reopen the menu, then click <strong>SD-WAN and Network Health Monitoring</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-sd-wan-and-network-health-monitoring.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-sd-wan-and-network-health-monitoring.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_hmf_sdwan_network_health.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_hmf_sdwan_network_health.png"></a></p>
+<p>Correlates WAN health, reachability, and service impact: SD-WAN <strong>Site Health</strong>, <strong>Circuit Availability</strong>, <strong>Degraded Tunnels</strong>, <strong>Application Health</strong>, and ThousandEyes <strong>Path Loss</strong> and BGP <strong>Routing Stability</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>Panels with no data in the selected window say so explicitly and suggest checking that the data source is onboarded or widening the time range.</p>
+</div>
+<h2 id="step-4-scalable-network-segmentation">Step 4: Scalable Network Segmentation</h2>
+<p>In the left navigation, click <strong>Scalable Network Segmentation</strong>. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: <em>how far has TrustSec/SGT segmentation been adopted, and is it being enforced?</em></p>
+<h3 id="segmentation-readiness">Segmentation Readiness</h3>
+<p>Click <strong>Scalable Network Segmentation</strong> in the left navigation, then click <strong>Segmentation Readiness</strong> in the menu.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-segmentation-readiness.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-segmentation-readiness.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_segmentation_readiness.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_segmentation_readiness.png"></a></p>
+<p>Connects segmentation posture, trust boundaries, and enforcement coverage: the TrustSec-capable <strong>Hardware Inventory</strong>, endpoint-to-SGT assignments, which <strong>Security Groups</strong> are in use, the <strong>Segmentation Adoption Rate</strong>, <strong>Sites With No Observed SGT Coverage</strong>, and tagged authentication events by location.</p>
+<h3 id="segmentation-operations">Segmentation Operations</h3>
+<p>Click <strong>Scalable Network Segmentation</strong> again to reopen the menu, then click <strong>Segmentation Operations</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-segmentation-operations.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-segmentation-operations.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_segmentation_operations.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_segmentation_operations.png"></a></p>
+<p>Summarizes segment health, policy alignment, and areas needing investigation: tagged endpoints by reporting device, <strong>IP-SGT Bindings</strong>, <strong>SGACL Decisions</strong> (permit, deny), VRF / VLAN / VXLAN / SGT feature events, and <strong>FMC Blocks by SGT Context</strong> — where firewall policy is acting on group tags.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use <strong>Sites With No Observed SGT Coverage</strong> as a rollout checklist: each listed site authenticates users but never assigns a non-default Security Group Tag.</p>
+</div>
+<h2 id="step-5-hybrid-mesh-firewalling">Step 5: Hybrid Mesh Firewalling</h2>
+<p>In the left navigation, click <strong>Hybrid Mesh Firewalling</strong>. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: <em>is policy enforced consistently across every firewall — on-prem, branch, cloud, and workload?</em></p>
+<h3 id="hybrid-mesh-enforcement">Hybrid Mesh Enforcement</h3>
+<p>Click <strong>Hybrid Mesh Firewalling</strong> in the left navigation, then click <strong>Hybrid Mesh Enforcement</strong> in the menu.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-hybrid-mesh-enforcement.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-hybrid-mesh-enforcement.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_hmf_enforcement.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_hmf_enforcement.png"></a></p>
+<p>Unifies firewall posture, enforcement, and workload protection: <strong>Reporting Firewalls</strong>, <strong>Unified Block Activity</strong> across Meraki MX and Secure Firewall/ASA, FMC enforcement, Umbrella/SSE <strong>DNS Security Activity</strong>, Palo Alto <strong>SGT-tagged Policy Decisions</strong>, and Secure Access DLP findings.</p>
+<h3 id="threat-detection-and-enforcement">Threat Detection and Enforcement</h3>
+<p>Click <strong>Hybrid Mesh Firewalling</strong> again to reopen the menu, then click <strong>Threat Detection and Enforcement</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-threat-detection-and-enforcement.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-threat-detection-and-enforcement.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_hmf_threat_detection_enforcement.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_hmf_threat_detection_enforcement.png"></a></p>
+<p>Tracks high-confidence detections and the controls enforcing policy: allowed vs blocked <strong>Firewall Decisions</strong>, <strong>Cloud Firewall Blocks</strong>, the Multicloud Defense <strong>Deny Rate</strong>, Isovalent <strong>Runtime Alerts</strong>, <strong>Branch IPS Pressure</strong> from SD-WAN UTD, and a unified enforcement trend.</p>
+<h3 id="dlp-and-cloud-native-security">DLP and Cloud Native Security</h3>
+<p>Click <strong>Hybrid Mesh Firewalling</strong> again to reopen the menu, then click <strong>DLP and Cloud Native Security</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-dlp-and-cloud-native-security.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-dlp-and-cloud-native-security.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_hmf_dlp_cloud_native_security.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_hmf_dlp_cloud_native_security.png"></a></p>
+<p>Exposes data-loss risk and cloud-native workload controls: <strong>Data Loss Findings</strong> by severity, Secure Workload <strong>Workload Alert Pressure</strong>, the cloud enforcement rate, runtime detection severity, and native AWS / Azure / GCP <strong>Cloud Security Activity</strong>.</p>
+<h2 id="step-6-agentic-ops">Step 6: Agentic Ops</h2>
+<p>In the left navigation, click <strong>Agentic Ops</strong>. A menu slides out listing this pillar's dashboards; open each one in turn by clicking it in the menu. This pillar answers: <em>are users getting a good digital experience, and what should operators and executives act on first?</em></p>
+<h3 id="operational-intelligence">Operational Intelligence</h3>
+<p>Click <strong>Agentic Ops</strong> in the left navigation, then click <strong>Operational Intelligence</strong> in the menu.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-operational-intelligence.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-operational-intelligence.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_agentic_ops_operational_intelligence.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_agentic_ops_operational_intelligence.png"></a></p>
+<p>Coordinates test health, path quality, routing instability, and AI Defense signals: <strong>Degraded ThousandEyes Tests</strong> with a table of tests needing attention, <strong>AI Defense Policy Outcomes</strong> (blocked vs allowed prompts), latency by reporting agent, network loss, lowest application availability, and BGP path changes by test.</p>
+<h3 id="secure-networking-assurance">Secure Networking Assurance</h3>
+<p>Click <strong>Agentic Ops</strong> again to reopen the menu, then click <strong>Secure Networking Assurance</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-secure-networking-assurance.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-secure-networking-assurance.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_agentic_ops_secure_networking_assurance.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_agentic_ops_secure_networking_assurance.png"></a></p>
+<p>Rolls protected-application access into one decision-ready <strong>Secure Networking Assurance Score</strong> built from <strong>A</strong>ttainability (ThousandEyes HTTP availability), <strong>R</strong>etainability (ISE and ZTNA success), and <strong>Q</strong>uality (latency and packet loss), adjusted by a <strong>Contextual risk multiplier</strong> from active XDR incidents.</p>
+<h3 id="executive-assurance">Executive Assurance</h3>
+<p>Click <strong>Agentic Ops</strong> again to reopen the menu, then click <strong>Executive Assurance</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-menu-executive-assurance.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-menu-executive-assurance.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../screenshots/ssne-sn_agentic_ops_executive_assurance.png" data-desc-position="top"><img alt="" src="../screenshots/ssne-sn_agentic_ops_executive_assurance.png"></a></p>
+<p>Summarizes posture, operational risk, and business-relevant outcomes for leadership: <strong>Fleet Device Health</strong>, lowest site connectivity, wireless availability, identity friction, reported enforcement blocks, and lowest application availability.</p>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>If the assurance score shows <em>N/A</em>, one of its inputs had no data in the selected window. Widen the time range to see the trend.</p>
+</div>
+<h2 id="step-7-investigate-any-panel">Step 7: Investigate Any Panel</h2>
+<p>Every panel has two icons in its top-right corner:</p>
+<ul>
+<li>
+<p><strong>ⓘ</strong> — what the panel measures and how to read it.</p>
+</li>
+<li>
+<p><strong>Search</strong> (magnifier) — opens the panel's exact search, with the active time range, in Splunk Search, so you can pivot from any number to the raw events behind it.</p>
+</li>
+</ul>
+<p>Use the <strong>Time range</strong> buttons (4h, 24h, 48h, 7d, 30d) at the top of each dashboard to change the window.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Congratulations</p>
+<p>You have completed the Splunk Secure Networking App section. You explored the Insights Workspace and all five secure-networking pillars, and learned how to drill from any metric to its underlying search.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../section-3-identity/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Section 3: Identity">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Section 3: Identity
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../section-5-studio/" class="md-footer__link md-footer__link--next" aria-label="Next: Section 5: Studio">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Section 5: Studio
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2024 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "navigation.expand", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../javascripts/links.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

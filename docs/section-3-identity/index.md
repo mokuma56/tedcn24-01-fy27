@@ -47,6 +47,18 @@ Use the filter panel on the left (Status, Source, Trust Level, Compiled Status, 
 !!! info "Note"
     **Default filters** hide deleted, deprovisioned, and disabled accounts. Toggle **Default filters** off to see the full population.
 
+---
+
+Next sech for the user **Alex Garcia. **Once found **Click** to explore the user details in a new tab
+
+![](../screenshots/c950c240d7.png)
+
+Spend time **exploring** all of the **details and capabilities** available to the user.
+
+![](../screenshots/9c8aa86277.png)
+
+---
+
 ## Step 3: Explore Applications
 
 

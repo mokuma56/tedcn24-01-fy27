@@ -213,7 +213,7 @@ show me my Mexico City Devices
 
 The Topology view displays your global network topology organized by site, providing a visual representation of device relationships and connectivity across your environment. In this case, we pivoted directly to the **C9300-X-Leaf1 i**n the local site topology. Notice the navigation options available to go directly to the device in Meraki or pivot back to the device in inventory.
 
-To demonstrate the seamless pivot to the** Mexico City** network, **Click Meraki** on the top navigation banner.
+To demonstrate the seamless pivot to the **Mexico City** network, **Click Meraki** on the top navigation banner.
 
 ---
 

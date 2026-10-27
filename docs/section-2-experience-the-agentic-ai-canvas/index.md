@@ -98,11 +98,11 @@ The scenario below involves a **Network Operator** who wants to perform Root Cau
 
 **Example sequence of prompts:**
 
-**Prompt #1 **Summarize my Catalyst SD-WAN deployment
+**Prompt #1** Summarize my Catalyst SD-WAN deployment
 
-**Prompt #2 **Give me the list of sites with low availability
+**Prompt #2** Give me the list of sites with low availability
 
-**Prompt #3 **I can see that Site_101 has 0% availability. Help me troubleshoot and identify the root cause
+**Prompt #3** I can see that Site_101 has 0% availability. Help me troubleshoot and identify the root cause
 
 ---
 

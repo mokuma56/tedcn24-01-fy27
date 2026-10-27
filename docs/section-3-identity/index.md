@@ -11,7 +11,11 @@ In this section, you will explore Identity Intelligence in Cisco Cloud Control. 
 
 From the Cloud Control top bar, open the **9-Dot Menu** and select **Identity**. The Identity Intelligence **Dashboard** opens by default.
 
-![](../screenshots/id-dashboard.png)
+From the drop down **Click** the **Overview Dashboard** (Take note of all the other available dashboards)
+
+![](../screenshots/8bcc704de3.png)
+
+---
 
 The Dashboard answers one question: *how healthy is the identity posture of this organization right now?*
 
@@ -20,6 +24,10 @@ The Dashboard answers one question: *how healthy is the identity posture of this
 - **Posture score trend** — how the score has moved over the selected window (30 days by default), so you can tell whether remediation work is paying off.
 
 - **Top Recommendations** — per-category scores for **Human Identities**, **Non-Human Identities**, and **MFA**, each with the single highest-impact fix, how many identities it affects, and the checks that contribute to it.
+
+![](../screenshots/id-dashboard.png)
+
+---
 
 !!! tip "Tip"
     Click any **users** or **contributing check** link on a recommendation card to jump straight to the filtered list of affected identities.

@@ -131,6 +131,9 @@ AI Canvas queries Cisco IQ's assessment data and adds a table to the canvas — 
 
 ![](../screenshots/iq-canvas-a1.png)
 
+!!! warning "Caution"
+    AI Canvas is an agentic system, and this is a live lab environment that changes over time. The cards, tables, and findings AI Canvas generates for you may differ from the screenshots in this guide — for example, you may see a different card layout, different findings, or different counts. Work with the cards AI Canvas gives you at the time and investigate what they show.
+
 To read the whole table, hover over the table card and click **Enter fullscreen mode** (the expand icon at the top right of the card). The summary shows how many findings are High, Medium, and Low, and the rows are sorted by severity.
 
 ![](../screenshots/iq-canvas-a1-full-1.png)

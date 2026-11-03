@@ -66,11 +66,13 @@ This is every Cisco IQ assessment for the device, summarized by severity:
 
 An operator sees all of this without leaving Cloud Control.
 
+When you have finished reviewing the assessments, **right-click** **View in Cisco IQ** at the bottom of the panel and choose **Open Link in New Window**. Cisco IQ opens in its own window, and Cloud Control stays open in this one so you can come back to it later in the lab.
+
 ## Step 5: Cross-Launch into Cisco IQ
 
 
 
-At the bottom of the Assessments tab, click **View in Cisco IQ**.
+Switch to the new window you opened from **View in Cisco IQ**.
 
 ![](../screenshots/iq-summary.png)
 
@@ -118,7 +120,7 @@ Every hardening rule is evaluated against the device's configuration and marked 
 
 
 
-Return to Cloud Control (use the Cloud Control top bar or your browser's back button — you stay signed in). Click **Home**, open **Canvas**, and start a **New** canvas.
+Switch back to the Cloud Control window you left open in Step 4 — you are still signed in. Click **Home**, open **Canvas**, and start a **New** canvas.
 
 In the message box, enter:  
 What security hardening opportunities are on ISR4431/K9?

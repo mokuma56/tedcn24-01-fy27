@@ -1,22 +1,15 @@
 # AI Canvas Prompt Library
 
-This appendix is an interactive library of **353 AI Canvas prompts**, each one tested repeatedly in the dCloud lab environment. Every prompt shows how it performed in testing, so you can pick the ones most likely to give a strong, consistent answer.
+The **dCloud AI Canvas Prompt Library** is a shared, public collection of AI Canvas prompts tested in the dCloud lab environment and ranked by how consistently they produce a strong answer. Use it to find a prompt that works for what you want to investigate, then paste it into **AI Canvas** or the **AI Assistant**.
+
+[Open the dCloud AI Canvas Prompt Library](https://dcloud-c3-prompts.dc-01.com/){ .md-button .md-button--primary target=_blank rel=noopener }
 
 **How to use it**
 
-- **Search** for a product, site, or problem (press `/` to jump to the search box).
-- **Filter** by product area, by consistency, or turn on **✨ Top picks** — prompts that scored 4.5 or higher with High consistency.
-- **Sort** by recommended, highest AI grade, most consistent, or fastest response.
-- Click the **copy** button on any prompt, then paste it into **AI Canvas** or the **AI Assistant**.
-- Prompts with a **follow-up** show the next question to ask in the same canvas.
-- Values highlighted in yellow, such as `<alert-id>`, must be replaced with a value from your environment before you run the prompt.
-- Click **☆** to save a prompt to **My favorites** in this browser.
-- Tried a prompt? Click **👍** or **👎** to tell other students whether it worked for you. Votes from everyone are combined, and **Sort: Students' favorites** puts the best-loved prompts first. Click your vote again to remove it.
-- Found a prompt that works well? Click **➕ Share a prompt**. Shared prompts are reviewed before they appear in the library with a **Community** badge.
-
-<iframe src="../apps/prompt-library.html" title="AI Canvas Prompt Library" style="width:100%;height:80vh;min-height:620px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;" allow="clipboard-write" loading="eager"></iframe>
-
-[Open the prompt library in a new tab](../apps/prompt-library.html){ target=_blank }
+- **Browse or filter** prompts by domain and by consistency rating, and switch between list and tile views.
+- **Copy** a prompt and paste it into **AI Canvas** or the **AI Assistant** in Cloud Control.
+- **Rate** the prompts you try, so the library learns what works and what doesn't.
+- **Submit a prompt** that worked well for you. An admin reviews each submission and runs it through AI Canvas to rate its consistency before it is published to the library.
 
 
 ---
